@@ -196,14 +196,14 @@ let data = [
         points:0,
         questionAndPoints: [
             {
-                question:"Number of protons in Aluminium            ",
+                question:"Number of protons in Aluminum            ",
                 answer:13
             },{
-                question:"Aluminium 's State at room temperature",
+                question:"Aluminum 's State at room temperature",
                 answer:"Solid"
             },
             {
-                question:"Aluminium 's abbreviation",
+                question:"Aluminum 's abbreviation",
                 answer:"Al"
             }
         ]
@@ -295,7 +295,7 @@ let data = [
                 question:"Number of protons in Potassium ",
                 answer:19
             },{
-                question:"Potssium's State at room temperature",
+                question:"Potassium's State at room temperature",
                 answer:"Solid"
             },
             {
@@ -308,14 +308,14 @@ let data = [
         points:0,
         questionAndPoints: [
             {
-                question:"Number of protons in Calium ",
+                question:"Number of protons in Calcium ",
                 answer:20
             },{
-                question:"Calium's State at room temperature",
+                question:"Calcium's State at room temperature",
                 answer:"Solid"
             },
             {
-                question:"Calium's abbreviation",
+                question:"Calcium's abbreviation",
                 answer:"Ca"
             }
         ]
@@ -356,14 +356,14 @@ let data = [
         points:0,
         questionAndPoints: [
             {
-                question:"Number of protons in Vandium",
+                question:"Number of protons in Vanadium",
                 answer:23
             },{
-                question:"Vandium's State at room temperature",
+                question:"Vanadium's State at room temperature",
                 answer:"Solid"
             },
             {
-                question:"Vandium's abbreviation",
+                question:"Vanadium's abbreviation",
                 answer:"V"
             }
         ]
@@ -420,14 +420,14 @@ let data = [
         points:0,
         questionAndPoints: [
             {
-                question:"Number of electrons in Colbat",
+                question:"Number of electrons in Cobalt",
                 answer:27
             },{
-                question:"Colbat's State at room temperature",
+                question:"Cobalt's State at room temperature",
                 answer:"Solid"
             },
             {
-                question:"Colbat's abbreviation",
+                question:"Cobalt's abbreviation",
                 answer:"Co"
             }
         ]
@@ -852,14 +852,14 @@ let data = [
         points:0,
         questionAndPoints: [
             {
-                question:"Number of electrons in Xneon",
+                question:"Number of electrons in Xenon",
                 answer:54
             },{
-                question:"Xneon's State at room temperature",
+                question:"Xenon's State at room temperature",
                 answer:"Gas"
             },
             {
-                question:"Xneon's abbreviation",
+                question:"Xenon's abbreviation",
                 answer:"Xe"
             }
         ]
@@ -868,14 +868,14 @@ let data = [
         points:0,
         questionAndPoints: [
             {
-                question:"Number of electrons in Caesium",
+                question:"Number of electrons in Cesium",
                 answer:55
             },{
-                question:"Caesium's State at room temperature",
+                question:"Cesium's State at room temperature",
                 answer:"Solid"
             },
             {
-                question:"Caesium's abbreviation",
+                question:"Cesium's abbreviation",
                 answer:"Cs"
             }
         ]
