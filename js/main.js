@@ -23,7 +23,7 @@ function nextQuestion () {
     document.getElementById("next").innerHTML = "Continue";
     if(functionRun > 0){
         if(document.getElementById("input").value.toLowerCase() == ""){
-            document.getElementById("result").innerHTML = `<div class="alert alert-warning" role="alert">You did not write anything for the last question!<br/> The answer is: ${answer}  &#9888;&#65039;`;
+            document.getElementById("result").innerHTML = `<div class="alert alert-warning" role="alert">You did not answer the last question!<br/> The answer is: ${answer}  &#9888;&#65039;`;
         }else{
             if(isNaN(answer)){
                 if (answer.toLowerCase() == document.getElementById("input").value.toLowerCase()) {
