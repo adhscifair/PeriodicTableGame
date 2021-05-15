@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="./pictures/logo.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+</head>
+<body>
+
+  <!-- Button trigger modal -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Periodic Table Game Rules</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;
+                    To begin the game you need to click the “Let the fun begin” button.
+                    First, you will answer the question above the input box. Next, you must click the “Continue” button.
+                    Once the you click the continue button, an alert will pop up. If the alert is red, you answered the question wrong.
+                     If the alert is green, you answered the question right. 
+                     If the alert is yellow, you did not type anything for the last question.
+                     You get one point for every right answer. Also, the element based on the 
+                     question is revealed on the periodic table. Your progress will be lost if 
+                     you exit or reload the page (version two is on the way to fix this). 
+                     The game can continue on until all the elements in the periodic table are 
+                     revealed!
+                    
+                </p>
+    
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron">
+    <h1>The Periodic Table Game</h1>
+    <h3>By Adhithya Yuvaraj</h3>
+    Click "Show Rules" to see the rules!
+    <br/>
+    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+        Show Rules
+      </button>
+    <p class="lead">
+    <hr class="my-4">
+    <div id= "question"></div>
+        <div id = "showAndHide">
+            <input type="text" id = "input"/>
+            <br/>
+            <br/>
+        </div>
+        <div id="result">
+            <div class="alert alert-dark" role="alert">
+                <span ><b>Answer a question to see if you got it right.</b></span>
+                    <br/>
+                    <span id="points"><b>Look below to see what elements you uncovered!</b></span>
+            </div>
+        </div>
+            <button id="next" onclick = "nextQuestion()" class="btn btn-primary">Let the fun begin</button>
+        <br/>
+  </div>
+        <table class="periodic">
+            <tr id="p1">
+                <td id="el1" title="Hydrogen" class="white hidden-element"><sup>1</sup>H<span id="el1a" class="visible-span">?</span></td>
+                <td class="empty" colspan="16"></td>
+                <td id="el2" title="Helium" class="noble hidden-element"><sup>2</sup>He <span id="el2a" class="visible-span">?</span></td>
+            </tr>
+            <tr id="p2">
+                <td id="el3" title="Lithium" class="red hidden-element"><sup>3</sup>Li <span id="el3a" class="visible-span">?</span></td>
+                <td id="el4" title="Beryllium" class="orange hidden-element"><sup>4</sup>Be <span id="el4a" class="visible-span">?</span></td>
+                <td class="empty" id="desc" colspan="10" rowspan="2 hidden-element"></td>
+                <td id="el5" title="Boron" class="metaliod hidden-element"><sup>5</sup>B <span id="el5a" class="visible-span">?</span></td>
+                <td id="el6" title="Carbon" class="nonmetal hidden-element"><sup>6</sup>C <span id="el6a" class="visible-span">?</span></td>
+                <td id="el7" title="Nitrogen" class="nonmetal hidden-element"><sup>7</sup>N <span id="el7a" class="visible-span">?</span></td>
+                <td id="el8" title="Oxygen" class="nonmetal hidden-element"><sup>8</sup>O <span id="el8a" class="visible-span">?</span></td>
+                <td id="el9" title="Fluorine" class="halogen hidden-element"><sup>9</sup>F <span id="el9a" class="visible-span">?</span></td>
+                <td id="el10" title="Neon" class="noble hidden-element"><sup>10</sup>Ne <span id="el10a" class="visible-span">?</span></td>
+            </tr>
+            <tr id="p3">
+                <td id="el11" title="Sodium" class="red hidden-element"><sup>11</sup>Na<span id="el11a" class="visible-span">?</span></td>
+                <td id="el12" title="Magnesium" class="orange hidden-element"><sup>12</sup>Mg<span id="el12a" class="visible-span">?</span></td>
+                <td id="el13" title="Aluminium" class="metal hidden-element"><sup>13</sup>Al<span id="el13a" class="visible-span">?</span></td>
+                <td id="el14" title="Silicon" class="metaliod hidden-element"><sup>14</sup>Si<span id="el14a" class="visible-span">?</span></td>
+                <td id="el15"  title="Phosphorus" class="nonmetal hidden-element"><sup>15</sup>P<span id="el15a" class="visible-span">?</span></td>
+                <td id="el16"  title="Sulfur" class="nonmetal hidden-element"><sup>16</sup>S<span id="el16a" class="visible-span">?</span></td>
+                <td id="el17" title="Chlorine" class="halogen hidden-element"><sup>17</sup>Cl<span id="el17a" class="visible-span">?</span></td>
+                <td id="el18" title="Argon" class="noble hidden-element"><sup>18</sup>Ar<span id="el18a" class="visible-span">?</span></td>
+            </tr>
+            <tr id="p4">
+                <td id="el19"  title="Potassium" class="red hidden-element"><sup>19</sup>K<span id="el19a" class="visible-span">?</span></td>
+                <td id="el20" title="Calcium" class="orange hidden-element"><sup>20</sup>Ca<span id="el20a" class="visible-span">?</span></td>
+                <td id="el21" title="Scandium" class="blue hidden-element"><sup>21</sup>Sc<span id="el21a" class="visible-span">?</span></td>
+                <td id="el22" title="Titanium" class="blue hidden-element"><sup>22</sup>Ti<span id="el22a" class="visible-span">?</span></td>
+                <td id="el23"  title="Vanadium" class="blue hidden-element"><sup>23</sup>V<span id="el23a" class="visible-span">?</span></td>
+                <td id="el24" title="Chromium" class="blue hidden-element"><sup>24</sup>Cr<span id="el24a" class="visible-span">?</span></td>
+                <td id="el25" title="Manganese" class="blue hidden-element"><sup>25</sup>Mn<span id="el25a" class="visible-span">?</span></td>
+                <td id="el26" title="Iron" class="blue hidden-element"><sup>26</sup>Fe<span id="el26a" class="visible-span">?</span></td>
+                <td id="el27" title="Cobalt" class="blue hidden-element"><sup>27</sup>Co<span id="el27a" class="visible-span">?</span></td>
+                <td id="el28" title="Nickel" class="blue hidden-element"><sup>28</sup>Ni<span id="el28a" class="visible-span">?</span></td>
+                <td id="el29" title="Copper" class="blue hidden-element"><sup>29</sup>Cu<span id="el29a" class="visible-span">?</span></td>
+                <td id="el30" title="Zinc" class="blue hidden-element"><sup>30</sup>Zn<span id="el30a" class="visible-span">?</span></td>
+                <td id="el31" title="Gallium" class="metal hidden-element"><sup>31</sup>Ga<span id="el31a" class="visible-span">?</span></td>
+                <td id="el32" title="Germanium" class="metaliod hidden-element"><sup>32</sup>Ge<span id="el32a" class="visible-span">?</span></td>
+                <td id="el33" title="Arsenic" class="metaliod hidden-element"><sup>33</sup>As<span id="el33a" class="visible-span">?</span></td>
+                <td id="el34" title="Selenium" class="nonmetal hidden-element"><sup>34</sup>Se<span id="el34a" class="visible-span">?</span></td>
+                <td id="el35" title="Bromine" class="halogen hidden-element"><sup>35</sup>Br<span id="el35a" class="visible-span">?</span></td>
+                <td id="el36" title="Krypton" class="noble hidden-element"><sup>36</sup>Kr<span id="el36a" class="visible-span">?</span></td>
+            </tr>
+            <tr id="p5">
+                <td id="el37" title="Rubidium" class="red hidden-element"><sup>37</sup>Rb<span id="el37a" class="visible-span">?</span></td>
+                <td id="el38" title="Strontium" class="orange hidden-element"><sup>38</sup>Sr<span id="el38a" class="visible-span">?</span></td>
+                <td id="el39"  title="Yttrium" class="blue hidden-element"><sup>39</sup>Y<span id="el39a" class="visible-span">?</span></td>
+                <td id="el40" title="Zirconium" class="blue hidden-element"><sup>40</sup>Zr<span id="el40a" class="visible-span">?</span></td>
+                <td id="el41" title="Niobium" class="blue hidden-element"><sup>41</sup>Nb<span id="el41a" class="visible-span">?</span></td>
+                <td id="el42" title="Molybdenum" class="blue hidden-element"><sup>42</sup>Mo<span id="el42a" class="visible-span">?</span></td>
+                <td id="el43" title="Technetium" class="blue hidden-element"><sup>43</sup>Tc<span id="el43a" class="visible-span">?</span></td>
+                <td id="el44" title="Ruthenium" class="blue hidden-element"><sup>44</sup>Ru<span id="el44a" class="visible-span">?</span></td>
+                <td id="el45" title="Rhodium" class="blue hidden-element"><sup>45</sup>Rh<span id="el45a" class="visible-span">?</span></td>
+                <td id="el46" title="Palladium" class="blue hidden-element"><sup>46</sup>Pd<span id="el46a" class="visible-span">?</span></td>
+                <td id="el47" title="Silver" class="blue hidden-element"><sup>47</sup>Ag<span id="el47a" class="visible-span">?</span></td>
+                <td id="el48" title="Cadmium" class="blue hidden-element"><sup>48</sup>Cd<span id="el48a" class="visible-span">?</span></td>
+                <td id="el49" title="Indium" class="metal hidden-element"><sup>49</sup>In<span id="el49a" class="visible-span">?</span></td>
+                <td id="el50" title="Tin" class="metal hidden-element"><sup>50</sup>Sn<span id="el50a" class="visible-span">?</span></td>
+                <td id="el51" title="Antimony" class="metaliod hidden-element"><sup>51</sup>Sb<span id="el51a" class="visible-span">?</span></td>
+                <td id="el52" title="Tellurium" class="metaliod hidden-element"><sup>52</sup>Te<span id="el52a" class="visible-span">?</span></td>
+                <td id="el53"  title="Iodine" class="halogen hidden-element"><sup>53</sup>I<span id="el53a" class="visible-span">?</span></td>
+                <td id="el54" title="Xenon" class="noble hidden-element"><sup>54</sup>Xe<span id="el54a" class="visible-span">?</span></td>
+            </tr>
+            <tr id="p6">
+                <td id="el55" title="Caesium" class="red hidden-element"><sup>55</sup>Cs<span id="el55a" class="visible-span">?</span></td>
+                <td id="el56" title="Barium" class="orange hidden-element"><sup>56</sup>Ba<span id="el56a" class="visible-span">?</span></td>
+                <td class="empty"></td>
+                <td id="el72" title="Hafnium" class="blue hidden-element"><sup>72</sup>Hf<span id="el72a" class="visible-span">?</span></td>
+                <td id="el73" title="Tantalum" class="blue hidden-element"><sup>73</sup>Ta<span id="el73a" class="visible-span">?</span></td>
+                <td id="el74"  title="Tungsten" class="blue hidden-element"><sup>74</sup>W<span id="el74a" class="visible-span">?</span></td>
+                <td id="el75" title="Rhenium" class="blue hidden-element"><sup>75</sup>Re<span id="el75a" class="visible-span">?</span></td>
+                <td id="el76" title="Osmium" class="blue hidden-element"><sup>76</sup>Os<span id="el76a" class="visible-span">?</span></td>
+                <td id="el77" title="Iridium" class="blue hidden-element"><sup>77</sup>Ir<span id="el77a" class="visible-span">?</span></td>
+                <td id="el78" title="Platinum" class="blue hidden-element"><sup>78</sup>Pt<span id="el78a" class="visible-span">?</span></td>
+                <td id="el79" title="Gold" class="blue hidden-element"><sup>79</sup>Au<span id="el79a" class="visible-span">?</span></td>
+                <td id="el80" title="Mercury" class="blue hidden-element"><sup>80</sup>Hg<span id="el80a" class="visible-span">?</span></td>
+                <td id="el81" title="Thallium" class="metal hidden-element"><sup>81</sup>Tl<span id="el81a" class="visible-span">?</span></td>
+                <td id="el82" title="Lead" class="metal hidden-element"><sup>82</sup>Pb<span id="el82a" class="visible-span">?</span></td>
+                <td id="el83" title="Bismuth" class="metal hidden-element"><sup>83</sup>Bi<span id="el83a" class="visible-span">?</span></td>
+                <td id="el84" title="Polonium" class="metaliod hidden-element"><sup>84</sup>Po<span id="el84a" class="visible-span">?</span></td>
+                <td id="el85" title="Astatine" class="halogen hidden-element"><sup>85</sup>At<span id="el85a" class="visible-span">?</span></td>
+                <td id="el86" title="Radon" class="noble hidden-element"><sup>86</sup>Rn<span id="el86a" class="visible-span">?</span></td>
+            </tr>
+            <tr id="p7">
+                <td id="el87" title="Francium" class="red hidden-element"><sup>87</sup>Fr<span id="el87a" class="visible-span">?</span></td>
+                <td id="el88" title="Radium" class="orange hidden-element"><sup>88</sup>Ra<span id="el88a" class="visible-span">?</span></td>
+                <td class="empty"></td>
+                <td id="el104" title="Rutherfordium" class="blue hidden-element"><sup>104</sup>Rf<span id="el104a" class="visible-span">?</span></td>
+                <td id="el105" title="Dubnium" class="blue hidden-element"><sup>105</sup>Db<span id="el105a" class="visible-span">?</span></td>
+                <td id="el106" title="Seaborgium" class="blue hidden-element"><sup>106</sup>Sg<span id="el106a" class="visible-span">?</span></td>
+                <td id="el107" title="Bohrium" class="blue hidden-element"><sup>107</sup>Bh<span id="el107a" class="visible-span">?</span></td>
+                <td id="el108" title="Hassium" class="blue hidden-element"><sup>108</sup>Hs<span id="el108a" class="visible-span">?</span></td>
+                <td id="el109" title="Meitnerium" class="blue hidden-element"><sup>109</sup>Mt<span id="el109a" class="visible-span">?</span></td>
+                <td id="el110" title="Darmstadtium" class="blue hidden-element"><sup>110</sup>Ds<span id="el110a" class="visible-span">?</span></td>
+                <td id="el111" title="Roentgenium" class="blue hidden-element"><sup>111</sup>Rg<span id="el111a" class="visible-span">?</span></td>
+                <td id="el112" title="Copernicium" class="blue hidden-element"><sup>112</sup>Cn<span id="el112a" class="visible-span">?</span></td>
+                <td id="el113" title="Nihonium" class="metal hidden-element"><sup>113</sup>Nh<span id="el113a" class="visible-span">?</span></td>
+                <td id="el114" title="Flerovium" class="metal hidden-element"><sup>114</sup>Fl<span id="el114a" class="visible-span">?</span></td>
+                <td id="el115" title="Moscovium" class="metal hidden-element"><sup>115</sup>Mc<span id="el115a" class="visible-span">?</span></td>
+                <td id="el116" title="Livermorium" class="metal hidden-element"><sup>116</sup>Lv<span id="el116a" class="visible-span">?</span></td>
+                <td id="el117" title="Tennessine" class="halogen hidden-element"><sup>117</sup>Ts<span id="el117a" class="visible-span">?</span></td>
+                <td id="el118" title="Oganesson" class="noble hidden-element"><sup>118</sup>Og<span id="el118a" class="visible-span">?</span></td>
+            </tr>
+            <tr class="spacer"><td class="empty" colspan=18></td></tr>
+            <tr class="spacer"><td class="empty" colspan=18></td></tr>
+            <tr>
+                <td class="empty" colspan="3"></td>
+                <td id="el57" title="Lanthanum" class="darkBlue hidden-element"><sup>57</sup>La<span id="el57a" class="visible-span">?</span></td>
+                <td id="el58" title="Cerium" class="darkBlue hidden-element"><sup>58</sup>Ce<span id="el58a" class="visible-span">?</span></td>
+                <td id="el59" title="Praseodymium" class="darkBlue hidden-element"><sup>59</sup>Pr<span id="el59a" class="visible-span">?</span></td>
+                <td id="el60" title="Neodymium" class="darkBlue hidden-element"><sup>60</sup>Nd<span id="el60a" class="visible-span">?</span></td>
+                <td id="el61" title="Promethium" class="darkBlue hidden-element"><sup>61</sup>Pm<span id="el61a" class="visible-span">?</span></td>
+                <td id="el62" title="Samarium" class="darkBlue hidden-element"><sup>62</sup>Sm<span id="el62a" class="visible-span">?</span></td>
+                <td id="el63" title="Europium" class="darkBlue hidden-element"><sup>63</sup>Eu<span id="el63a" class="visible-span">?</span></td>
+                <td id="el64" title="Gadolinium" class="darkBlue hidden-element"><sup>64</sup>Gd<span id="el64a" class="visible-span">?</span></td>
+                <td id="el65" title="Terbium" class="darkBlue hidden-element"><sup>65</sup>Tb<span id="el65a" class="visible-span">?</span></td>
+                <td id="el66" title="Dysprosium" class="darkBlue hidden-element"><sup>66</sup>Dy<span id="el66a" class="visible-span">?</span></td>
+                <td id="el67" title="Holmium"  class="darkBlue hidden-element"><sup>67</sup>Ho<span id="el67a" class="visible-span">?</span></td>
+                <td id="el68" title="Erbium" class="darkBlue hidden-element"><sup>68</sup>Er<span id="el68a" class="visible-span">?</span></td>
+                <td id="el69" title="Thulium" class="darkBlue hidden-element"><sup>69</sup>Tm<span id="el69a" class="visible-span">?</span></td>
+                <td id="el70" title="Ytterbium" class="darkBlue hidden-element"><sup>70</sup>Yb<span id="el70a" class="visible-span">?</span></td>
+                <td id="el71" title="Lutetium" class="darkBlue hidden-element"><sup>71</sup>Lu<span id="el71a" class="visible-span">?</span></td>
+                <td class="empty"></td>
+            </tr>
+            <tr >
+                <td class="empty" colspan="3"></td>
+                <td id="el89" title="Actinium" class="aqua hidden-element"><sup>89</sup>Ac<span id="el89a" class="visible-span">?</span></td>
+                <td id="el90" title="Thorium" class="aqua hidden-element"><sup>90</sup>Th<span id="el90a" class="visible-span">?</span></td>
+                <td id="el91" title="Protactinium" class="aqua hidden-element"><sup>91</sup>Pa<span id="el91a" class="visible-span">?</span></td>
+                <td id="el92"  title="Uranium" class="aqua hidden-element"><sup>92</sup>U<span id="el92a" class="visible-span">?</span></td>
+                <td id="el93" title="Neptunium" class="aqua hidden-element"><sup>93</sup>Np<span id="el93a" class="visible-span">?</span></td>
+                <td id="el94" title="Plutonium" class="aqua hidden-element"><sup>94</sup>Pu<span id="el94a" class="visible-span">?</span></td>
+                <td id="el95" title="Americium" class="aqua hidden-element"><sup>95</sup>Am<span id="el95a" class="visible-span">?</span></td>
+                <td id="el96" title="Curium" class="aqua hidden-element"><sup>96</sup>Cm<span id="el96a" class="visible-span">?</span></td>
+                <td id="el97" title="Berkelium" class="aqua hidden-element"><sup>97</sup>Bk<span id="el97a" class="visible-span">?</span></td>
+                <td id="el98" title="Californium" class="aqua hidden-element"><sup>98</sup>Cf<span id="el98a" class="visible-span">?</span></td>
+                <td id="el99" title="Einsteinium" class="aqua hidden-element"><sup>99</sup>Es<span id="el99a" class="visible-span">?</span></td>
+                <td id="el100" title="Fermium" class="aqua hidden-element"><sup>100</sup>Fm<span id="el100a" class="visible-span">?</span></td>
+                <td id="el101" title="Mendelevium" class="aqua hidden-element"><sup>101</sup>Md<span id="el101a" class="visible-span">?</span></td>
+                <td id="el102" title="Nobelium" class="aqua hidden-element"><sup>102</sup>No<span id="el102a" class="visible-span">?</span></td>
+                <td id="el103" title="Lawrencium" class="aqua hidden-element"><sup>103</sup>Lr<span id="el103a" class="visible-span">?</span></td>
+                <td class="empty"></td>
+            </tr>
+        </table>
+    <footer></footer>
+    <script src="js/confetti.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
