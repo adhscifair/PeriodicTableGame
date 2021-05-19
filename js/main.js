@@ -1,5 +1,5 @@
 //all the logic
-document.getElementById("question").innerHTML = "Click 'next question' for your questions to start appearing";
+document.getElementById("question").innerHTML = "Click 'Let the fun begin' button for your questions to start appearing!";
 let functionRun = 0;
 let questionNum = Math.floor(Math.random() * data[0].questionAndPoints.length);
 let rand = Math.floor(Math.random() * data.length);
