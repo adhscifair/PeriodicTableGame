@@ -1,9 +1,10 @@
 //all the logic
-document.getElementById("question").innerHTML = "Click 'Let the fun begin' button for your questions to start appearing!";
+document.getElementById("question").innerHTML = "Click 'next question' for your questions to start appearing";
 let functionRun = 0;
-let questionNum = Math.floor(Math.random() * data[0].questionAndPoints.length);
 let rand = Math.floor(Math.random() * data.length);
 let randQuestionAndPoints = data[rand].questionAndPoints;
+console.log(randQuestionAndPoints)
+let questionNum = Math.floor(Math.random() * randQuestionAndPoints.length);
 let question = randQuestionAndPoints[questionNum].question;
 let answer = randQuestionAndPoints[questionNum].answer;
 let inputElement = document.getElementById("showAndHide");
@@ -27,17 +28,17 @@ function nextQuestion () {
         }else{
             if(isNaN(answer)){
                 if (answer.toLowerCase() == document.getElementById("input").value.toLowerCase()) {
-                        console.log(functionRun);
+                        //console.log(functionRun);
                         points++;
-                        if(data[rand].points < 3){
+                        if(data[rand].points < questionNum){
                             data[rand].points++;
                         }
                         pop();
                         
                         let idName = "el" + (rand+1);
                         let AidName = idName + "a"
-                        console.log(idName)
-                        console.log(data[rand].points + " On..." + (rand + 1));
+                        //console.log(idName)
+                        //console.log(data[rand].points + " On..." + (rand + 1));
                         let element = document.getElementById(idName);
                         element.style.visibility = "visible";
                         document.getElementById(AidName).style.visibility = "hidden";
@@ -50,26 +51,26 @@ function nextQuestion () {
                         let element = document.getElementById(idName);
                         element.style.visibility = "hidden";
                         document.getElementById(AidName).style.visibility = "visible";
-                        console.log(element.style.visibility)
+                        //console.log(element.style.visibility)
                     if(data[rand].points > 0){
                         points--;
                         data[rand].points --;
-                        console.log(data[rand].points);
+                        //console.log(data[rand].points);
                     }
                 }
                 document.getElementById("input").value = "";
             }else{
                 if (answer == document.getElementById("input").value) {
-                        console.log(functionRun);
+                        //console.log(functionRun);
                         points++;
-                        if(data[rand].points < 3){
+                        if(data[rand].points < questionNum){
                             data[rand].points++;
                         }
                         pop();
                         let idName = "el" + (rand+1);
                         let AidName = idName + "a"
-                        console.log(idName)
-                        console.log(data[rand].points + " On..." + (rand + 1));
+                        //console.log(idName)
+                        //console.log(data[rand].points + " On..." + (rand + 1));
                         let element = document.getElementById(idName);
                         element.style.visibility = "visible";
                         document.getElementById(AidName).style.visibility = "hidden";
@@ -81,20 +82,20 @@ function nextQuestion () {
                         let element = document.getElementById(idName);
                         element.style.visibility = "hidden";
                         document.getElementById(AidName).style.visibility = "visible";
-                        console.log(element.style.visibility)
+                        //console.log(element.style.visibility)
                     if(data[rand].points > 0){
                         points--;
                         data[rand].points --;
-                        console.log(data[rand].points);
+                        //console.log(data[rand].points);
                     }
                 }
                 document.getElementById("input").value = ""; 
             }
         }
     }
-    questionNum = Math.floor(Math.random() * data[0].questionAndPoints.length);
     rand = Math.floor(Math.random() * data.length);
     randQuestionAndPoints = data[rand].questionAndPoints;
+    questionNum = Math.floor(Math.random() * randQuestionAndPoints.length);
     question = randQuestionAndPoints[questionNum].question;
     answer = randQuestionAndPoints[questionNum].answer;
     //console.log(rand + " " + answer);
