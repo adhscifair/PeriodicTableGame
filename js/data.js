@@ -29,8 +29,12 @@ let data = [
                 answer:2.20
             },
             {
-                question:"Hydrogen's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Hydrogen's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^1"
+            },
+            {
+                question:"Hydrogen's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:1312
             }
         ]
     },
@@ -61,8 +65,12 @@ let data = [
                 answer:"none"
             },
             {
-                question:"Helium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Helium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2"
+            },
+            {
+                question:"Helium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:2372
             }
  
         ]
@@ -95,8 +103,12 @@ let data = [
                 answer:1
             },
             {
-                question:"Lithium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Lithium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^1"
+            },
+            {
+                question:"Lithium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:513
             }
  
         ]
@@ -128,8 +140,12 @@ let data = [
                 answer:2
             },
             {
-                question:"Beryllium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Beryllium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2"
+            },
+            {
+                question:"Beryllium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:899
             }
  
         ]
@@ -161,8 +177,12 @@ let data = [
                 answer:3
             },
             {
-                question:"Boron's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Boron's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2 2p^1"
+            },
+            {
+                question:"Boron's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:801
             }
  
         ]
@@ -194,8 +214,12 @@ let data = [
                 answer:4
             },
             {
-                question:"Carbon's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Carbon's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
                 answer:"1s^2 2s^2 2p^2"
+            },
+            {
+                question:"Carbon's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:1086
             }
  
         ]
@@ -227,8 +251,12 @@ let data = [
                 answer:5
             },
             {
-                question:"Nitrogen's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Nitrogen's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2 2p^3"
+            },
+            {
+                question:"Nitrogen's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:1402
             }
  
         ]
@@ -260,8 +288,12 @@ let data = [
                 answer:6
             },
             {
-                question:"Oxygen's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Oxygen's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2 2p^4"
+            },
+            {
+                question:"Oxygen's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:1314
             }
         ]
     },
@@ -292,8 +324,12 @@ let data = [
                 answer:7
             },
             {
-                question:"Fluorine's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Fluorine's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2 2p^5"
+            },
+            {
+                question:"Fluorine's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:1681
             }
         ]
     },
@@ -324,8 +360,12 @@ let data = [
                 answer:8
             },
             {
-                question:"Neon's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Neon's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2 2p^6"
+            },
+            {
+                question:"Neon's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:2081
             }
         ]
     },
@@ -357,8 +397,12 @@ let data = [
                 answer:+1
             },
             {
-                question:"Sodium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Sodium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2 2p^6 3s^1"
+            },
+            {
+                question:"Sodium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:496
             }
         ]
     },
@@ -390,8 +434,12 @@ let data = [
                 answer:+2
             },
             {
-                question:"Magnesium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Magnesium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2 2p^6 3s^2"
+            },
+            {
+                question:"Magnesium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:738
             }
         ]
     },
@@ -399,7 +447,7 @@ let data = [
         points:0,
         questionAndPoints: [
             {
-                question:"Number of protons in Aluminum            ",
+                question:"Number of protons in Aluminum",
                 answer:13
             },{
                 question:"Aluminum 's State at room temperature",
@@ -422,8 +470,12 @@ let data = [
                 answer:+3
             },
             {
-                question:"Aluminum's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Aluminum's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2 2p^6 3s^2 3p^1"
+            },
+            {
+                question:"Alminum's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:577
             }
         ]
     },
@@ -454,8 +506,12 @@ let data = [
                 answer:+4
             },
             {
-                question:"Silicon's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Silicon's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2 2p^6 3s^2 3p^2"
+            },
+            {
+                question:"Silicon's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:786
             }
         ]
     },
@@ -486,7 +542,7 @@ let data = [
                 answer:-3
             },
             {
-                question:"Phosphorus's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Phosphorus's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2 2p^6 3s^2 3p^3"
             }
         ]
@@ -518,8 +574,12 @@ let data = [
                 answer:-2
             },
             {
-                question:"Sulfur's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Sulfur's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2 2p^6 3s^2 3p^4"
+            },
+            {
+                question:"Sulfur's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:1000
             }
         ]
     },
@@ -550,8 +610,12 @@ let data = [
                 answer:-1
             },
             {
-                question:"Chlorine's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Chlorine's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2 2p^6 3s^2 3p^5"
+            },
+            {
+                question:"Chlorine's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:1251
             }
         ]
     },
@@ -582,8 +646,12 @@ let data = [
                 answer:0
             },
             {
-                question:"Argon's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Argon's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2 2p^6 3s^2 3p^6"
+            },
+            {
+                question:"Argon's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:1520
             }
         ]
     },
@@ -614,8 +682,12 @@ let data = [
                 answer:+1
             },
             {
-                question:"Potassium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Potassium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^1"
+            },
+            {
+                question:"Potassium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:419
             }
         ]
     },
@@ -646,8 +718,12 @@ let data = [
                 answer:+2
             },
             {
-                question:"Calcium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8)",
+                question:"Calcium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2"
+            },
+            {
+                question:"Calcium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:590
             }
         ]
     },
@@ -676,6 +752,14 @@ let data = [
             {
                 question:"Scandium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Scandium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^1"
+            },
+            {
+                question:"Scandium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:631
             }
         ]
     },
@@ -704,6 +788,14 @@ let data = [
             {
                 question:"Titanium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+4
+            },
+            {
+                question:"Titanium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^2"
+            },
+            {
+                question:"Titanium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:658
             }
         ]
     },
@@ -732,6 +824,14 @@ let data = [
             {
                 question:"Vandium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+5
+            },
+            {
+                question:"Vandium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^3"
+            },
+            {
+                question:"Vandium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:650
             }
         ]
     },
@@ -760,6 +860,14 @@ let data = [
             {
                 question:"Chromium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+6
+            },
+            {
+                question:"Chromium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^5"
+            },
+            {
+                question:"Chromium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:653
             }
         ]
     },
@@ -788,6 +896,14 @@ let data = [
             {
                 question:"Maganese's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+7
+            },
+            {
+                question:"Maganese's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^5"
+            },
+            {
+                question:"Maganese's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:717
             }
         ]
     },
@@ -816,6 +932,14 @@ let data = [
             {
                 question:"Iron's oxidation state that makes the outer shell of itself 'full' when combined with another element.",
                 answer:+2
+            },
+            {
+                question:"Iron's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6"
+            },
+            {
+                question:"Iron's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:759
             }
         ]
     },
@@ -844,6 +968,14 @@ let data = [
             {
                 question:"Cobalt's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Cobalt's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^7"
+            },
+            {
+                question:"Cobalt's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:760
             }
         ]
     },
@@ -872,6 +1004,14 @@ let data = [
             {
                 question:"Nickel's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+2
+            },
+            {
+                question:"Nickel's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^8"
+            },
+            {
+                question:"Nickel's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:737
             }
         ]
     },
@@ -900,6 +1040,14 @@ let data = [
             {
                 question:"Copper's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+2
+            },
+            {
+                question:"Copper's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10"
+            },
+            {
+                question:"Copper's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:745
             }
         ]
     },
@@ -928,6 +1076,14 @@ let data = [
             {
                 question:"Zinc's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+2
+            },
+            {
+                question:"Zinc's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10"
+            },
+            {
+                question:"Zinc's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:906
             }
         ]
     },
@@ -956,6 +1112,14 @@ let data = [
             {
                 question:"Gallium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Gallium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^2"
+            },
+            {
+                question:"Gallium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:579
             }
         ]
     },
@@ -984,6 +1148,14 @@ let data = [
             {
                 question:"Germanium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+4
+            },
+            {
+                question:"Germanium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^3"
+            },
+            {
+                question:"Germanium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:762
             }
         ]
     },
@@ -1012,6 +1184,14 @@ let data = [
             {
                 question:"Arsenic's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:-3
+            },
+            {
+                question:"Arsenic's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^3"
+            },
+            {
+                question:"Arsenic's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:947
             }
         ]
     },
@@ -1040,6 +1220,14 @@ let data = [
             {
                 question:"Selenium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:-2
+            },
+            {
+                question:"Selenium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^4"
+            },
+            {
+                question:"Selenium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:941
             }
         ]
     },
@@ -1068,6 +1256,14 @@ let data = [
             {
                 question:"Bromine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:-1
+            },
+            {
+                question:"Bromine's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^5"
+            },
+            {
+                question:"Bromine's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:1140
             }
         ]
     },
@@ -1096,6 +1292,14 @@ let data = [
             {
                 question:"Krypton's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:0
+            },
+            {
+                question:"Krypton's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6"
+            },
+            {
+                question:"Krypton's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:1351
             }
         ]
     },
@@ -1124,6 +1328,14 @@ let data = [
             {
                 question:"Rubidium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+1
+            },
+            {
+                question:"Rubidium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1"
+            },
+            {
+                question:"Rubidium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:403
             }
         ]
     },
@@ -1152,6 +1364,14 @@ let data = [
             {
                 question:"Strontium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+2
+            },
+            {
+                question:"Strontium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2"
+            },
+            {
+                question:"Strontium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:550
             }
         ]
     },
@@ -1180,6 +1400,14 @@ let data = [
             {
                 question:"Yttrium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Yttrium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^1"
+            },
+            {
+                question:"Yttrium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:616
             }
         ]
     },
@@ -1208,6 +1436,14 @@ let data = [
             {
                 question:"Zirocnium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+4
+            },
+            {
+                question:"Zirocnium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^2"
+            },
+            {
+                question:"Zirocnium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:660
             }
         ]
     },
@@ -1236,6 +1472,14 @@ let data = [
             {
                 question:"Niobium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+5
+            },
+            {
+                question:"Niobium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^4"
+            },
+            {
+                question:"Niobium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:664
             }
         ]
     },
@@ -1264,6 +1508,14 @@ let data = [
             {
                 question:"Molybdenum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+6
+            },
+            {
+                question:"Molybdenum's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^5"
+            },
+            {
+                question:"Molybdenum's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:685
             }
         ]
     },
@@ -1292,6 +1544,14 @@ let data = [
             {
                 question:"Technetium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+7
+            },
+            {
+                question:"Technetium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2 4d^5"
+            },
+            {
+                question:"Technetium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:702
             }
         ]
     },
@@ -1320,6 +1580,14 @@ let data = [
             {
                 question:"Ruthenium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Ruthenium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^7"
+            },
+            {
+                question:"Ruthenium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:711
             }
         ]
     },
@@ -1348,6 +1616,14 @@ let data = [
             {
                 question:"Rhodium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+4
+            },
+            {
+                question:"Rhodium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^8"
+            },
+            {
+                question:"Rhodium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:720
             }
         ]
     },
@@ -1376,6 +1652,14 @@ let data = [
             {
                 question:"Palladium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+2
+            },
+            {
+                question:"Palladium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 4d^10"
+            },
+            {
+                question:"Palladium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:805
             }
         ]
     },
@@ -1404,6 +1688,14 @@ let data = [
             {
                 question:"Silver's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+1
+            },
+            {
+                question:"Silver's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10"
+            },
+            {
+                question:"Silver's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:731
             }
         ]
     },
@@ -1432,6 +1724,14 @@ let data = [
             {
                 question:"Cadmium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+2
+            },
+            {
+                question:"Cadmium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2 4d^10"
+            },
+            {
+                question:"Cadmium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:868
             }
         ]
     },
@@ -1460,6 +1760,14 @@ let data = [
             {
                 question:"Indium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Indium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^1"
+            },
+            {
+                question:"Indium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:558
             }
         ]
     },
@@ -1488,6 +1796,14 @@ let data = [
             {
                 question:"Tin's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+4
+            },
+            {
+                question:"Tin's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^2"
+            },
+            {
+                question:"Tin's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:709
             }
         ]
     },
@@ -1516,6 +1832,14 @@ let data = [
             {
                 question:"Antimony's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:-3
+            },
+            {
+                question:"Antimony's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^3"
+            },
+            {
+                question:"Antimony's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:834
             }
         ]
     },
@@ -1544,6 +1868,14 @@ let data = [
             {
                 question:"Tellirum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:-2
+            },
+            {
+                question:"Tellirum's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^4"
+            },
+            {
+                question:"Tellirum's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:869
             }
         ]
     },
@@ -1572,6 +1904,14 @@ let data = [
             {
                 question:"Iodine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:-1
+            },
+            {
+                question:"Iodine's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^5"
+            },
+            {
+                question:"Iodine's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:1008
             }
         ]
     },
@@ -1600,6 +1940,14 @@ let data = [
             {
                 question:"Xeneon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:0
+            },
+            {
+                question:"Xeneon's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6"
+            },
+            {
+                question:"Xeneon's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:1170
             }
         ]
     },
@@ -1628,6 +1976,14 @@ let data = [
             {
                 question:"Cesium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+1
+            },
+            {
+                question:"Cesium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^1"
+            },
+            {
+                question:"Cesium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:376
             }
         ]
     },
@@ -1656,6 +2012,14 @@ let data = [
             {
                 question:"Barium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+2
+            },
+            {
+                question:"Barium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2"
+            },
+            {
+                question:"Barium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:503
             }
         ]
     },
@@ -1684,6 +2048,14 @@ let data = [
             {
                 question:"Lanthanum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Lanthanum's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 5d^1"
+            },
+            {
+                question:"Lanthanum's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:538
             }
         ]
     },
@@ -1712,6 +2084,14 @@ let data = [
             {
                 question:"Cerium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Cerium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 5d^1 4f^1"
+            },
+            {
+                question:"Cerium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:527
             }
         ]
     },
@@ -1740,6 +2120,14 @@ let data = [
             {
                 question:"Praseodymium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Praseodymium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^3"
+            },
+            {
+                question:"Praseodymium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:523
             }
         ]
     },
@@ -1768,6 +2156,14 @@ let data = [
             {
                 question:"Neodymium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Neodymium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^4"
+            },
+            {
+                question:"Neodymium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:530
             }
         ]
     },
@@ -1796,6 +2192,14 @@ let data = [
             {
                 question:"Promethium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Promethium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^5"
+            },
+            {
+                question:"Promethium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:536
             }
         ]
     },
@@ -1824,6 +2228,14 @@ let data = [
             {
                 question:"Samarium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Samarium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^6"
+            },
+            {
+                question:"Samarium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:543
             }
         ]
     },
@@ -1852,6 +2264,14 @@ let data = [
             {
                 question:"Europium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Europium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^7"
+            },
+            {
+                question:"Europium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:547
             }
         ]
     },
@@ -1880,6 +2300,14 @@ let data = [
             {
                 question:"Gadolinium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Gadolinium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^75d^1"
+            },
+            {
+                question:"Gadolinium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:592
             }
         ]
     },
@@ -1908,6 +2336,14 @@ let data = [
             {
                 question:"Terbium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Terbium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^9"
+            },
+            {
+                question:"Terbium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:565
             }
         ]
     },
@@ -1936,6 +2372,14 @@ let data = [
             {
                 question:"Dysprosium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Dysprosium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^10"
+            },
+            {
+                question:"Dysprosium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:572
             }
         ]
     },
@@ -1964,6 +2408,14 @@ let data = [
             {
                 question:"Holmium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Holmium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^11"
+            },
+            {
+                question:"Holmium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:581
             }
         ]
     },
@@ -1992,6 +2444,14 @@ let data = [
             {
                 question:"Erbium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Erbium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^12"
+            },
+            {
+                question:"Erbium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:589
             }
         ]
     },
@@ -2020,6 +2480,14 @@ let data = [
             {
                 question:"Thulium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Thulium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^13"
+            },
+            {
+                question:"Thulium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:597
             }
         ]
     },
@@ -2048,6 +2516,14 @@ let data = [
             {
                 question:"Ytterbium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Ytterbium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14"
+            },
+            {
+                question:"Ytterbium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:603
             }
         ]
     },
@@ -2076,6 +2552,14 @@ let data = [
             {
                 question:"Lutetium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Lutetium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^1"
+            },
+            {
+                question:"Lutetium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:524
             }
         ]
     },
@@ -2104,6 +2588,14 @@ let data = [
             {
                 question:"Hafnium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+4
+            },
+            {
+                question:"Hafnium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^2"
+            },
+            {
+                question:"Hafnium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:642
             }
         ]
     },
@@ -2132,6 +2624,14 @@ let data = [
             {
                 question:"Tantalum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+5
+            },
+            {
+                question:"Tantalum's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^3"
+            },
+            {
+                question:"Tantalum's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:761
             }
         ]
     },
@@ -2160,6 +2660,14 @@ let data = [
             {
                 question:"Tungsten's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+6
+            },
+            {
+                question:"Tungsten's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^4"
+            },
+            {
+                question:"Tungsten's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:770
             }
         ]
     },
@@ -2188,6 +2696,14 @@ let data = [
             {
                 question:"Rhenium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+7
+            },
+            {
+                question:"Rhenium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^5"
+            },
+            {
+                question:"Rhenium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:760
             }
         ]
     },
@@ -2216,6 +2732,14 @@ let data = [
             {
                 question:"Osmium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+4
+            },
+            {
+                question:"Osmium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^6"
+            },
+            {
+                question:"Osmium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:840
             }
         ]
     },
@@ -2244,6 +2768,14 @@ let data = [
             {
                 question:"Irdium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+4
+            },
+            {
+                question:"Irdium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^7"
+            },
+            {
+                question:"Irdium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:880
             }
         ]
     },
@@ -2272,6 +2804,14 @@ let data = [
             {
                 question:"Platinum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+4
+            },
+            {
+                question:"Platinum's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^9"
+            },
+            {
+                question:"Platinum's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:870
             }
         ]
     },
@@ -2300,6 +2840,14 @@ let data = [
             {
                 question:"Gold's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Gold's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10"
+            },
+            {
+                question:"Gold's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:890
             }
         ]
     },
@@ -2328,6 +2876,14 @@ let data = [
             {
                 question:"Mercury's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+2
+            },
+            {
+                question:"Mercury's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10"
+            },
+            {
+                question:"Mercury's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:1007
             }
         ]
     },
@@ -2356,6 +2912,14 @@ let data = [
             {
                 question:"Thallium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Thallium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1"
+            },
+            {
+                question:"Thallium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:589
             }
         ]
     },
@@ -2384,6 +2948,14 @@ let data = [
             {
                 question:"Lead's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+4
+            },
+            {
+                question:"Lead's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^2"
+            },
+            {
+                question:"Lead's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:716
             }
         ]
     },
@@ -2412,6 +2984,14 @@ let data = [
             {
                 question:"Bismuth's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:-3
+            },
+            {
+                question:"Bismuth's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^3"
+            },
+            {
+                question:"Bismuth's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:703
             }
         ]
     },
@@ -2440,6 +3020,14 @@ let data = [
             {
                 question:"Polonium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:-2
+            },
+            {
+                question:"Polonium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^4"
+            },
+            {
+                question:"Polonium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:812
             }
         ]
     },
@@ -2468,6 +3056,14 @@ let data = [
             {
                 question:"Astatine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:-1
+            },
+            {
+                question:"Astatine's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^5"
+            },
+            {
+                question:"Astatine's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:930
             }
         ]
     },
@@ -2496,6 +3092,14 @@ let data = [
             {
                 question:"Radon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:0
+            },
+            {
+                question:"Radon's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6"
+            },
+            {
+                question:"Radon's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:1040
             }
         ]
     },
@@ -2524,6 +3128,14 @@ let data = [
             {
                 question:"Francium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+1
+            },
+            {
+                question:"Francium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6 7s^1"
+            },
+            {
+                question:"Francium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:400
             }
         ]
     },
@@ -2552,6 +3164,14 @@ let data = [
             {
                 question:"Radium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+2
+            },
+            {
+                question:"Radium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6 7s^2"
+            },
+            {
+                question:"Radium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:509
             }
         ]
     },
@@ -2580,6 +3200,14 @@ let data = [
             {
                 question:"Actinium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Actinium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6 7s^2 6d^1"
+            },
+            {
+                question:"Actinium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:499
             }
         ]
     },
@@ -2608,6 +3236,14 @@ let data = [
             {
                 question:"Thorium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+4
+            },
+            {
+                question:"Thorium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6 7s^2 6d^2"
+            },
+            {
+                question:"Thorium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:587
             }
         ]
     },
@@ -2636,6 +3272,14 @@ let data = [
             {
                 question:"Protactinium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Protactinium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^2 6d^1"
+            },
+            {
+                question:"Protactinium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:568
             }
         ]
     },
@@ -2664,6 +3308,14 @@ let data = [
             {
                 question:"Uranium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Uranium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^3 6d^1"
+            },
+            {
+                question:"Uranium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:584
             }
         ]
     },
@@ -2692,6 +3344,14 @@ let data = [
             {
                 question:"Neptunium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Neptunium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^4 6d^1"
+            },
+            {
+                question:"Neptunium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:597
             }
         ]
     },
@@ -2720,6 +3380,14 @@ let data = [
             {
                 question:"Plutonium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Plutonium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^6"
+            },
+            {
+                question:"Plutonium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:585
             }
         ]
     },
@@ -2748,6 +3416,14 @@ let data = [
             {
                 question:"Americium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Americium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^7"
+            },
+            {
+                question:"Americium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:578
             }
         ]
     },
@@ -2776,6 +3452,14 @@ let data = [
             {
                 question:"Curium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Curium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^7 6d^1"
+            },
+            {
+                question:"Curium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:581
             }
         ]
     },
@@ -2804,6 +3488,14 @@ let data = [
             {
                 question:"Berkelium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Berkelium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^9"
+            },
+            {
+                question:"Berkelium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:601
             }
         ]
     },
@@ -2832,6 +3524,14 @@ let data = [
             {
                 question:"Californium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Californium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^10"
+            },
+            {
+                question:"Californium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:608
             }
         ]
     },
@@ -2860,6 +3560,14 @@ let data = [
             {
                 question:"Ensteinium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Enstenium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^11"
+            },
+            {
+                question:"Enstenium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:619
             }
         ]
     },
@@ -2888,6 +3596,14 @@ let data = [
             {
                 question:"Fermium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Fermium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^12"
+            },
+            {
+                question:"Fermium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:627
             }
         ]
     },
@@ -2916,6 +3632,14 @@ let data = [
             {
                 question:"Mendelevium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Mendelevium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^13"
+            },
+            {
+                question:"Mendelevium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:635
             }
         ]
     },
@@ -2944,6 +3668,14 @@ let data = [
             {
                 question:"Nobelium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Nobelium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14"
+            },
+            {
+                question:"Nobelium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:642
             }
         ]
     },
@@ -2972,6 +3704,14 @@ let data = [
             {
                 question:"Lawrencium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+3
+            },
+            {
+                question:"Lawrencium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 7p^1"
+            },
+            {
+                question:"Lawrencium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:"n.a."
             }
         ]
     },
@@ -3000,6 +3740,14 @@ let data = [
             {
                 question:"Rutherfordium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+4
+            },
+            {
+                question:"Rutherfordium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^2"
+            },
+            {
+                question:"Rutherfordium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:490
             }
         ]
     },
@@ -3028,6 +3776,14 @@ let data = [
             {
                 question:"Dubnium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+5
+            },
+            {
+                question:"Dubnium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^3"
+            },
+            {
+                question:"Dubnium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:640
             }
         ]
     },
@@ -3056,6 +3812,14 @@ let data = [
             {
                 question:"Seaborgium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+6
+            },
+            {
+                question:"Seaborgium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^4"
+            },
+            {
+                question:"Seaborgium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:730
             }
         ]
     },
@@ -3084,6 +3848,14 @@ let data = [
             {
                 question:"Bohrium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+7
+            },
+            {
+                question:"Bohrium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^5"
+            },
+            {
+                question:"Bohrium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:660
             }
         ]
     },
@@ -3112,6 +3884,14 @@ let data = [
             {
                 question:"Hassium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
                 answer:+8
+            },
+            {
+                question:"Hassium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^6"
+            },
+            {
+                question:"Hassium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:750
             }
         ]
     },
@@ -3140,6 +3920,14 @@ let data = [
             {
                 question:"Meitnerium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
                 answer:"unknown"
+            },
+            {
+                question:"Meitnerium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^7"
+            },
+            {
+                question:"Meitnerium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:640
             }
         ]
     },
@@ -3166,8 +3954,16 @@ let data = [
                 answer:10
             },
             {
-                question:"Meitnerium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
+                question:"Darmstadtium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
                 answer:"unknown"
+            },
+            {
+                question:"Darmstadtium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^8"
+            },
+            {
+                question:"Damrstadtium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:"n.a."
             }
         ]
     },
@@ -3196,6 +3992,14 @@ let data = [
             {
                 question:"Roentgenium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
                 answer:"unknown"
+            },
+            {
+                question:"Roentgenium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^9"
+            },
+            {
+                question:"Roentgenium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:"n.a."
             }
         ]
     },
@@ -3224,6 +4028,14 @@ let data = [
             {
                 question:"Copernicium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
                 answer:+2
+            },
+            {
+                question:"Copernicium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10"
+            },
+            {
+                question:"Copernicium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:"n.a."
             }
         ]
     },
@@ -3253,6 +4065,14 @@ let data = [
             {
                 question:"Nihonium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
                 answer:"unknown"
+            },
+            {
+                question:"Nihonium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^1"
+            },
+            {
+                question:"Nihonium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:"n.a."
             }
         ]
     },
@@ -3281,6 +4101,14 @@ let data = [
             {
                 question:"Flerovium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
                 answer:"unknown"
+            },
+            {
+                question:"Flerovium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^2"
+            },
+            {
+                question:"Flerovium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:"n.a."
             }
         ]
     },
@@ -3309,6 +4137,14 @@ let data = [
             {
                 question:"Moscovium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
                 answer:"unknown"
+            },
+            {
+                question:"Moscovium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^3"
+            },
+            {
+                question:"Moscovium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:"n.a."
             }
         ]
     },
@@ -3337,6 +4173,14 @@ let data = [
             {
                 question:"Livermorium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
                 answer:"unknown"
+            },
+            {
+                question:"Livermorium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^4"
+            },
+            {
+                question:"Livermorium's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:"n.a."
             }
         ]
     },
@@ -3365,6 +4209,14 @@ let data = [
             {
                 question:"Tennessine's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
                 answer:"unknown"
+            },
+            {
+                question:"Tennessine's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^5"
+            },
+            {
+                question:"Tennessine's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:"n.a."
             }
         ]
     },
@@ -3393,6 +4245,14 @@ let data = [
             {
                 question:"Oganesson's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
                 answer:"unknown"
+            },
+            {
+                question:"Oganesson's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
+                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^6"
+            },
+            {
+                question:"Oganesson's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:"n.a."
             }
         ]
     }
