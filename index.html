@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Periodic Table Game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/new.css">
     <link rel="shortcut icon" type="image/jpg" href="./pictures/logo.png"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -19,7 +19,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Looking to have fun learning the perodic table?!</h5>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button id="#rulesButton" type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
               <p>Well, this site can help you! Dedicated to middle schoolers
@@ -47,20 +47,28 @@
         </div>
         <div class="modal-body">
             <p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;
-                  <strong>This game is pretty straightforward, but if your ever stuck on how to continue, this is the place!</strong>
-                    To begin the game you need to click the “Start” button.
-                    First, you will answer the question above the input box. Next, you must click the “Continue” button.
-                    Once the you click the continue button, an alert will pop up. If the alert is red, you answered the question wrong.
-                     If the alert is green, you answered the question right. 
-                     If the alert is yellow, you did not type anything for the last question.
-                     You get one point for every right answer. Also, the element based on the 
-                     question is revealed on the periodic table. Your progress will be lost if 
-                     you exit or reload the page (version two is on the way to fix this). 
-                     The game can continue on until all the elements in the periodic table are 
-                     revealed!<strong>I hope you now know how to play!</strong>
-                    
-                </p>
+              <img src="pictures/begin.png" alt="the start button">
+              Alright! First you click the "start" button. [Look above]
+              <img src="pictures/typeAnswer.png" alt="typing the answer in">
+              <br/><br/>
+              Then, you type in your answer![Look above]
+              <br/><br/><br/>
+              <img src="pictures/submit.png" alt="clicking 'continue'">
+              <br/><br/>
+              And, of course. You submit it, clicking the "submit button".[Look above]
+              <br/><br/>
+              <img src="pictures/alerts.png" alt="examples of different alerts" width="400px;">
+              <br/><br/>
+              After that, you will get three alerts. If it is GREEN, that 
+              means it is correct! If it's red, that means it is incorrect,
+              and if it is yellow - well you forgot to answer the question![Look above]
+              <br/><br/>
+              <strong>Now your all set! Have fun</strong>
+              <br/><br/>
+              <i>FYI: You lose your progress when you RELOAD or EXIT the page.
+              </i>
+             
+
     
             </p>
         </div>
@@ -68,6 +76,9 @@
     </div>
   </div>
   <div>
+    <button id="rules" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+      Rules
+      </button>
     <h1 style="text-align: center;">The Periodic Table Game</h1>
   <div id="interactive">
       <div id="result"></div>
@@ -79,10 +90,7 @@
                 <br/>
             </div>
           
-                <button id="next" onclick = "nextQuestion()" class="btn btn-primary">Start!</button>
-                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
-                Rules
-                </button>
+                <button id="next" onclick = "nextQuestion()" class="big btn btn-primary">Start!</button>
           <br/>
       </div>
     </div>
