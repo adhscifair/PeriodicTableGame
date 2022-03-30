@@ -28,6 +28,17 @@ body {
     font-size: 12px;
     
   }
+  .big{
+    width:200px;
+    height:100px;
+    font-size:50px;
+  }
+  #rules{
+    float:right;
+    background-color: rgb(8, 165, 68);
+    height:50px;
+    width:100px;
+  }
   .element {
     position: absolute;
     top: 0;
