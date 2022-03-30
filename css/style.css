@@ -20,6 +20,10 @@ body{
     height: 100%;
     margin:0 auto;
 }
+
+#rulesButton{
+    float:left;
+}
 #next{
     cursor:pointer;
 }
@@ -104,5 +108,4 @@ td:hover{
 .visible-span{
     visibility: visible;
 }
-
 
