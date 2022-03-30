@@ -50,7 +50,8 @@ function handleWrongAnswer(questionNumber, points) {
 
 function nextQuestion () {
     inputElement.style.display = "block";
-    $("#next").html("Continue");
+    $("#next").html("Continue").removeClass("big");
+    
     if(functionRun > 0){
         if($("#input").val() == ""){
             $("#result").html(`<div class="alert alert-warning alert-dismissible fade show" role="alert">You did not answer the last question!<br/> The answer is: ${answer}  &#9888;&#65039;<button type="button" class="close" data-dismiss="alert" aria-label="Close">
