@@ -3,14 +3,14 @@
 let data = [
 
     {
-        points:0,
+        elementName: "Hydrogen",
         questionAndPoints: [
             {
                 question:"Number of electrons in Hydrogen",
                 answer:1
             },{
                 question:" Hydrogen's State at room temperature",
-                answer:"Gas"
+                answer:"gas"
             },
             {
                 question:"Hydrogen's abbreviation",
@@ -39,14 +39,15 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Helium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Helium",
                 answer:2
-            },{
+            },
+            {
                 question:" Helium's State at room temperature",
-                answer:"Gas"
+                answer:"gas"
             },
             {
                 question:"Helium's abbreviation",
@@ -57,7 +58,7 @@ let data = [
                 answer:0
             },
             {
-                question:"Number of valence electrons in Hyrdogen (including the d-subshell and s-subshell for the d-block and f-block elements!)",
+                question:"Number of valence electrons in Helium (including the d-subshell and s-subshell for the d-block and f-block elements!)",
                 answer:2
             },
             {
@@ -77,14 +78,14 @@ let data = [
     },
 
     {
-        points:0,
+        elementName: "Lithium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Lithium",
                 answer:3
             },{
                 question:"Lithium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Lithium's abbreviation",
@@ -114,14 +115,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Beryllium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Beryllium",
                 answer:4
             },{
                 question:"Beryllium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Beryllium's abbreviation",
@@ -151,14 +152,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Boron",
         questionAndPoints: [
             {
                 question:"Number of electrons in Boron",
                 answer:5
             },{
                 question:"Boron's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Boron's abbreviation",
@@ -188,14 +189,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Carbon",
         questionAndPoints: [
             {
                 question:"Number of electrons in Carbon",
                 answer:6
             },{
                 question:"Carbon's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Carbon's abbreviation",
@@ -225,14 +226,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Nitrogen",
         questionAndPoints: [
             {
                 question:"Number of electrons in Nitrogen",
                 answer:7
             },{
                 question:"Nitrogen's State at room temperature",
-                answer:"Gas"
+                answer:"gas"
             },
             {
                 question:"Nitrogen's abbreviation",
@@ -262,14 +263,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Oxygen",
         questionAndPoints: [
             {
                 question:"Number of protons in Oxygen",
                 answer:8
             },{
                 question:"Oxygen's State at room temperature",
-                answer:"Gas"
+                answer:"gas"
             },
             {
                 question:"Oxygen's abbreviation",
@@ -298,14 +299,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Fluorine",
         questionAndPoints: [
             {
                 question:"Number of protons in Fluorine",
                 answer:9
             },{
                 question:"Fluorine's State at room temperature",
-                answer:"Gas"
+                answer:"gas"
             },
             {
                 question:"Fluorine's abbreviation",
@@ -334,14 +335,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Neon",
         questionAndPoints: [
             {
                 question:"Number of protons in Neon",
                 answer:10
             },{
                 question:"Neon's State at room temperature",
-                answer:"Gas"
+                answer:"gas"
             },
             {
                 question:"Neon's abbreviation",
@@ -371,14 +372,14 @@ let data = [
     },
 
     {
-        points:0,
+        elementName: "Sodium",
         questionAndPoints: [
             {
                 question:"Number of protons in Sodium",
                 answer:11
             },{
                 question:"Sodium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Sodium's abbreviation",
@@ -407,7 +408,7 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Magnesium",
         questionAndPoints: [
             {
                 question:"Number of protons in Magnesium",
@@ -415,7 +416,7 @@ let data = [
             },
             {
                 question:"Magnesium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Magnesium's abbreviation",
@@ -444,14 +445,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Aluminum",
         questionAndPoints: [
             {
                 question:"Number of protons in Aluminum",
                 answer:13
             },{
                 question:"Aluminum 's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Aluminum 's abbreviation",
@@ -480,14 +481,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Silicon",
         questionAndPoints: [
             {
                 question:"Number of protons in Silicon          ",
                 answer:14
             },{
                 question:"Silicon 's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Silicon 's abbreviation",
@@ -516,14 +517,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Phosphorus",
         questionAndPoints: [
             {
                 question:"Number of protons in Phosphorus  ",
                 answer:15
             },{
                 question:"Phosphorus 's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Phosphorus 's abbreviation",
@@ -544,18 +545,22 @@ let data = [
             {
                 question:"Phosphorus's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
                 answer:"1s^2 2s^2 2p^6 3s^2 3p^3"
+            },
+            {
+                question:"Phosphorus's Ionization Energy in kilojoules per mole (kJ/mol)",
+                answer:1012
             }
         ]
     },
     {
-        points:0,
+        elementName: "Sulfur",
         questionAndPoints: [
             {
                 question:"Number of protons in Sulfur  ",
                 answer:16
             },{
                 question:"Sulfur 's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Sulfur's abbreviation",
@@ -584,14 +589,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Chlorine",
         questionAndPoints: [
             {
                 question:"Number of protons in Chlorine  ",
                 answer:17
             },{
                 question:"Chlorine 's State at room temperature",
-                answer:"Gas"
+                answer:"gas"
             },
             {
                 question:"Chlorine's abbreviation",
@@ -620,14 +625,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Argon",
         questionAndPoints: [
             {
                 question:"Number of protons in Argon  ",
                 answer:18
             },{
                 question:"Argon's State at room temperature",
-                answer:"Gas"
+                answer:"gas"
             },
             {
                 question:"Argon's abbreviation",
@@ -656,14 +661,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Potassium",
         questionAndPoints: [
             {
                 question:"Number of protons in Potassium ",
                 answer:19
             },{
                 question:"Potassium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Potassium's abbreviation",
@@ -692,14 +697,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Calcium",
         questionAndPoints: [
             {
                 question:"Number of protons in Calcium ",
                 answer:20
             },{
                 question:"Calcium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Calcium's abbreviation",
@@ -728,14 +733,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Scandium",
         questionAndPoints: [
             {
                 question:"Number of protons in Scandium",
                 answer:21
             },{
                 question:"Scandium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Scandium's abbreviation",
@@ -764,14 +769,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Titanium",
         questionAndPoints: [
             {
                 question:"Number of protons in Titanium",
                 answer:22
             },{
                 question:"Titanium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Titanium's abbreviation",
@@ -800,14 +805,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Vanadium",
         questionAndPoints: [
             {
                 question:"Number of protons in Vanadium",
                 answer:23
             },{
                 question:"Vanadium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Vanadium's abbreviation",
@@ -836,14 +841,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Chromium",
         questionAndPoints: [
             {
                 question:"Number of protons in Chromium",
                 answer:24
             },{
                 question:"Chromium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Chromium's abbreviation",
@@ -872,14 +877,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Manganese",
         questionAndPoints: [
             {
                 question:"Number of protons in Manganese",
                 answer:25
             },{
                 question:"Manganese's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Manganese's abbreviation",
@@ -908,14 +913,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Iron",
         questionAndPoints: [
             {
                 question:"Number of electrons in Iron",
                 answer:26
             },{
                 question:"Iron's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Iron's abbreviation",
@@ -944,14 +949,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Cobalt",
         questionAndPoints: [
             {
                 question:"Number of electrons in Cobalt",
                 answer:27
             },{
                 question:"Cobalt's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Cobalt's abbreviation",
@@ -980,14 +985,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Nickel",
         questionAndPoints: [
             {
                 question:"Number of electrons in Nickel",
                 answer:28
             },{
                 question:"Nickel's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Nickel's abbreviation",
@@ -1016,14 +1021,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Copper",
         questionAndPoints: [
             {
                 question:"Number of electrons in Copper",
                 answer:29
             },{
                 question:"Copper's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Copper's abbreviation",
@@ -1052,14 +1057,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Zinc",
         questionAndPoints: [
             {
                 question:"Number of electrons in Zinc",
                 answer:30
             },{
                 question:"Zinc's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Zinc's abbreviation",
@@ -1088,14 +1093,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Gallium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Gallium",
                 answer:31
             },{
                 question:"Gallium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Gallium's abbreviation",
@@ -1124,14 +1129,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Germanium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Germanium",
                 answer:32
             },{
                 question:"Germanium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Germanium's abbreviation",
@@ -1160,14 +1165,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Arsenic",
         questionAndPoints: [
             {
                 question:"Number of electrons in Arsenic",
                 answer:33
             },{
                 question:"Arsenic's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Arsenic's abbreviation",
@@ -1196,14 +1201,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Selenium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Selenium",
                 answer:34
             },{
                 question:"Selenium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Selenium's abbreviation",
@@ -1232,14 +1237,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Bromine",
         questionAndPoints: [
             {
                 question:"Number of electrons in Bromine",
                 answer:35
             },{
                 question:"Bromine's State at room temperature",
-                answer:"Liquid"
+                answer:"liquid"
             },
             {
                 question:"Bromine's abbreviation",
@@ -1268,14 +1273,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Krypton",
         questionAndPoints: [
             {
                 question:"Number of electrons in Krypton",
                 answer:36
             },{
                 question:"Krypton's State at room temperature",
-                answer:"Liquid"
+                answer:"liquid"
             },
             {
                 question:"Krypton's abbreviation",
@@ -1304,14 +1309,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Rubidum",
         questionAndPoints: [
             {
                 question:"Number of electrons in Rubidium",
                 answer:37
             },{
                 question:"Rubidium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Rubidium's abbreviation",
@@ -1340,14 +1345,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Strontium",
         questionAndPoints: [
             {
                 question:"Number of protons in Strontium",
                 answer:37
             },{
                 question:"Strontium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Strontium's abbreviation",
@@ -1376,14 +1381,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Yttrium",
         questionAndPoints: [
             {
                 question:"Number of protons in Yttrium",
                 answer:39
             },{
                 question:"Yttrium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Yttrium's abbreviation",
@@ -1412,14 +1417,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Zirconium",
         questionAndPoints: [
             {
                 question:"Number of protons in Zirconium",
                 answer:40
             },{
                 question:"Zirconium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Zirconium's abbreviation",
@@ -1448,14 +1453,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Niobium",
         questionAndPoints: [
             {
                 question:"Number of protons in Niobium",
                 answer:41
             },{
                 question:"Niobium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Niobium's abbreviation",
@@ -1484,14 +1489,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Molybdenum",
         questionAndPoints: [
             {
                 question:"Number of protons in Molybdenum",
                 answer:42
             },{
                 question:"Molybdenum's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Molybdenum's abbreviation",
@@ -1520,14 +1525,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Technetium",
         questionAndPoints: [
             {
                 question:"Number of protons in Technetium",
                 answer:43
             },{
                 question:"Technetium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Technetium's abbreviation",
@@ -1556,14 +1561,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Ruthenium",
         questionAndPoints: [
             {
                 question:"Number of protons in Ruthenium",
                 answer:44
             },{
                 question:"Ruthenium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Ruthenium's abbreviation",
@@ -1592,14 +1597,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Rhodium",
         questionAndPoints: [
             {
                 question:"Number of protons in Rhodium",
                 answer:45
             },{
                 question:"Rhodium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Rhodium's abbreviation",
@@ -1628,14 +1633,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Palladium",
         questionAndPoints: [
             {
                 question:"Number of protons in Palladium",
                 answer:46
             },{
                 question:"Palladium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Palladium's abbreviation",
@@ -1664,14 +1669,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Silver",
         questionAndPoints: [
             {
                 question:"Number of protons in Silver",
                 answer:47
             },{
                 question:"Silver's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Silver's abbreviation",
@@ -1700,14 +1705,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Cadmium",
         questionAndPoints: [
             {
                 question:"Number of protons in Cadmium",
                 answer:48
             },{
                 question:"Cadmium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Cadmium's abbreviation",
@@ -1736,14 +1741,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Indium",
         questionAndPoints: [
             {
                 question:"Number of protons in Indium",
                 answer:49
             },{
                 question:"Indium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Indium's abbreviation",
@@ -1772,14 +1777,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Tin",
         questionAndPoints: [
             {
                 question:"Number of protons in Tin",
                 answer:50
             },{
                 question:"Tin's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Tin's abbreviation",
@@ -1808,14 +1813,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Antimony",
         questionAndPoints: [
             {
                 question:"Number of electrons in Antimony",
                 answer:51
             },{
                 question:"Antimony's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Antimony's abbreviation",
@@ -1844,14 +1849,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Tellurium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Tellurium",
                 answer:52
             },{
                 question:"Tellurium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Tellurium's abbreviation",
@@ -1880,14 +1885,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Iodine",
         questionAndPoints: [
             {
                 question:"Number of electrons in Iodine",
                 answer:53
             },{
                 question:"Iodine's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Iodine's abbreviation",
@@ -1913,17 +1918,19 @@ let data = [
                 question:"Iodine's Ionization Energy in kilojoules per mole (kJ/mol)",
                 answer:1008
             }
+            
         ]
     },
     {
-        points:0,
+        elementName: "Xenon",
         questionAndPoints: [
             {
                 question:"Number of electrons in Xenon",
                 answer:54
-            },{
+            },
+            {
                 question:"Xenon's State at room temperature",
-                answer:"Gas"
+                answer:"gas"
             },
             {
                 question:"Xenon's abbreviation",
@@ -1952,14 +1959,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Cesium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Cesium",
                 answer:55
             },{
                 question:"Cesium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Cesium's abbreviation",
@@ -1988,14 +1995,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Barium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Barium",
                 answer:56
             },{
                 question:"Barium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Barium's abbreviation",
@@ -2024,14 +2031,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Lanthanum",
         questionAndPoints: [
             {
                 question:"Number of electrons in Lanthanum",
                 answer:57
             },{
                 question:"Lanthanum's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Lanthanum's abbreviation",
@@ -2060,14 +2067,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Cerium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Cerium",
                 answer:58
             },{
                 question:"Cerium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Cerium's abbreviation",
@@ -2096,14 +2103,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Praseodymium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Praseodymium",
                 answer:59
             },{
                 question:"Praseodymium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Praseodymium's abbreviation",
@@ -2132,14 +2139,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Neodymium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Neodymium",
                 answer:60
             },{
                 question:"Neodymium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Neodymium's abbreviation",
@@ -2168,14 +2175,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Promethium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Promethium",
                 answer:61
             },{
                 question:"Promethium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Promethium's abbreviation",
@@ -2204,14 +2211,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Samarium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Samarium",
                 answer:62
             },{
                 question:"Samarium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Samarium's abbreviation",
@@ -2240,14 +2247,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Europium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Europium",
                 answer:63
             },{
                 question:"Europium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Europium's abbreviation",
@@ -2276,14 +2283,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Gadolinium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Gadolinium",
                 answer:64
             },{
                 question:"Gadolinium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Gadolinium's abbreviation",
@@ -2312,14 +2319,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Terbium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Terbium",
                 answer:65
             },{
                 question:"Terbium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Terbium's abbreviation",
@@ -2348,14 +2355,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Dysprosium",
         questionAndPoints: [
             {
                 question:"Number of electrons in Dysprosium",
                 answer:66
             },{
                 question:"Dysprosium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Dysprosium's abbreviation",
@@ -2384,14 +2391,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Holmium",
         questionAndPoints: [
             {
                 question:"Number of protons in Holmium",
                 answer:67
             },{
                 question:"Holmium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Holmium's abbreviation",
@@ -2420,14 +2427,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Erbium",
         questionAndPoints: [
             {
                 question:"Number of protons in Erbium",
                 answer:68
             },{
                 question:"Erbium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Erbium's abbreviation",
@@ -2456,14 +2463,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Thulium",
         questionAndPoints: [
             {
                 question:"Number of protons in Thulium",
                 answer:69
             },{
                 question:"Thulium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Thulium's abbreviation",
@@ -2492,14 +2499,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Ytterbium",
         questionAndPoints: [
             {
                 question:"Number of protons in Ytterbium",
                 answer:70
             },{
                 question:"Ytterbium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Ytterbium's abbreviation",
@@ -2528,14 +2535,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Lutetium",
         questionAndPoints: [
             {
                 question:"Number of protons in Lutetium",
                 answer:71
             },{
                 question:"Lutetium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Lutetium's abbreviation",
@@ -2564,14 +2571,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Hafnium",
         questionAndPoints: [
             {
                 question:"Number of protons in Hafnium",
                 answer:72
             },{
                 question:"Hafnium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Hafnium's abbreviation",
@@ -2600,14 +2607,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Tantalum",
         questionAndPoints: [
             {
                 question:"Number of protons in Tantalum",
                 answer:73
             },{
                 question:"Tantalum's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Tantalum's abbreviation",
@@ -2636,14 +2643,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Tungsten",
         questionAndPoints: [
             {
                 question:"Number of protons in Tungsten",
                 answer:74
             },{
                 question:"Tungsten's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Tungsten's abbreviation",
@@ -2672,14 +2679,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Rhenium",
         questionAndPoints: [
             {
                 question:"Number of protons in Rhenium",
                 answer:75
             },{
                 question:"Rhenium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Rhenium's abbreviation",
@@ -2708,14 +2715,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Osmium",
         questionAndPoints: [
             {
                 question:"Number of protons in Osmium",
                 answer:76
             },{
                 question:"Osmium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Osmium's abbreviation",
@@ -2744,14 +2751,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Iridium",
         questionAndPoints: [
             {
                 question:"Number of protons in Iridium",
                 answer:77
             },{
                 question:"Iridium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Iridium's abbreviation",
@@ -2780,14 +2787,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Platinum",
         questionAndPoints: [
             {
                 question:"Number of protons in Platinum",
                 answer:77
             },{
                 question:"Platinum's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Platinum's abbreviation",
@@ -2816,14 +2823,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Gold",
         questionAndPoints: [
             {
                 question:"Number of protons in Gold",
                 answer:79
             },{
                 question:"Gold's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Gold's abbreviation",
@@ -2852,14 +2859,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Mercury",
         questionAndPoints: [
             {
                 question:"Number of protons in Mercury",
                 answer:80
             },{
                 question:"Mercury's State at room temperature",
-                answer:"Liquid"
+                answer:"liquid"
             },
             {
                 question:"Mercury's abbreviation",
@@ -2888,14 +2895,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Thallium",
         questionAndPoints: [
             {
                 question:"Number of protons in Thallium",
                 answer:81
             },{
                 question:"Thallium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Thallium's abbreviation",
@@ -2924,14 +2931,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Lead",
         questionAndPoints: [
             {
                 question:"Number of protons in Lead",
                 answer:82
             },{
                 question:"Lead's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Lead's abbreviation",
@@ -2960,14 +2967,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Bismuth",
         questionAndPoints: [
             {
                 question:"Number of protons in Bismuth",
                 answer:83
             },{
                 question:"Bismuth's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Bismuth's abbreviation",
@@ -2996,14 +3003,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Polonium",
         questionAndPoints: [
             {
                 question:"Number of protons in Polonium",
                 answer:84
             },{
                 question:"Polonium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Polonium's abbreviation",
@@ -3032,14 +3039,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Astatine",
         questionAndPoints: [
             {
                 question:"Number of protons in Astatine",
                 answer:85
             },{
                 question:"Astatine's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Astatine's abbreviation",
@@ -3068,14 +3075,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Radon",
         questionAndPoints: [
             {
                 question:"Number of protons in Radon",
                 answer:86
             },{
                 question:"Radon's State at room temperature",
-                answer:"Gas"
+                answer:"gas"
             },
             {
                 question:"Radon's abbreviation",
@@ -3104,14 +3111,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Francium",
         questionAndPoints: [
             {
                 question:"Number of protons in Francium",
                 answer:87
             },{
                 question:"Francium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Francium's abbreviation",
@@ -3140,14 +3147,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Radium",
         questionAndPoints: [
             {
                 question:"Number of protons in Radium",
                 answer:88
             },{
                 question:"Radium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Radium's abbreviation",
@@ -3176,14 +3183,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Actinium",
         questionAndPoints: [
             {
                 question:"Number of protons in Actinium",
                 answer:89
             },{
                 question:"Actinium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Actinium's abbreviation",
@@ -3212,14 +3219,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Thorium",
         questionAndPoints: [
             {
                 question:"Number of protons in Thorium",
                 answer:90
             },{
                 question:"Thorium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Thorium's abbreviation",
@@ -3248,14 +3255,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Protactinium",
         questionAndPoints: [
             {
                 question:"Number of protons in Protactinium",
                 answer:91
             },{
                 question:"Protactinium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Protactinium's abbreviation",
@@ -3284,14 +3291,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Uranium",
         questionAndPoints: [
             {
                 question:"Number of protons in Uranium",
                 answer:92
             },{
                 question:"Uranium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Uranium's abbreviation",
@@ -3320,14 +3327,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Neptunium",
         questionAndPoints: [
             {
                 question:"Number of protons in Neptunium ",
                 answer:93
             },{
                 question:"Neptunium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Neptunium's abbreviation",
@@ -3356,14 +3363,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Plutonium",
         questionAndPoints: [
             {
                 question:"Number of protons in Plutonium ",
                 answer:94
             },{
                 question:"Plutonium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Plutonium's abbreviation",
@@ -3392,14 +3399,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Americium",
         questionAndPoints: [
             {
                 question:"Number of protons in Americium",
                 answer:95
             },{
                 question:"Americium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Americium's abbreviation",
@@ -3428,14 +3435,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Curium",
         questionAndPoints: [
             {
                 question:"Number of protons in Curium",
                 answer:96
             },{
                 question:"Curium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Curium's abbreviation",
@@ -3464,14 +3471,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Berkelium",
         questionAndPoints: [
             {
                 question:"Number of protons in Berkelium",
                 answer:97
             },{
                 question:"Berkelium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Berkelium's abbreviation",
@@ -3500,14 +3507,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Californium",
         questionAndPoints: [
             {
                 question:"Number of protons in Californium",
                 answer:98
             },{
                 question:"Californium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Californium's abbreviation",
@@ -3536,14 +3543,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Einstenium",
         questionAndPoints: [
             {
                 question:"Number of protons in Einsteinium",
                 answer:99
             },{
                 question:"Einsteinium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Einsteinium's abbreviation",
@@ -3572,14 +3579,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Fermium",
         questionAndPoints: [
             {
                 question:"Number of protons in Fermium",
                 answer:100
             },{
                 question:"Fermium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Fermium's abbreviation",
@@ -3608,14 +3615,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Mendelevium",
         questionAndPoints: [
             {
                 question:"Number of protons in Mendelevium",
                 answer:101
             },{
                 question:"Mendelevium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Mendelevium's abbreviation",
@@ -3644,14 +3651,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Nobelium",
         questionAndPoints: [
             {
                 question:"Number of protons in Nobelium",
                 answer:102
             },{
                 question:"Nobelium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Nobelium's abbreviation",
@@ -3680,14 +3687,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName:"Lawrencium",
         questionAndPoints: [
             {
                 question:"Number of protons in Lawrencium",
                 answer:103
             },{
                 question:"Lawrencium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Lawrencium's abbreviation",
@@ -3716,14 +3723,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Rutherfordium",
         questionAndPoints: [
             {
                 question:"Number of protons in Rutherfordium",
                 answer:104
             },{
                 question:"Rutherfordium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Rutherfordium's abbreviation",
@@ -3752,14 +3759,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Dubnium",
         questionAndPoints: [
             {
                 question:"Number of protons in Dubnium",
                 answer:105
             },{
                 question:"Dubnium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Dubnium's abbreviation",
@@ -3788,14 +3795,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Seaborgium",
         questionAndPoints: [
             {
                 question:"Number of protons in Seaborgium",
                 answer:106
             },{
                 question:"Seaborgium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Seaborgium's abbreviation",
@@ -3824,14 +3831,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Bohrium",
         questionAndPoints: [
             {
                 question:"Number of protons in Bohrium",
                 answer:107
             },{
                 question:"Bohrium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Bohrium's abbreviation",
@@ -3860,14 +3867,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Hassium",
         questionAndPoints: [
             {
                 question:"Number of protons in Hassium",
                 answer:108
             },{
                 question:"Hassium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Hassium's abbreviation",
@@ -3896,14 +3903,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Meitnerium",
         questionAndPoints: [
             {
                 question:"Number of protons in Meitnerium",
                 answer:109
             },{
                 question:"Meitnerium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Meitnerium's abbreviation",
@@ -3932,14 +3939,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Darmstadtium",
         questionAndPoints: [
             {
                 question:"Number of protons in Darmstadtium",
                 answer:110
             },{
                 question:"Darmstadtium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Darmstadtium's abbreviation",
@@ -3968,14 +3975,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Roentgenium",
         questionAndPoints: [
             {
                 question:"Number of protons in Roentgenium",
                 answer:111
             },{
                 question:"Roentgenium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Roentgenium's abbreviation",
@@ -4004,14 +4011,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Copernicium",
         questionAndPoints: [
             {
                 question:"Number of protons in Copernicium",
                 answer:112
             },{
                 question:"Copernicium's State at room temperature",
-                answer:"Liquid"
+                answer:"liquid"
             },
             {
                 question:"Copernicium's abbreviation",
@@ -4040,7 +4047,7 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Nihonium",
         questionAndPoints: [
             {
                 question:"Number of protons in Nihonium",
@@ -4048,7 +4055,7 @@ let data = [
             },
             {
                 question:"Nihonium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Nihonium's abbreviation",
@@ -4077,14 +4084,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Flerovium",
         questionAndPoints: [
             {
                 question:"Number of protons in Flerovium",
                 answer:114
             },{
                 question:"Flerovium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Flerovium's abbreviation",
@@ -4113,14 +4120,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Moscovium",
         questionAndPoints: [
             {
                 question:"Number of protons in Moscovium",
                 answer:115
             },{
                 question:"Moscovium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Moscovium's abbreviation",
@@ -4149,14 +4156,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Livermorium",
         questionAndPoints: [
             {
                 question:"Number of protons in Livermorium",
                 answer:116
             },{
                 question:"Livermorium's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Livermorium's abbreviation",
@@ -4185,14 +4192,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Tennessine",
         questionAndPoints: [
             {
                 question:"Number of protons in Tennessine",
                 answer:117
             },{
                 question:"Tennessine's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Tennessine's abbreviation",
@@ -4221,14 +4228,14 @@ let data = [
         ]
     },
     {
-        points:0,
+        elementName: "Oganesson",
         questionAndPoints: [
             {
                 question:"Number of protons in Oganesson",
                 answer:118
             },{
                 question:"Oganesson's State at room temperature",
-                answer:"Solid"
+                answer:"solid"
             },
             {
                 question:"Oganesson's abbreviation",
