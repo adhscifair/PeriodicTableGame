@@ -1,101 +1,183 @@
-//all the logic
-let functionRun = 0;
-let rand = Math.floor(Math.random() * data.length);
-let randQuestionAndPoints = data[rand].questionAndPoints;
-let questionNum = Math.floor(Math.random() * randQuestionAndPoints.length);
-let question = randQuestionAndPoints[questionNum].question;
-let answer = randQuestionAndPoints[questionNum].answer;
-let inputElement = document.getElementById("showAndHide");
-inputElement.style.display =  "none";
-let points = 0
-$(document).ready(function(){
-    $("#myModal").modal('show');
-});
-function wrongMessage (answer) {
-    answer = randQuestionAndPoints[questionNum].answer;
-    let message = ` <div class="alert alert-danger alert-dismissible fade show" role="alert"> <b>You got the last question incorrect.<br/> The answer is: __ANSWER__ &#129300;</b><button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="True">&times;</span>
-  </button></div>`;
-    return message.replace("__ANSWER__", answer);
-}
-function rightMessage (points) {
-    let message = `<div class="alert alert-success alert-dismissible fade show" role="alert"><b> You got the last question correct!</b><br/><b> You have __POINTS__ point(s)! &#128077;</b><button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="True">&times;</span>
-  </button></div>`;
-    return message.replace("__POINTS__", points);
-}
+//making lots of VARIBLES. NUM NUM NUM
+let questionsAnsweredArray = {}
+let question
+let questionNumber = 7
 
-function handleRightAnswer(questionNumber, points) {
-    pop()
-    let idName = "#el" + (questionNumber+1)
-    let aidName = idName + "a"
-    $(idName).removeClass("hidden-element")
-    $(idName).removeClass("element-no-transition")
-    $(idName).addClass("element")
-    $(aidName).removeClass("visible-span")
-    $(aidName).addClass("hidden-element")
-    $("#result").html(rightMessage(points))
-}
 
-function handleWrongAnswer(questionNumber, points) {
-    let idName = "#el" + (questionNumber+1)
-    let aidName = idName + "a"
-    $(idName).addClass("hidden-element")
-    $(idName).addClass("element-no-transition")
-    $(idName).removeClass("element")
-    $(aidName).removeClass("hidden-element")
-    $(aidName).addClass("visible-span")
-    $("#result").html(wrongMessage(points))
-}
-
-function nextQuestion () {
-    inputElement.style.display = "block";
-    $("#next").html("Continue").removeClass("big");
-    
-    if(functionRun > 0){
-        if($("#input").val() == ""){
-            $("#result").html(`<div class="alert alert-warning alert-dismissible fade show" role="alert">You did not answer the last question!<br/> The answer is: ${answer}  &#9888;&#65039;<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="True">&times;</span>
-          </button></div>`);
-        } else{
-            if(isNaN(answer)){
-                if (answer.toLowerCase() == $("#input").val().toLowerCase()) {
-                    points++
-                    if(data[rand].points < questionNum){
-                        data[rand].points++
-                    }
-                    handleRightAnswer(rand, points)
-                } else {
-                    handleWrongAnswer(rand, points)
-                    if(data[rand].points > 0){
-                        points--
-                        data[rand].points--
-                    }
-                }
-            } else {
-                if (answer == $("#input").val()) {
-                    points++;
-                    if(data[rand].points < questionNum){
-                        data[rand].points++;
-                    }
-                    handleRightAnswer(rand, points)
-                } else {
-                    handleWrongAnswer(rand, points)
-                    if(data[rand].points > 0){
-                        points--
-                        data[rand].points--
-                    }
-                }
-            }
-            $("#input").val("")
-        }
+function onLoad() {
+    if(localStorage.getItem("progress") === null) {
+        localStorage.setItem("progress", "")
+    }else{
+        let savedProgress  = JSON.parse(localStorage.getItem("progress"))
+        questionsAnsweredArray = savedProgress
     }
-    rand = Math.floor(Math.random() * data.length)
-    randQuestionAndPoints = data[rand].questionAndPoints
-    questionNum = Math.floor(Math.random() * randQuestionAndPoints.length)
-    question = randQuestionAndPoints[questionNum].question
-    answer = randQuestionAndPoints[questionNum].answer
-    $("#question").html(`${question}`)
-    functionRun++
+}
+
+function checkAndInitializeQAarray(elementName) {
+    if(!questionsAnsweredArray[elementName]) {
+        let object = {
+            'name': elementName, 
+            'QA': [],
+            'score': 0
+        }
+        questionsAnsweredArray[elementName] = object
+        
+    } 
+}
+
+function storeQA(elementName, question, answer, isCorrect) {
+    checkAndInitializeQAarray(elementName)
+    let curQA = {}
+    curQA['question'] = question
+    curQA['answer'] = answer
+    curQA['isCorrect'] = isCorrect
+    questionsAnsweredArray[elementName].QA.push(curQA)
+    if(isCorrect) {
+        let curScore = questionsAnsweredArray[elementName]['score'] + 1
+        questionsAnsweredArray[elementName]['score'] = curScore
+    }
+    localStorage.setItem("progress", JSON.stringify(questionsAnsweredArray))
+    console.log(JSON.parse(localStorage.getItem("progress")))
+    $("#arrayText").append(JSON.stringify(questionsAnsweredArray))
+}
+
+
+function resetForNextElement() {
+    questionNumber = 7
+}
+
+function resetForNextQuestion() {
+    $("#input").val("")
+    questionNumber--
+    if(questionNumber >= 0) {
+        question = data[arrayNumber].questionAndPoints[questionNumber].question
+        $("#questionBody").html(question)
+    }
+}
+
+function checkAnswer(answerInputed, correctAnswer) {
     
+    if(questionNumber == 1) {
+        answerInputed = answerInputed.toLowerCase()
+    }
+    return answerInputed == correctAnswer
+}
+
+function handleEmptyAnswer() {
+    $("#quickMessage").html(`
+        <div class="alert alert-warning" role="alert">
+            Please answer the question to proceed. 
+        </div>
+        
+    `)
+    $("#questionBody").html(question)
+}
+
+function displaySuccessMessage() {
+    $("#quickMessage").html(
+        `<div class="alert alert-success" role="alert">
+            Great job! You got the last question correct!
+        </div>`
+    )
+}
+
+function displayFailureMessage(correctAnswer) {
+    $("#quickMessage").html(`
+        <div class="alert alert-danger" role="alert">
+            You got the last question incorrect. The answer was ${correctAnswer}.
+            <br/> Their is always next time!
+        </div>
+    `)
+}
+
+function handleCompletedElement(elementName) {
+    let score = questionsAnsweredArray[elementName].score
+    if(score >= 4) {
+        pop()
+    }
+    $("#questionBody").html(`You have answered ${score}/8 questions correctly!!`)
+    $("#quickMessage").hide()
+    $("#quickMessage").text("")
+    $("#questionInputBody").hide()
+    $("#quickNote").hide()
+}
+
+function displayProgress(elementName) {
+    if(questionsAnsweredArray[elementName]
+        && questionsAnsweredArray[elementName]['QA'].length > 0) {
+        $("#quickNote").text('')
+        $("#arrayText").text('')
+        let curArray = questionsAnsweredArray[elementName]
+        let score = curArray['score']
+        let qaArray = curArray['QA']
+
+        $("#arrayText").append(`Your overall score for this element is ${score}/8`)
+
+        for(let i=0; i< qaArray.length; i++) {
+            let curText = `<br/> Question: ${qaArray[i]['question']}`
+            curText += `<br/> Answer: ${qaArray[i]['answer']}`
+            curText += `<br/> Is Correct: ${qaArray[i]['isCorrect']} <br/>`
+            $("#arrayText").append(`<li class="list-group-item arrayList">${curText}</li>`)
+        }
+    } else {
+        $("#quickNote").text('Answer a question to see your progress!')
+        $('#quickNote').show()
+        $("#arrayText").text('')
+    }
+}
+
+
+function displayModal (clicked_id) {
+      
+    resetForNextElement()
+
+    $("#congratMessage").hide()
+    //setting up the arrayNumber it should call in data.js using the id.
+    arrayNumber = parseInt(clicked_id.slice(2)) - 1
+
+    let title = data[arrayNumber].elementName
+
+    //making the modal show up
+    $("#questionModal").modal('show')
+    document.getElementById("questionModalLabel").innerHTML = title
+    $("#quickMessage").show()
+    $("#questionInputBody").show()
+
+    question = data[arrayNumber].questionAndPoints[questionNumber].question
+    document.getElementById("questionBody").innerHTML = question
+
+    displayProgress(title)
+}
+
+function evaluateAnswer(){
+   let elementName = data[arrayNumber].elementName
+    if(questionNumber >= 0) {
+        answerInputed = $("#input").val()
+        correctAnswer = data[arrayNumber].questionAndPoints[questionNumber].answer
+        question = data[arrayNumber].questionAndPoints[questionNumber].question
+        if(answerInputed == "") { // if empty answer
+            handleEmptyAnswer()
+        } else {
+            if(checkAnswer(answerInputed, correctAnswer)) { //right answer
+                storeQA(elementName, question, answerInputed, true)
+                displaySuccessMessage()
+                resetForNextQuestion()
+            } else { //wrong answer
+                storeQA(elementName, question, answerInputed, false)
+                displayFailureMessage(correctAnswer)
+                resetForNextQuestion()
+            }
+        }
+
+    }
+    if(questionNumber < 0) {
+        handleCompletedElement(elementName)
+    }
+    displayProgress(elementName)
+    
+}
+
+function makeData() {
+    
+
 }
