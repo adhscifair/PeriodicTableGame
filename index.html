@@ -6,36 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Periodic Table Game</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/new.css">
     <link rel="shortcut icon" type="image/jpg" href="./pictures/logo.png"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
-<body>
-  <!--make sure to add question thing at top.
-  push to adhscifair-->
-<div id="myModal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Looking to have fun learning the perodic table?!</h5>
-                <button id="#rulesButton" type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-              <p>Well, this site can help you! Dedicated to middle schoolers
-                and high schoolers, (and made by a middle schooler) this website
-                will help you learn the periodic table in a fun way! What are you waiting for? Exit out of the pop out, and 
-                start. (You start by clicking the START button, but I think you know
-                that already)
-              </p>
-            </div>
-        </div>
-    </div>
-</div>
-  <!-- Button trigger modal -->
-  
-  <!-- Modal -->
-  
+<body onload="onLoad()">
+
+  <!--
+    Instructions Modal
+  -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -46,89 +25,137 @@
           </button>
         </div>
         <div class="modal-body">
-            <p>
-              <img src="pictures/begin.png" alt="the start button">
-              Alright! First you click the "start" button. [Look above]
-              <img src="pictures/typeAnswer.png" alt="typing the answer in">
-              <br/><br/>
-              Then, you type in your answer![Look above]
-              <br/><br/><br/>
-              <img src="pictures/submit.png" alt="clicking 'continue'">
-              <br/><br/>
-              And, of course. You submit it, clicking the "submit button".[Look above]
-              <br/><br/>
-              <img src="pictures/alerts.png" alt="examples of different alerts" width="400px;">
-              <br/><br/>
-              After that, you will get three alerts. If it is GREEN, that 
-              means it is correct! If it's red, that means it is incorrect,
-              and if it is yellow - well you forgot to answer the question![Look above]
-              <br/><br/>
-              <strong>Now your all set! Have fun</strong>
-              <br/><br/>
-              <i>FYI: You lose your progress when you RELOAD or EXIT the page.
-              </i>
-             
+          Welcome to the Periodic Table Game! Not sure where to start?
+          Well, this is how you use the website to the best of your ability!
+          <br/><br/>
+          First hover and click on an elemenet that you would like to answer
+          questions about! (As shown below)
+          <br/><br/>
+          <img src="pictures/begin.png" alt="Clicking on Hydrogen" width="25%"/>
+          <br/>
+          Then a modal should pop up. Enter the answer into the input box, and 
+          click submit. (As shown below)
+          <br/><br/>
+          <img src="pictures/answerQuestion.png" alt="Clicking on Hydrogen" width="100%"/>
+          <br/>
+          The alerts on top would tell you wether you got it right, wrong, or
+          just left it blank. (As shown below)
+          <br/><br/>
+          <img src="pictures/alerts.png" alt="Clicking on Hydrogen" width="100%"/>
+          <br/>
+          After you answered all the questions for one elemenet, a congradulatory 
+          message would've poped up! (As shown below)
+          <br/><br/>
+          <img src="pictures/completedElement.png" alt="Clicking on Hydrogen" width="100%"/>
+          <br/>
+          If you clicked the "progress" tab, you would be able to see what you
+          got right, wrong and what your score is. (As shown below)
+          <br/><br/>
+          <img src="pictures/progressTab.png" alt="Clicking on Hydrogen" width="50%"/>
+          <br/>
+          Close the pop-up, and then you can keep clicking on different elements and answering different
+          questions about them.
+          <br/>
 
-    
-            </p>
+          <br/>
+          <h4>That's all! Hope you have fun playing this game!</h4>
         </div>
       </div>
     </div>
   </div>
-  <div>
-    <button id="rules" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
-      Rules
-      </button>
-    <h1 style="text-align: center;">The Periodic Table Game</h1>
-  <div id="interactive">
-      <div id="result"></div>
-      <div id="right">
-        <div id= "question"></div>
-            <div id = "showAndHide">
-                <input type="text" id = "input"/>
-                <br/>
-                <br/>
+
+  <!--
+    Question Panel / Modal
+  -->
+  <div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="questionModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <br/>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="questions-tab" data-toggle="tab" href="#questions" role="tab" aria-controls="questions" aria-selected="true">Questions</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="progress-tab" data-toggle="tab" href="#progress" role="tab" aria-controls="progress" aria-selected="false">Progress</a>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+
+          <div class="tab-pane fade show active" id="questions" role="tabpanel" aria-labelledby="questions-tab">
+            <div class="modal-body" id="modalBody">
+              <div id="quickMessage">
+                Please note that you will not be able to click out 
+                of this modal until you answer ALL the questions, 
+                otherwise, your progress will be lost. 
+              </div>
+              <div class="modal-body" id="questionBody"></div>
+              <div class="modal-body" id="questionInputBody">
+                <input autocomplete="off" id="input">
+                <button onclick="evaluateAnswer()" id="submit" class="btn btn-primary">Submit</button>
+              </div>
             </div>
-          
-                <button id="next" onclick = "nextQuestion()" class="big btn btn-primary">Start!</button>
-          <br/>
-      </div>
-    </div>
+          </div>
+
+          <div class="tab-pane fade" id="progress" role="tabpanel" aria-labelledby="progress-tab">
+            <div class="modal-body">
+              <p id="quickNote">Answer a question to see your progress!</p>
+                <div  id= "test" class="card" style="width: 18rem;">
+                  <ul class="list-group list-group-flush" id="arrayText"></ul>
+                </div>
+            </div>
+          </div>
+
+        </div> <!-- end of tab content-->
+
+      </div> <!-- end of modal content-->
+    </div> <!-- end of modal dialogue-->
+  </div>
+  
+
+  <button style="float:right;" class="btn-primary btn" href="#" id="rules" data-toggle="modal" data-target="#exampleModal" >Rules</button>
+  <h1 id = "header" style="text-align: center;">The Periodic Table Game</h1>
+
+ 
     <div class="periodic">
         <div class="periodic-row">
           <div class="cell">
-            <div id="el1" class="element-no-transition hidden-element">
-              <div class="at_num">1</div>
-              <div class="symbol">H</div>
-              <div class="at_details">hydrogen<br />1.008</div>
-              <br/><span id="el1a" class="question-mark visible-span">?</span>
+            <div onclick="displayModal(this.id)" id = "el1"  class="element" data-toggle="modal2" data-target="#questionModal">
+              <span class="at_num">1</span><br/>
+              <span class="symbol">H</span><br/>
+              <span id="el1-title" class="at_details">Hydrogen </span>
             </div>
           </div>
           <div class="specialcell"></div>
           <div class="cell">
-            <div id="el2" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id = "el2" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">2</div>
               <div class="symbol">He</div>
-              <div class="at_details">helium<br />4.0026</div>
-              <br/><span id="el2a" class="question-mark visible-span">?</span>
+              <span id = "el2-title" class="at_details">Helium</span>
             </div>
           </div>
         </div>
         <div class="periodic-row">
           <div class="cell">
-            <div id="el3" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el3" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">3</div>
               <div class="symbol">Li</div>
-              <div class="at_details">lithium<br />6.94</div>
-              <br/><span id="el3a" class="question-mark visible-span">?</span>
+              <div id = "el3-title" class="at_details">Lithium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el4" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el4" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">4</div>
               <div class="symbol">Be</div>
-              <div class="at_details">beryllium<br />9.0122</div>
-              <br/><span id="el4a" class="question-mark visible-span">?</span>
+              <div  id = "el4-title" class="at_details">Beryllium</div>
+              <br/>
             </div>
           </div>
           <div class="cell"></div>
@@ -143,69 +170,69 @@
           <div class="cell"></div>
           
           <div class="cell">
-            <div id="el5" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el5" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">5</div>
               <div class="symbol">B</div>
-              <div class="at_details">boron<br />10.81</div>
-              <br/><span id="el5a" class="question-mark visible-span">?</span>
+              <div id = "el5-title" class="at_details">Boron</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el6" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el6" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">6</div>
               <div class="symbol">C</div>
-              <div class="at_details">carbon<br />12.011</div>
-              <br/><span id="el6a" class="question-mark visible-span">?</span>
+              <div id = "el6-title" class="at_details">Carbon</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el7" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el7" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">7</div>
               <div class="symbol">N</div>
-              <div class="at_details">nidivogen<br />14.007</div>
-              <br/><span id="el7a" class="question-mark visible-span">?</span>
+              <div id = "el7-title" class="at_details">Nitrogen</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el8" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el8" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">8</div>
               <div class="symbol">O</div>
-              <div class="at_details">oxygen<br />15.999</div>
-              <br/><span id="el8a" class="question-mark visible-span">?</span>
+              <div id = "el8-title" class="at_details">Oxygen</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el9" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el9" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">9</div>
               <div class="symbol">F</div>
-              <div class="at_details">fluorine<br />18.998</div>
-              <br/><span id="el9a" class="question-mark visible-span">?</span>
+              <div id = "el9-title" class="at_details">Fluorine</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el10" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el10" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">10</div>
               <div class="symbol">Ne</div>
-              <div class="at_details">neon<br />20.180</div>
-              <br/><span id="el10a" class="question-mark visible-span">?</span>
+              <div id = "el10-title" class="at_details">Neon</div>
+              <br/>
             </div>
           </div>
         </div>
         <div class="periodic-row">
           <div class="cell">
-            <div id="el11" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el11" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">11</div>
               <div class="symbol">Na</div>
-              <div class="at_details">sodium<br />22.990</div>
-              <br/><span id="el11a" class="question-mark visible-span">?</span>
+              <div id = "el-11title" class="at_details">Sodium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el12" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el12" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">12</div>
               <div class="symbol">Mg</div>
-              <div class="at_details">magnesium<br />24.305</div>
-              <br/><span id="el12a" class="question-mark visible-span">?</span>
+              <div id = "el12-title" class="at_details">Magnesium</div>
+              <br/>
             </div>
           </div>
           <div class="cell"></div>
@@ -219,621 +246,621 @@
           <div class="cell"></div>
           <div class="cell"></div>
           <div class="cell">
-            <div id="el13" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el13" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">13</div>
               <div class="symbol">Al</div>
-              <div class="at_details">aluminum<br />26.982</div>
-              <br/><span id="el13a" class="question-mark visible-span">?</span>
+              <div id = "el13-title" class="at_details">Aluminum</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el14" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el14" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">14</div>
               <div class="symbol">Si</div>
-              <div class="at_details">silicon<br />28.085</div>
-              <br/><span id="el14a" class="question-mark visible-span">?</span>
+              <div id = "el14-title" class="at_details">Silicon</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el15" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el15" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">15</div>
               <div class="symbol">P</div>
-              <div class="at_details">phosphorus<br />30.974</div>
-              <br/><span id="el15a" class="question-mark visible-span">?</span>
+              <div id = "el15-title" class="at_details">Phosphorus</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el16" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el16" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">16</div>
               <div class="symbol">S</div>
-              <div class="at_details">sulfur<br />32.06</div>
-              <br/><span id="el16a" class="question-mark visible-span">?</span>
+              <div id = "el16-title" class="at_details">Sulfur</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el17" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el17" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">17</div>
               <div class="symbol">Cl</div>
-              <div class="at_details">chlorine<br />35.45</div>
-              <br/><span id="el17a" class="question-mark visible-span">?</span>
+              <div id = "el17-title" class="at_details">Chlorine</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el18" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el18" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">18</div>
               <div class="symbol">Ar</div>
-              <div class="at_details">argon<br />39.948</div>
-              <br/><span id="el18a" class="question-mark visible-span">?</span>
+              <div id = "el18-title" class="at_details">Argon</div>
+              <br/>
             </div>
           </div>
         </div>
         <div class="periodic-row">
           <div class="cell">
-            <div id="el19" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el19" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">19</div>
               <div class="symbol">K</div>
-              <div class="at_details">potassium<br />39.098</div>
-              <br/><span id="el19a" class="question-mark visible-span">?</span>
+              <div id = "el19-title" class="at_details">Potassium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el20" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el20" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">20</div>
               <div class="symbol">Ca</div>
-              <div class="at_details">calcium<br />40.078</div>
-              <br/><span id="el20a" class="question-mark visible-span">?</span>
+              <div id = "el20-title" class="at_details">Calcium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el21" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el21" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">21</div>
               <div class="symbol">Sc</div>
-              <div class="at_details">scandium<br />44.956</div>
-              <br/><span id="el21a" class="question-mark visible-span">?</span>
+              <div id = "el21-title" class="at_details">Scandium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el22" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el22" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">22</div>
               <div class="symbol">Ti</div>
-              <div class="at_details">titanium<br />47.867</div>
-              <br/><span id="el22a" class="question-mark visible-span">?</span>
+              <div id = "el22-title" class="at_details">Titanium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el23" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el23" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">23</div>
               <div class="symbol">V</div>
-              <div class="at_details">vanadium<br />50.942</div>
-              <br/><span id="el23a" class="question-mark visible-span">?</span>
+              <div id = "el23-title" class="at_details">Vanadium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el24" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el24" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">24</div>
               <div class="symbol">Cr</div>
-              <div class="at_details">chromium<br />51.996</div>
-              <br/><span id="el24a" class="question-mark visible-span">?</span>
+              <div id = "el24-title" class="at_details">Chromium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el25" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el25" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">25</div>
               <div class="symbol">Mn</div>
-              <div class="at_details">manganese<br />54.938</div>
-              <br/><span id="el25a" class="question-mark visible-span">?</span>
+              <div id = "el25-title" class="at_details">Manganese</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el26" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el26" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">26</div>
               <div class="symbol">Fe</div>
-              <div class="at_details">iron<br />55.845</div>
-              <br/><span id="el26a" class="question-mark visible-span">?</span>
+              <div id = "el26-title" class="at_details">Iron</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el27" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el27" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">27</div>
               <div class="symbol">Co</div>
-              <div class="at_details">cobalt<br />58.933</div>
-              <br/><span id="el27a" class="question-mark visible-span">?</span>
+              <div id = "el27-title" class="at_details">Cobalt</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el28" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el28" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">28</div>
               <div class="symbol">Ni</div>
-              <div class="at_details">nickel<br />58.693</div>
-              <br/><span id="el28a" class="question-mark visible-span">?</span>
+              <div id = "el28-title" class="at_details">Nickel</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el29" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el29" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">29</div>
               <div class="symbol">Cu</div>
-              <div class="at_details">copper<br />63.546</div>
-              <br/><span id="el29a" class="question-mark visible-span">?</span>
+              <div id = "el29-title" class="at_details">copper</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el30" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el30" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">30</div>
               <div class="symbol">Zn</div>
-              <div class="at_details">zinc<br />65.38</div>
-              <br/><span id="el30a" class="question-mark visible-span">?</span>
+              <div id = "el30-title" class="at_details">Zinc</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el31" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el31" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">31</div>
               <div class="symbol">Ga</div>
-              <div class="at_details">gallium<br />69.723</div>
-              <br/><span id="el31a" class="question-mark visible-span">?</span>
+              <div id = "el31-title" class="at_details">Gallium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el32" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el32" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">32</div>
               <div class="symbol">Ge</div>
-              <div class="at_details">germanium<br />72.63</div>
-              <br/><span id="el32a" class="question-mark visible-span">?</span>
+              <div id = "el32-title" class="at_details">Germanium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el33" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el33" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">33</div>
               <div class="symbol">As</div>
-              <div class="at_details">arsenic<br />74.922</div>
-              <br/><span id="el33a" class="question-mark visible-span">?</span>
+              <div id = "el33-title" class="at_details">Arsenic</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el34" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el34" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">34</div>
               <div class="symbol">Se</div>
-              <div class="at_details">selenium<br />78.96</div>
-              <br/><span id="el34a" class="question-mark visible-span">?</span>
+              <div id = "el34-title" class="at_details">Selenium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el35" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el35" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">35</div>
               <div class="symbol">Br</div>
-              <div class="at_details">bromine<br />79.904</div>
-              <br/><span id="el35a" class="question-mark visible-span">?</span>
+              <div id = "el35-title" class="at_details">Bromine</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el36" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el36" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">36</div>
               <div class="symbol">Kr</div>
-              <div class="at_details">krypton<br />83.798</div>
-              <br/><span id="el36a" class="question-mark visible-span">?</span>
+              <div id = "el36-title" class="at_details">Krypton</div>
+              <br/>
             </div>
           </div>
         </div>
         <div class="periodic-row">
           <div class="cell">
-            <div id="el37" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el37" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">37</div>
               <div class="symbol">Rb</div>
-              <div class="at_details">rubidium<br />85.468</div>
-              <br/><span id="el37a" class="question-mark visible-span">?</span>
+              <div id = "el37-title" class="at_details">Rubidium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el38" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el38" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">38</div>
               <div class="symbol">Sr</div>
-              <div class="at_details">sdivontium<br />87.62</div>
-              <br/><span id="el38a" class="question-mark visible-span">?</span>
+              <div id = "el38-title" class="at_details">Strontium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el39" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el39" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">39</div>
               <div class="symbol">Y</div>
-              <div class="at_details">ytdivium<br />88.906</div>
-              <br/><span id="el39a" class="question-mark visible-span">?</span>
+              <div id = "el39-title" class="at_details">Ytterbium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el40" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el40" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">40</div>
               <div class="symbol">Zr</div>
-              <div class="at_details">zirconium<br />91.224</div>
-              <br/><span id="el40a" class="question-mark visible-span">?</span>
+              <div id = "el40-title" class="at_details">Zirconium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el41" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el41" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">41</div>
               <div class="symbol">Nb</div>
-              <div class="at_details">niobium<br />92.906</div>
-              <br/><span id="el41a" class="question-mark visible-span">?</span>
+              <div id = "el41-title" class="at_details">Niobium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el42" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el42" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">42</div>
               <div class="symbol">Mo</div>
-              <div class="at_details">molybdenum<br />95.96</div>
-              <br/><span id="el42a" class="question-mark visible-span">?</span>
+              <div id = "el42-title" class="at_details">Molybdenum</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el43" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el43" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">43</div>
               <div class="symbol">Tc</div>
-              <div class="at_details">technetium<br />[97.91]</div>
-              <br/><span id="el43a" class="question-mark visible-span">?</span>
+              <div id = "el43-title" class="at_details">Technetium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el44" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el44" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">44</div>
               <div class="symbol">Ru</div>
-              <div class="at_details">ruthenium<br />101.07</div>
-              <br/><span id="el44a" class="question-mark visible-span">?</span>
+              <div id = "el44-title" class="at_details">Ruthenium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el45" class="element-no-transition hidden-element">
+            <div id="el45" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">45</div>
               <div class="symbol">Rh</div>
-              <div class="at_details">rhodium<br />102.91</div>
-              <br/><span id="el45a" class="question-mark visible-span">?</span>
+              <div id = "el-title" class="at_details">Rhodium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el46" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el46" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">46</div>
               <div class="symbol">Pd</div>
-              <div class="at_details">palladium<br />106.42</div>
-              <br/><span id="el46a" class="question-mark visible-span">?</span>
+              <div id = "el46-title" class="at_details">Palladium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el47" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el47" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">47</div>
               <div class="symbol">Ag</div>
-              <div class="at_details">silver<br />107.87</div>
-              <br/><span id="el47a" class="question-mark visible-span">?</span>
+              <div id = "el47-title" class="at_details">Silver</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el48" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el48" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">48</div>
               <div class="symbol">Cd</div>
-              <div class="at_details">cadmium<br />112.41</div>
-              <br/><span id="el48a" class="question-mark visible-span">?</span>
+              <div id = "el48-title" class="at_details">Cadmium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el49" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el49" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">49</div>
               <div class="symbol">In</div>
-              <div class="at_details">indium<br />114.82</div>
-              <br/><span id="el49a" class="question-mark visible-span">?</span>
+              <div id = "el49-title" class="at_details">Indium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el50" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el50" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">50</div>
               <div class="symbol">Sn</div>
-              <div class="at_details">tin<br />118.71</div>
-              <br/><span id="el50a" class="question-mark visible-span">?</span>
+              <div id = "el50-title" class="at_details">Tin</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el51" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el51" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">51</div>
               <div class="symbol">Sb</div>
-              <div class="at_details">antimony<br />121.76</div>
-              <br/><span id="el51a" class="question-mark visible-span">?</span>
+              <div id = "el51-title" class="at_details">Antimony</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el52" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el52" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">52</div>
               <div class="symbol">Te</div>
-              <div class="at_details">tellurium<br />127.60</div>
-              <br/><span id="el52a" class="question-mark visible-span">?</span>
+              <div id = "el52-title" class="at_details">Tellurium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el53" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el53" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">53</div>
               <div class="symbol">I</div>
-              <div class="at_details">iodine<br />126.90</div>
-              <br/><span id="el53a" class="question-mark visible-span">?</span>
+              <div id = "el53-title" class="at_details">Iodine</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el54" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el54" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">54</div>
               <div class="symbol">Xe</div>
-              <div class="at_details">xenon<br />131.29</div>
-              <br/><span id="el54a" class="question-mark visible-span">?</span>
+              <div id = "el54-title" class="at_details">Xenon</div>
+              <br/>
             </div>
           </div>
         </div>
         <div class="periodic-row">
           <div class="cell">
-            <div id="el55" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el55" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">55</div>
               <div class="symbol">Cs</div>
-              <div class="at_details">cesium<br />132.91</div>
-              <br/><span id="el55a" class="question-mark visible-span">?</span>
+              <div id = "el55-title" class="at_details">Cesium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el56" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el56" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">56</div>
               <div class="symbol">Ba</div>
-              <div class="at_details">barium<br />137.33</div>
-              <br/><span id="el56a" class="question-mark visible-span">?</span>
+              <div id = "el56-title" class="at_details">Barium</div>
+              <br/>
             </div>
           </div>
           <div class="cell"></div>
           <div class="cell">
-            <div id="el72" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el72" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">72</div>
               <div class="symbol">Hf</div>
-              <div class="at_details">hafnium<br />178.49</div>
-              <br/><span id="el72a" class="question-mark visible-span">?</span>
+              <div id = "el72-title" class="at_details">Hafnium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el73" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el73" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">73</div>
               <div class="symbol">Ta</div>
-              <div class="at_details">tantalum<br />180.95</div>
-              <br/><span id="el73a" class="question-mark visible-span">?</span>
+              <div id = "el73-title" class="at_details">Tantalum</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el74" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el74" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">74</div>
               <div class="symbol">W</div>
-              <div class="at_details">tungsten<br />183.84</div>
-              <br/><span id="el74a" class="question-mark visible-span">?</span>
+              <div id = "el74-title" class="at_details">Tungsten</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el75" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el75" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">75</div>
               <div class="symbol">Re</div>
-              <div class="at_details">rhenium<br />186.21</div>
-              <br/><span id="el75a" class="question-mark visible-span">?</span>
+              <div id = "el75-title" class="at_details">Rhenium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el76" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el76" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">76</div>
               <div class="symbol">Os</div>
-              <div class="at_details">osmium<br />190.23</div>
-              <br/><span id="el76a" class="question-mark visible-span">?</span>
+              <div id = "el76-title" class="at_details">Osmium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el77" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el77" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">77</div>
               <div class="symbol">Ir</div>
-              <div class="at_details">iridium<br />192.22</div>
-              <br/><span id="el77a" class="question-mark visible-span">?</span>
+              <div id = "el77-title" class="at_details">Iridium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el78" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el78" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">78</div>
               <div class="symbol">Pt</div>
-              <div class="at_details">platinum<br />195.08</div>
-              <br/><span id="el78a" class="question-mark visible-span">?</span>
+              <div id = "el78-title" class="at_details">Platinum</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el79" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el79" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">79</div>
               <div class="symbol">Au</div>
-              <div class="at_details">gold<br />196.97</div>
-              <br/><span id="el79a" class="question-mark visible-span">?</span>
+              <div id = "el79-title" class="at_details">Gold</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el80" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el80" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">80</div>
               <div class="symbol">Hg</div>
-              <div class="at_details">mercury<br />200.59</div>
-              <br/><span id="el80a" class="question-mark visible-span">?</span>
+              <div id = "el80-title" class="at_details">Mercury</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el81" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el81" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">81</div>
               <div class="symbol">Tl</div>
-              <div class="at_details">thallium<br />204.38</div>
-              <br/><span id="el81a" class="question-mark visible-span">?</span>
+              <div id = "el81-title" class="at_details">Thallium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el82" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el82" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">82</div>
               <div class="symbol">Pb</div>
-              <div class="at_details">lead<br />207.2</div>
-              <br/><span id="el82a" class="question-mark visible-span">?</span>
+              <div id = "el82-title" class="at_details">Lead</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el83" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el83" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">83</div>
               <div class="symbol">Bi</div>
-              <div class="at_details">bismuth<br />208.98</div>
-              <br/><span id="el83a" class="question-mark visible-span">?</span>
+              <div id = "el83-title" class="at_details">Bismuth</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el84" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el84" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">84</div>
               <div class="symbol">Po</div>
-              <div class="at_details">polonium<br />[208.98]</div>
-              <br/><span id="el84a" class="question-mark visible-span">?</span>
+              <div id = "el84-title" class="at_details">Polonium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el85" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el85" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">85</div>
               <div class="symbol">At</div>
-              <div class="at_details">astatine<br />[209.99]</div>
-              <br/><span id="el85a" class="question-mark visible-span">?</span>
+              <div id = "el85-title" class="at_details">Astatine</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el86" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el86" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">86</div>
               <div class="symbol">Rn</div>
-              <div class="at_details">radon<br />[222.02]</div>
-              <br/><span id="el86a" class="question-mark visible-span">?</span>
+              <div id = "el86-title" class="at_details">Radon</div>
+              <br/>
             </div>
           </div>
         </div>
         <div class="periodic-row">
           <div class="cell">
-            <div id="el87" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el87" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">87</div>
               <div class="symbol">Fr</div>
-              <div class="at_details">francium<br />[223.02]</div>
-              <br/><span id="el87a" class="question-mark visible-span">?</span>
+              <div id = "el87-title" class="at_details">Francium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el88" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el88" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">88</div>
               <div class="symbol">Ra</div>
-              <div class="at_details">radium<br />[226.03]</div>
-              <br/><span id="el88a" class="question-mark visible-span">?</span>
+              <div id = "el88-title" class="at_details">Radium</div>
+              <br/>
             </div>
           </div>
           <div class="cell"></div>
           <div class="cell">
-            <div id="el104" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el104" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">104</div>
               <div class="symbol">Rf</div>
-              <div class="at_details">rutherfordium<br />[265.12]</div>
-              <br/><span id="el104a" class="question-mark visible-span">?</span>
+              <div id = "el104-title" class="at_details">Rutherfordium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el105" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el105" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">105</div>
               <div class="symbol">Db</div>
-              <div class="at_details">dubnium<br />[268.13]</div>
-              <br/><span id="el105a" class="question-mark visible-span">?</span>
+              <div id = "el105-title" class="at_details">Dubnium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el106" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el106" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">106</div>
               <div class="symbol">Sg</div>
-              <div class="at_details">seaborgium<br />[271.13]</div>
-              <br/><span id="el106a" class="question-mark visible-span">?</span>
+              <div id = "el106-title" class="at_details">Seaborgium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el107" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el107" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">107</div>
               <div class="symbol">Bh</div>
-              <div class="at_details">bohrium<br />[270]</div>
-              <br/><span id="el107a" class="question-mark visible-span">?</span>
+              <div id = "el107-title" class="at_details">Bohrium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el108" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el108" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">108</div>
               <div class="symbol">Hs</div>
-              <div class="at_details">hassium<br />[277.15]</div>
-              <br/><span id="el108a" class="question-mark visible-span">?</span>
+              <div id = "el108-title" class="at_details">Hassium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el109" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el109" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">109</div>
               <div class="symbol">Mt</div>
-              <div class="at_details">meitnerium<br />[276.15]</div>
-              <br/><span id="el109a" class="question-mark visible-span">?</span>
+              <div id = "el109-title" class="at_details">Meitnerium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el110" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el110" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">110</div>
               <div class="symbol">Ds</div>
-              <div class="at_details">darmstadtium<br />[281.16]</div>
-              <br/><span id="el110a" class="question-mark visible-span">?</span>
+              <div id = "el110-title" class="at_details">Darmstadtium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el111" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el111" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">111</div>
               <div class="symbol">Rg</div>
-              <div class="at_details">roentgenium<br />[280.16]</div>
-              <br/><span id="el111a" class="question-mark visible-span">?</span>
+              <div id = "el111-title" class="at_details">Roentgenium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el112" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el112" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">112</div>
               <div class="symbol">Cn</div>
-              <div class="at_details">copernicium<br />[285.17]</div>
-              <br/><span id="el112a" class="question-mark visible-span">?</span>
+              <div id = "el112-title" class="at_details">Copernicium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el113" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el113" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">113</div>
-              <div class="symbol">Uut</div>
-              <div class="at_details">unundivium<br />[284.18]</div>
-              <br/><span id="el113a" class="question-mark visible-span">?</span>
+              <div class="symbol">Nh</div>
+              <div id = "el113-title" class="at_details">Nihonium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el114" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el114" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">114</div>
               <div class="symbol">Fl</div>
-              <div class="at_details">flerovium<br />[289.19]</div>
-              <br/><span id="el114a" class="question-mark visible-span">?</span>
+              <div id = "el114-title" class="at_details">Flerovium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el115" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el115" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">115</div>
-              <div class="symbol">Uup</div>
-              <div class="at_details">ununpentium<br />[288.19]</div>
-              <br/><span id="el115a" class="question-mark visible-span">?</span>
+              <div class="symbol">Mc</div>
+              <div id = "el115-title" class="at_details">Moscovium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el116" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el116" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">116</div>
               <div class="symbol">Lv</div>
-              <div class="at_details">livermorium<br />[293]</div>
-              <br/><span id="el116a" class="question-mark visible-span">?</span>
+              <div id = "el116-title" class="at_details">Livermorium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el117" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el117" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">117</div>
-              <div class="symbol">Uus</div>
-              <div class="at_details">ununseptium<br />[294]</div>
-              <br/><span id="el117a" class="question-mark visible-span">?</span>
+              <div class="symbol">Ts</div>
+              <div id = "el117-title" class="at_details">Tennessine</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el118" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el118" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">118</div>
-              <div class="symbol">Uuo</div>
-              <div class="at_details">ununoctium<br />[294]</div>
-              <br/><span id="el118a" class="question-mark visible-span">?</span>
+              <div class="symbol">Og</div>
+              <div id = "el118-title" class="at_details">Oganesson</div>
+              <br/>
             </div>
           </div>
         </div>
@@ -843,123 +870,123 @@
           <div class="cell"></div>
           <div class="cell"></div>
           <div class="cell">
-            <div id="el57" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el57" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">57</div>
               <div class="symbol">La</div>
-              <div class="at_details">lanthanum<br />138.91</div>
-              <br/><span id="el57a" class="question-mark visible-span">?</span>
+              <div id = "el57-title" class="at_details">Lanthanum</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el58" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el58" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">58</div>
               <div class="symbol">Ce</div>
-              <div class="at_details">cerium<br />140.12</div>
-              <br/><span id="el58a" class="question-mark visible-span">?</span>
+              <div id = "el58-title" class="at_details">Cerium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el59" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el59" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">59</div>
               <div class="symbol">Pr</div>
-              <div class="at_details">praseodymium<br />140.91</div>
-              <br/><span id="el59a" class="question-mark visible-span">?</span>
+              <div id = "el59-title" class="at_details">Praseodymium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el60" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el60" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">60</div>
               <div class="symbol">Nd</div>
-              <div class="at_details">neodymium<br />144.24</div>
-              <br/><span id="el60a" class="question-mark visible-span">?</span>
+              <div id = "el60-title" class="at_details">Neodymium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el61" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el61" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">61</div>
               <div class="symbol">Pm</div>
-              <div class="at_details">promethium<br />[144.91]</div>
-              <br/><span id="el61a" class="question-mark visible-span">?</span>
+              <div id = "el61-title" class="at_details">Promethium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el62" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el62" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">62</div>
               <div class="symbol">Sm</div>
-              <div class="at_details">samarium<br />150.36</div>
-              <br/><span id="el62a" class="question-mark visible-span">?</span>
+              <div id = "el62-title" class="at_details">Samarium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el63" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el63" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">63</div>
               <div class="symbol">Eu</div>
-              <div class="at_details">europium<br />151.96</div>
-              <br/><span id="el63a" class="question-mark visible-span">?</span>
+              <div id = "el63-title" class="at_details">Europium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el64" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el64" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">64</div>
               <div class="symbol">Gd</div>
-              <div class="at_details">gadolinium<br />157.25</div>
-              <br/><span id="el64a" class="question-mark visible-span">?</span>
+              <div id = "el64-title" class="at_details">Gadolinium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el65" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el65" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">65</div>
               <div class="symbol">Tb</div>
-              <div class="at_details">terbium<br />158.93</div>
-              <br/><span id="el65a" class="question-mark visible-span">?</span>
+              <div id = "el65-title" class="at_details">Terbium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el66" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el66" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">66</div>
               <div class="symbol">Dy</div>
-              <div class="at_details">dysprosium<br />162.50</div>
-              <br/><span id="el66a" class="question-mark visible-span">?</span>
+              <div id = "el66-title" class="at_details">Dysprosium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el67" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el67" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">67</div>
               <div class="symbol">Ho</div>
-              <div class="at_details">holmium<br />164.93</div>
-              <br/><span id="el67a" class="question-mark visible-span">?</span>
+              <div id = "el67-title" class="at_details">Holmium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el68" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el68" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">68</div>
               <div class="symbol">Er</div>
-              <div class="at_details">erbium<br />167.26</div>
-              <br/><span id="el68a" class="question-mark visible-span">?</span>
+              <div id = "el68-title" class="at_details">Erbium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el69" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el69" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">69</div>
               <div class="symbol">Tm</div>
-              <div class="at_details">thulium<br />168.93</div>
-              <br/><span id="el69a" class="question-mark visible-span">?</span>
+              <div id = "el69-title" class="at_details">Thulium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el70" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el70" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">70</div>
               <div class="symbol">Yb</div>
-              <div class="at_details">ytterbium<br />173.05</div>
-              <br/><span id="el70a" class="question-mark visible-span">?</span>
+              <div id = "el70-title" class="at_details">Ytterbium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el71" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el71" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">71</div>
               <div class="symbol">Lu</div>
-              <div class="at_details">lutetium<br />174.97</div>
-              <br/><span id="el71a" class="question-mark visible-span">?</span>
+              <div id = "el71-title" class="at_details">Lutetium</div>
+              <br/>
             </div>
           </div>
         </div>
@@ -968,123 +995,123 @@
           <div class="cell"></div>
           <div class="cell"></div>
           <div class="cell">
-            <div id="el89" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el89" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">89</div>
               <div class="symbol">Ac</div>
-              <div class="at_details">actinium<br />[227.03]</div>
-              <br/><span id="el89a" class="question-mark visible-span">?</span>
+              <div id = "el89-title" class="at_details">Actinium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el90" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el90" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">90</div>
               <div class="symbol">Th</div>
-              <div class="at_details">thorium<br />232.04</div>
-              <br/><span id="el90a" class="question-mark visible-span">?</span>
+              <div id = "el90-title" class="at_details">Thorium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el91" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el91" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">91</div>
               <div class="symbol">Pa</div>
-              <div class="at_details">protactinium<br />231.04</div>
-              <br/><span id="el91a" class="question-mark visible-span">?</span>
+              <div id = "el91-title" class="at_details">Protactinium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el92" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el92" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">92</div>
               <div class="symbol">U</div>
-              <div class="at_details">uranium<br />238.03</div>
-              <br/><span id="el92a" class="question-mark visible-span">?</span>
+              <div id = "el92-title" class="at_details">Uranium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el93" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el93" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">93</div>
               <div class="symbol">Np</div>
-              <div class="at_details">neptunium<br />[237.05]</div>
-              <br/><span id="el93a" class="question-mark visible-span">?</span>
+              <div id = "el93-title" class="at_details">Neptunium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el94" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el94" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">94</div>
               <div class="symbol">Pu</div>
-              <div class="at_details">plutonium<br />[244.06]</div>
-              <br/><span id="el94a" class="question-mark visible-span">?</span>
+              <div id = "el94-title" class="at_details">Plutonium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el95" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el95" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">95</div>
               <div class="symbol">Am</div>
-              <div class="at_details">americium<br />[243.06]</div>
-              <br/><span id="el95a" class="question-mark visible-span">?</span>
+              <div id = "el95-title" class="at_details">Americium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el96" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el96" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">96</div>
               <div class="symbol">Cm</div>
-              <div class="at_details">curium<br />[247.07]</div>
-              <br/><span id="el96a" class="question-mark visible-span">?</span>
+              <div id = "el96-title" class="at_details">Curium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el97" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el97" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">97</div>
               <div class="symbol">Bk</div>
-              <div class="at_details">berkelium<br />[247.07]</div>
-              <br/><span id="el97a" class="question-mark visible-span">?</span>
+              <div id = "el97-title" class="at_details">Berkelium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el89" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el98" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">98</div>
               <div class="symbol">Cf</div>
-              <div class="at_details">californium<br />[251.08]</div>
-              <br/><span id="el98a" class="question-mark visible-span">?</span>
+              <div id = "el98-title" class="at_details">Californium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el99" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el99" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">99</div>
               <div class="symbol">Es</div>
-              <div class="at_details">einsteinium<br />[252.08]</div>
-              <br/><span id="el99a" class="question-mark visible-span">?</span>
+              <div id = "el99-title" class="at_details">Einsteinium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el100" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el100" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">100</div>
               <div class="symbol">Fm</div>
-              <div class="at_details">fermium<br />[257.10]</div>
-              <br/><span id="el100a" class="question-mark visible-span">?</span>
+              <div id = "el100-title" class="at_details">Fermium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el101" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el101" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">101</div>
               <div class="symbol">Md</div>
-              <div class="at_details">mendelevium<br />[258.10]</div>
-              <br/><span id="el101a" class="question-mark visible-span">?</span>
+              <div id = "el101-title" class="at_details">Mendelevium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el102" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el102" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">102</div>
               <div class="symbol">No</div>
-              <div class="at_details">nobelium<br />[259.10]</div>
-              <br/><span id="el102a" class="question-mark visible-span">?</span>
+              <div id = "el102-title" class="at_details">Nobelium</div>
+              <br/>
             </div>
           </div>
           <div class="cell">
-            <div id="el103" class="element-no-transition hidden-element">
+            <div onclick="displayModal(this.id)" id="el103" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">103</div>
               <div class="symbol">Lr</div>
-              <div class="at_details">lawrencium<br />[262.11]</div>
-              <br/><span id="el103a" class="question-mark visible-span">?</span>
+              <div id = "el103-title" class="at_details">Lawrencium</div>
+              <br/>
             </div>
           </div>
         </div>
@@ -1094,11 +1121,10 @@
     
   </div>
 
-
+  <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/confetti.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="js/data.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>
