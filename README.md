@@ -1,2 +1,2 @@
 # PeriodicTableGame
-Make learning period tables fun using HTML, CSS, JS
+Make learning the periodic table fun using HTML, CSS, JS
