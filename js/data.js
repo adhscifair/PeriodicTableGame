@@ -1,4266 +1,4407 @@
-// the data for the elements.
-
 let data = [
-
-    {
-        elementName: "Hydrogen",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Hydrogen",
-                answer:1
-            },{
-                question:" Hydrogen's State at room temperature",
-                answer:"gas"
-            },
-            {
-                question:"Hydrogen's abbreviation",
-                answer:"H"
-            },
-            {
-                question:"Hydrogen's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+1
-            },
-            {
-                question:"Number of valence electrons in Hyrdogen (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:1
-            },
-            {
-                question:"Electronegativity in Hydrogen. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.20
-            },
-            {
-                question:"Hydrogen's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^1"
-            },
-            {
-                question:"Hydrogen's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:1312
-            }
-        ]
-    },
-    {
-        elementName: "Helium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Helium",
-                answer:2
-            },
-            {
-                question:" Helium's State at room temperature",
-                answer:"gas"
-            },
-            {
-                question:"Helium's abbreviation",
-                answer:"He"
-            },
-            {
-                question:"Helium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:0
-            },
-            {
-                question:"Number of valence electrons in Helium (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:2
-            },
-            {
-                question:"Electronegativity in Helium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"none"
-            },
-            {
-                question:"Helium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2"
-            },
-            {
-                question:"Helium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:2372
-            }
- 
-        ]
-    },
-
-    {
-        elementName: "Lithium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Lithium",
-                answer:3
-            },{
-                question:"Lithium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Lithium's abbreviation",
-                answer:"Li"
-            },
-            {
-                question:"Lithium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+1
-            },
-            {
-                question:"Electronegativity in Lithium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:0.98
-            },
-            {
-                question:"Number of valence electrons in Lithium (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:1
-            },
-            {
-                question:"Lithium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^1"
-            },
-            {
-                question:"Lithium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:513
-            }
- 
-        ]
-    },
-    {
-        elementName: "Beryllium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Beryllium",
-                answer:4
-            },{
-                question:"Beryllium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Beryllium's abbreviation",
-                answer:"Be"
-            },
-            {
-                question:"Beryllium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+2
-            },
-            {
-                question:"Electronegativity in Beryllium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.04
-            },
-            {
-                question:"Number of valence electrons in Beryllium (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:2
-            },
-            {
-                question:"Beryllium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2"
-            },
-            {
-                question:"Beryllium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:899
-            }
- 
-        ]
-    },
-    {
-        elementName: "Boron",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Boron",
-                answer:5
-            },{
-                question:"Boron's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Boron's abbreviation",
-                answer:"B"
-            },
-            {
-                question:"Boron's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Electronegativity in Boron. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.04
-            },
-            {
-                question:"Number of valence electrons in Boron (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:3
-            },
-            {
-                question:"Boron's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^1"
-            },
-            {
-                question:"Boron's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:801
-            }
- 
-        ]
-    },
-    {
-        elementName: "Carbon",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Carbon",
-                answer:6
-            },{
-                question:"Carbon's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Carbon's abbreviation",
-                answer:"C"
-            },
-            {
-                question:"Carbon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+4
-            },
-            {
-                question:"Electronegativity in Carbon. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.55
-            },
-            {
-                question:"Number of valence electrons in Carbon (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:4
-            },
-            {
-                question:"Carbon's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^2"
-            },
-            {
-                question:"Carbon's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:1086
-            }
- 
-        ]
-    },
-    {
-        elementName: "Nitrogen",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Nitrogen",
-                answer:7
-            },{
-                question:"Nitrogen's State at room temperature",
-                answer:"gas"
-            },
-            {
-                question:"Nitrogen's abbreviation",
-                answer:"N"
-            },
-            {
-                question:"Nitrogen's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:-3
-            },
-            {
-                question:"Electronegativity in Nitrogen. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:3.04
-            },
-            {
-                question:"Number of valence electrons in Nitrogen (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:5
-            },
-            {
-                question:"Nitrogen's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^3"
-            },
-            {
-                question:"Nitrogen's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:1402
-            }
- 
-        ]
-    },
-    {
-        elementName: "Oxygen",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Oxygen",
-                answer:8
-            },{
-                question:"Oxygen's State at room temperature",
-                answer:"gas"
-            },
-            {
-                question:"Oxygen's abbreviation",
-                answer:"O"
-            },
-            {
-                question:"Oxygen's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:-2
-            },
-            {
-                question:"Electronegativity in Oxygen. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:3.44
-            },
-            {
-                question:"Number of valence electrons in Oxygen (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:6
-            },
-            {
-                question:"Oxygen's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^4"
-            },
-            {
-                question:"Oxygen's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:1314
-            }
-        ]
-    },
-    {
-        elementName: "Fluorine",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Fluorine",
-                answer:9
-            },{
-                question:"Fluorine's State at room temperature",
-                answer:"gas"
-            },
-            {
-                question:"Fluorine's abbreviation",
-                answer:"F"
-            },
-            {
-                question:"Fluorine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:-1
-            },
-            {
-                question:"Electronegativity in Fluorine. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:3.93
-            },
-            {
-                question:"Number of valence electrons in Fluorine (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:7
-            },
-            {
-                question:"Fluorine's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^5"
-            },
-            {
-                question:"Fluorine's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:1681
-            }
-        ]
-    },
-    {
-        elementName: "Neon",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Neon",
-                answer:10
-            },{
-                question:"Neon's State at room temperature",
-                answer:"gas"
-            },
-            {
-                question:"Neon's abbreviation",
-                answer:"Ne"
-            },
-            {
-                question:"Neon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:0
-            },
-            {
-                question:"Electronegativity in Neon. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"none"
-            },
-            {
-                question:"Number of valence electrons in Neon (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:8
-            },
-            {
-                question:"Neon's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^6"
-            },
-            {
-                question:"Neon's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:2081
-            }
-        ]
-    },
-
-    {
-        elementName: "Sodium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Sodium",
-                answer:11
-            },{
-                question:"Sodium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Sodium's abbreviation",
-                answer:"Na"
-            },
-            {
-                question:"Electronegativity in Sodium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:0.93
-            },
-            {
-                question:"Number of valence electrons in Sodium (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:1
-            },
-            {
-                question:"Sodium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+1
-            },
-            {
-                question:"Sodium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^6 3s^1"
-            },
-            {
-                question:"Sodium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:496
-            }
-        ]
-    },
-    {
-        elementName: "Magnesium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Magnesium",
-                answer:12
-            },
-            {
-                question:"Magnesium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Magnesium's abbreviation",
-                answer:"Mg"
-            },
-            {
-                question:"Electronegativity in Magnesium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.31
-            },
-            {
-                question:"Number of valence electrons in Magnesium (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:2
-            },
-            {
-                question:"Magnesium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+2
-            },
-            {
-                question:"Magnesium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^6 3s^2"
-            },
-            {
-                question:"Magnesium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:738
-            }
-        ]
-    },
-    {
-        elementName: "Aluminum",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Aluminum",
-                answer:13
-            },{
-                question:"Aluminum 's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Aluminum 's abbreviation",
-                answer:"Al"
-            },
-            {
-                question:"Electronegativity in Aluminum. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.61
-            },
-            {
-                question:"Number of valence electrons in Aluminum (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:3
-            },
-            {
-                question:"Aluminum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Aluminum's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^1"
-            },
-            {
-                question:"Alminum's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:577
-            }
-        ]
-    },
-    {
-        elementName: "Silicon",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Silicon          ",
-                answer:14
-            },{
-                question:"Silicon 's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Silicon 's abbreviation",
-                answer:"Si"
-            },
-            {
-                question:"Electronegativity in Silicon. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.9
-            },
-            {
-                question:"Number of valence electrons in Silicon (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:4
-            },
-            {
-                question:"Silicon's oxidation state that makes the outer shell of itself 'full' when combined with another element.",
-                answer:+4
-            },
-            {
-                question:"Silicon's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^2"
-            },
-            {
-                question:"Silicon's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:786
-            }
-        ]
-    },
-    {
-        elementName: "Phosphorus",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Phosphorus  ",
-                answer:15
-            },{
-                question:"Phosphorus 's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Phosphorus 's abbreviation",
-                answer:"P"
-            },
-            {
-                question:"Electronegativity in Phosphorus. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.19
-            },
-            {
-                question:"Number of valence electrons in Phosphorus (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:5
-            },
-            {
-                question:"Phosphorus's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:-3
-            },
-            {
-                question:"Phosphorus's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^3"
-            },
-            {
-                question:"Phosphorus's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:1012
-            }
-        ]
-    },
-    {
-        elementName: "Sulfur",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Sulfur  ",
-                answer:16
-            },{
-                question:"Sulfur 's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Sulfur's abbreviation",
-                answer:"S"
-            },
-            {
-                question:"Electronegativity in Sulfur. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.58
-            },
-            {
-                question:"Number of valence electrons in Sulfur (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:6
-            },
-            {
-                question:"Sulfur's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:-2
-            },
-            {
-                question:"Sulfur's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^4"
-            },
-            {
-                question:"Sulfur's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:1000
-            }
-        ]
-    },
-    {
-        elementName: "Chlorine",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Chlorine  ",
-                answer:17
-            },{
-                question:"Chlorine 's State at room temperature",
-                answer:"gas"
-            },
-            {
-                question:"Chlorine's abbreviation",
-                answer:"Cl"
-            },
-            {
-                question:"Electronegativity in Chlorine. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:3.16
-            },
-            {
-                question:"Number of valence electrons in Chlorine (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:7
-            },
-            {
-                question:"Chlorine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:-1
-            },
-            {
-                question:"Chlorine's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^5"
-            },
-            {
-                question:"Chlorine's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:1251
-            }
-        ]
-    },
-    {
-        elementName: "Argon",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Argon  ",
-                answer:18
-            },{
-                question:"Argon's State at room temperature",
-                answer:"gas"
-            },
-            {
-                question:"Argon's abbreviation",
-                answer:"Ar"
-            },
-            {
-                question:"Electronegativity in Argon. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"none"
-            },
-            {
-                question:"Number of valence electrons in Argon (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:8
-            },
-            {
-                question:"Argon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:0
-            },
-            {
-                question:"Argon's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6"
-            },
-            {
-                question:"Argon's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:1520
-            }
-        ]
-    },
-    {
-        elementName: "Potassium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Potassium ",
-                answer:19
-            },{
-                question:"Potassium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Potassium's abbreviation",
-                answer:"K"
-            },
-            {
-                question:"Electronegativity in Potassium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:0.82
-            },
-            {
-                question:"Number of valence electrons in Potassium (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:1
-            },
-            {
-                question:"Potassium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+1
-            },
-            {
-                question:"Potassium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^1"
-            },
-            {
-                question:"Potassium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:419
-            }
-        ]
-    },
-    {
-        elementName: "Calcium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Calcium ",
-                answer:20
-            },{
-                question:"Calcium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Calcium's abbreviation",
-                answer:"Ca"
-            },
-            {
-                question:"Electronegativity in Calcium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1
-            },
-            {
-                question:"Number of valence electrons in Calcium (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:2
-            },
-            {
-                question:"Calcium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+2
-            },
-            {
-                question:"Calcium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2"
-            },
-            {
-                question:"Calcium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:590
-            }
-        ]
-    },
-    {
-        elementName: "Scandium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Scandium",
-                answer:21
-            },{
-                question:"Scandium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Scandium's abbreviation",
-                answer:"Sc"
-            },
-            {
-                question:"Electronegativity in Scandium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.36
-            },
-            {
-                question:"Number of valence electrons in Scandium (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:3
-            },
-            {
-                question:"Scandium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Scandium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^1"
-            },
-            {
-                question:"Scandium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:631
-            }
-        ]
-    },
-    {
-        elementName: "Titanium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Titanium",
-                answer:22
-            },{
-                question:"Titanium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Titanium's abbreviation",
-                answer:"Ti"
-            },
-            {
-                question:"Electronegativity in Titanium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.54
-            },
-            {
-                question:"Number of valence electrons in Titanium (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:4
-            },
-            {
-                question:"Titanium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+4
-            },
-            {
-                question:"Titanium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^2"
-            },
-            {
-                question:"Titanium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:658
-            }
-        ]
-    },
-    {
-        elementName: "Vanadium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Vanadium",
-                answer:23
-            },{
-                question:"Vanadium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Vanadium's abbreviation",
-                answer:"V"
-            },
-            {
-                question:"Electronegativity in Vandium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.63
-            },
-            {
-                question:"Number of valence electrons in Vandium (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:5
-            },
-            {
-                question:"Vandium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+5
-            },
-            {
-                question:"Vandium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^3"
-            },
-            {
-                question:"Vandium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:650
-            }
-        ]
-    },
-    {
-        elementName: "Chromium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Chromium",
-                answer:24
-            },{
-                question:"Chromium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Chromium's abbreviation",
-                answer:"Cr"
-            },
-            {
-                question:"Electronegativity in Chromium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.66
-            },
-            {
-                question:"Number of valence electrons in Chromium (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:6
-            },
-            {
-                question:"Chromium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+6
-            },
-            {
-                question:"Chromium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE))",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^5"
-            },
-            {
-                question:"Chromium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:653
-            }
-        ]
-    },
-    {
-        elementName: "Manganese",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Manganese",
-                answer:25
-            },{
-                question:"Manganese's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Manganese's abbreviation",
-                answer:"Mn"
-            },
-            {
-                question:"Electronegativity in Manganese. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.55
-            },
-            {
-                question:"Number of valence electrons in Manganese (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:7
-            },
-            {
-                question:"Maganese's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+7
-            },
-            {
-                question:"Maganese's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^5"
-            },
-            {
-                question:"Maganese's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:717
-            }
-        ]
-    },
-    {
-        elementName: "Iron",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Iron",
-                answer:26
-            },{
-                question:"Iron's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Iron's abbreviation",
-                answer:"Fe"
-            },
-            {
-                question:"Electronegativity in Iron. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.83
-            },
-            {
-                question:"Number of valence electrons in Iron (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:8
-            },
-            {
-                question:"Iron's oxidation state that makes the outer shell of itself 'full' when combined with another element.",
-                answer:+2
-            },
-            {
-                question:"Iron's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6"
-            },
-            {
-                question:"Iron's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:759
-            }
-        ]
-    },
-    {
-        elementName: "Cobalt",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Cobalt",
-                answer:27
-            },{
-                question:"Cobalt's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Cobalt's abbreviation",
-                answer:"Co"
-            },
-            {
-                question:"Electronegativity in Cobalt. (If their is none, type 'none')",
-                answer:1.88
-            },
-            {
-                question:"Number of valence electrons in Cobalt (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:9
-            },
-            {
-                question:"Cobalt's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Cobalt's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^7"
-            },
-            {
-                question:"Cobalt's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:760
-            }
-        ]
-    },
-    {
-        elementName: "Nickel",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Nickel",
-                answer:28
-            },{
-                question:"Nickel's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Nickel's abbreviation",
-                answer:"Ni"
-            },
-            {
-                question:"Electronegativity in Nickel. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.91
-            },
-            {
-                question:"Number of valence electrons in Nickel (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:10
-            },
-            {
-                question:"Nickel's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+2
-            },
-            {
-                question:"Nickel's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^8"
-            },
-            {
-                question:"Nickel's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:737
-            }
-        ]
-    },
-    {
-        elementName: "Copper",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Copper",
-                answer:29
-            },{
-                question:"Copper's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Copper's abbreviation",
-                answer:"Cu"
-            },
-            {
-                question:"Electronegativity in Copper. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.9
-            },
-            {
-                question:"Number of valence electrons in Copper (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:11
-            },
-            {
-                question:"Copper's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+2
-            },
-            {
-                question:"Copper's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10"
-            },
-            {
-                question:"Copper's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:745
-            }
-        ]
-    },
-    {
-        elementName: "Zinc",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Zinc",
-                answer:30
-            },{
-                question:"Zinc's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Zinc's abbreviation",
-                answer:"Zn"
-            },
-            {
-                question:"Electronegativity in Zinc. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.65
-            },
-            {
-                question:"Number of valence electrons in Zinc (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:12
-            },
-            {
-                question:"Zinc's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+2
-            },
-            {
-                question:"Zinc's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10"
-            },
-            {
-                question:"Zinc's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:906
-            }
-        ]
-    },
-    {
-        elementName: "Gallium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Gallium",
-                answer:31
-            },{
-                question:"Gallium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Gallium's abbreviation",
-                answer:"Ga"
-            },
-            {
-                question:"Electronegativity in Gallium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.81
-            },
-            {
-                question:"Number of valence electrons in Gallium (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:3
-            },
-            {
-                question:"Gallium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Gallium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^2"
-            },
-            {
-                question:"Gallium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:579
-            }
-        ]
-    },
-    {
-        elementName: "Germanium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Germanium",
-                answer:32
-            },{
-                question:"Germanium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Germanium's abbreviation",
-                answer:"Ge"
-            },
-            {
-                question:"Electronegativity in Germanium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.01
-            },
-            {
-                question:"Number of valence electrons in Germanium (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:4
-            },
-            {
-                question:"Germanium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+4
-            },
-            {
-                question:"Germanium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^3"
-            },
-            {
-                question:"Germanium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:762
-            }
-        ]
-    },
-    {
-        elementName: "Arsenic",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Arsenic",
-                answer:33
-            },{
-                question:"Arsenic's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Arsenic's abbreviation",
-                answer:"As"
-            },
-            {
-                question:"Electronegativity in Arsenic. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.18
-            },
-            {
-                question:"Number of valence electrons in Arsenic (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:5
-            },
-            {
-                question:"Arsenic's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:-3
-            },
-            {
-                question:"Arsenic's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^3"
-            },
-            {
-                question:"Arsenic's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:947
-            }
-        ]
-    },
-    {
-        elementName: "Selenium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Selenium",
-                answer:34
-            },{
-                question:"Selenium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Selenium's abbreviation",
-                answer:"Se"
-            },
-            {
-                question:"Electronegativity in Selenium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.55
-            },
-            {
-                question:"Number of valence electrons in Selenium (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:6
-            },
-            {
-                question:"Selenium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:-2
-            },
-            {
-                question:"Selenium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^4"
-            },
-            {
-                question:"Selenium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:941
-            }
-        ]
-    },
-    {
-        elementName: "Bromine",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Bromine",
-                answer:35
-            },{
-                question:"Bromine's State at room temperature",
-                answer:"liquid"
-            },
-            {
-                question:"Bromine's abbreviation",
-                answer:"Br"
-            },
-            {
-                question:"Electronegativity in Bromine. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.96
-            },
-            {
-                question:"Number of valence electrons in Bromine (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:7
-            },
-            {
-                question:"Bromine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:-1
-            },
-            {
-                question:"Bromine's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^5"
-            },
-            {
-                question:"Bromine's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:1140
-            }
-        ]
-    },
-    {
-        elementName: "Krypton",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Krypton",
-                answer:36
-            },{
-                question:"Krypton's State at room temperature",
-                answer:"liquid"
-            },
-            {
-                question:"Krypton's abbreviation",
-                answer:"Kr"
-            },
-            {
-                question:"Electronegativity in Krypton. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:3
-            },
-            {
-                question:"Number of valence electrons in Krypton. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:8
-            },
-            {
-                question:"Krypton's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:0
-            },
-            {
-                question:"Krypton's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6"
-            },
-            {
-                question:"Krypton's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:1351
-            }
-        ]
-    },
-    {
-        elementName: "Rubidum",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Rubidium",
-                answer:37
-            },{
-                question:"Rubidium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Rubidium's abbreviation",
-                answer:"Rb"
-            },
-            {
-                question:"Electronegativity in Rubidium (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:0.92
-            },
-            {
-                question:"Number of valence electrons in Rubidium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:1
-            },
-            {
-                question:"Rubidium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+1
-            },
-            {
-                question:"Rubidium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1"
-            },
-            {
-                question:"Rubidium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:403
-            }
-        ]
-    },
-    {
-        elementName: "Strontium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Strontium",
-                answer:37
-            },{
-                question:"Strontium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Strontium's abbreviation",
-                answer:"Sr"
-            },
-            {
-                question:"Electronegativity in Strontium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:0.95
-            },
-            {
-                question:"Number of valence electrons in Strontium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:2
-            },
-            {
-                question:"Strontium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+2
-            },
-            {
-                question:"Strontium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2"
-            },
-            {
-                question:"Strontium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:550
-            }
-        ]
-    },
-    {
-        elementName: "Yttrium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Yttrium",
-                answer:39
-            },{
-                question:"Yttrium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Yttrium's abbreviation",
-                answer:"Y"
-            },
-            {
-                question:"Electronegativity in Yttrium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.22
-            },
-            {
-                question:"Number of valence electrons in Yttrium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:3
-            },
-            {
-                question:"Yttrium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Yttrium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^1"
-            },
-            {
-                question:"Yttrium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:616
-            }
-        ]
-    },
-    {
-        elementName: "Zirconium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Zirconium",
-                answer:40
-            },{
-                question:"Zirconium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Zirconium's abbreviation",
-                answer:"Zr"
-            },
-            {
-                question:"Electronegativity in Zirconium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.33
-            },
-            {
-                question:"Number of valence electrons in Zirocnium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:4
-            },
-            {
-                question:"Zirocnium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+4
-            },
-            {
-                question:"Zirocnium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^2"
-            },
-            {
-                question:"Zirocnium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:660
-            }
-        ]
-    },
-    {
-        elementName: "Niobium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Niobium",
-                answer:41
-            },{
-                question:"Niobium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Niobium's abbreviation",
-                answer:"Nb"
-            },
-            {
-                question:"Electronegativity in Niobium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.6
-            },
-            {
-                question:"Number of valence electrons in Niobium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:5
-            },
-            {
-                question:"Niobium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+5
-            },
-            {
-                question:"Niobium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^4"
-            },
-            {
-                question:"Niobium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:664
-            }
-        ]
-    },
-    {
-        elementName: "Molybdenum",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Molybdenum",
-                answer:42
-            },{
-                question:"Molybdenum's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Molybdenum's abbreviation",
-                answer:"Mo"
-            },
-            {
-                question:"Electronegativity in Molybdenum. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.16
-            },
-            {
-                question:"Number of valence electrons in Molybdenum. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:6
-            },
-            {
-                question:"Molybdenum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+6
-            },
-            {
-                question:"Molybdenum's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^5"
-            },
-            {
-                question:"Molybdenum's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:685
-            }
-        ]
-    },
-    {
-        elementName: "Technetium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Technetium",
-                answer:43
-            },{
-                question:"Technetium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Technetium's abbreviation",
-                answer:"Tc"
-            },
-            {
-                question:"Electronegativity in Technetium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.9
-            },
-            {
-                question:"Number of valence electrons in Technetium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:7
-            },
-            {
-                question:"Technetium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+7
-            },
-            {
-                question:"Technetium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2 4d^5"
-            },
-            {
-                question:"Technetium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:702
-            }
-        ]
-    },
-    {
-        elementName: "Ruthenium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Ruthenium",
-                answer:44
-            },{
-                question:"Ruthenium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Ruthenium's abbreviation",
-                answer:"Ru"
-            },
-            {
-                question:"Electronegativity in Ruthenium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer: 2.2
-            },
-            {
-                question:"Number of valence electrons in Ruthenium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:8
-            },
-            {
-                question:"Ruthenium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Ruthenium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^7"
-            },
-            {
-                question:"Ruthenium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:711
-            }
-        ]
-    },
-    {
-        elementName: "Rhodium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Rhodium",
-                answer:45
-            },{
-                question:"Rhodium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Rhodium's abbreviation",
-                answer:"Rh"
-            },
-            {
-                question:"Electronegativity in Rhodium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.28
-            },
-            {
-                question:"Number of valence electrons in Rhodium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:9
-            },
-            {
-                question:"Rhodium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+4
-            },
-            {
-                question:"Rhodium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^8"
-            },
-            {
-                question:"Rhodium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:720
-            }
-        ]
-    },
-    {
-        elementName: "Palladium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Palladium",
-                answer:46
-            },{
-                question:"Palladium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Palladium's abbreviation",
-                answer:"Pd"
-            },
-            {
-                question:"Electronegativity in Palladium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.2
-            },
-            {
-                question:"Number of valence electrons in Palladium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:10
-            },
-            {
-                question:"Palladium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+2
-            },
-            {
-                question:"Palladium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 4d^10"
-            },
-            {
-                question:"Palladium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:805
-            }
-        ]
-    },
-    {
-        elementName: "Silver",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Silver",
-                answer:47
-            },{
-                question:"Silver's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Silver's abbreviation",
-                answer:"Ag"
-            },
-            {
-                question:"Electronegativity in Silver. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.93
-            },
-            {
-                question:"Number of valence electrons in Silver. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:11
-            },
-            {
-                question:"Silver's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+1
-            },
-            {
-                question:"Silver's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10"
-            },
-            {
-                question:"Silver's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:731
-            }
-        ]
-    },
-    {
-        elementName: "Cadmium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Cadmium",
-                answer:48
-            },{
-                question:"Cadmium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Cadmium's abbreviation",
-                answer:"Cd"
-            },
-            {
-                question:"Electronegativity in Cadmium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.69
-            },
-            {
-                question:"Number of valence electrons in Cadmium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:12
-            },
-            {
-                question:"Cadmium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+2
-            },
-            {
-                question:"Cadmium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2 4d^10"
-            },
-            {
-                question:"Cadmium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:868
-            }
-        ]
-    },
-    {
-        elementName: "Indium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Indium",
-                answer:49
-            },{
-                question:"Indium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Indium's abbreviation",
-                answer:"In"
-            },
-            {
-                question:"Electronegativity in Indium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.78
-            },
-            {
-                question:"Number of valence electrons in Indium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:3
-            },
-            {
-                question:"Indium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Indium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^1"
-            },
-            {
-                question:"Indium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:558
-            }
-        ]
-    },
-    {
-        elementName: "Tin",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Tin",
-                answer:50
-            },{
-                question:"Tin's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Tin's abbreviation",
-                answer:"Sn"
-            },
-            {
-                question:"Electronegativity in Tin. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.96
-            },
-            {
-                question:"Number of valence electrons in Tin. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:4
-            },
-            {
-                question:"Tin's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+4
-            },
-            {
-                question:"Tin's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^2"
-            },
-            {
-                question:"Tin's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:709
-            }
-        ]
-    },
-    {
-        elementName: "Antimony",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Antimony",
-                answer:51
-            },{
-                question:"Antimony's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Antimony's abbreviation",
-                answer:"Sb"
-            },
-            {
-                question:"Electronegativity in Antimony. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.05
-            },
-            {
-                question:"Number of valence electrons in Antimony. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:5
-            },
-            {
-                question:"Antimony's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:-3
-            },
-            {
-                question:"Antimony's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^3"
-            },
-            {
-                question:"Antimony's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:834
-            }
-        ]
-    },
-    {
-        elementName: "Tellurium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Tellurium",
-                answer:52
-            },{
-                question:"Tellurium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Tellurium's abbreviation",
-                answer:"Te"
-            },
-            {
-                question:"Electronegativity in Tellirum. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.1
-            },
-            {
-                question:"Number of valence electrons in Tellirum. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:6
-            },
-            {
-                question:"Tellirum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:-2
-            },
-            {
-                question:"Tellirum's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^4"
-            },
-            {
-                question:"Tellirum's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:869
-            }
-        ]
-    },
-    {
-        elementName: "Iodine",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Iodine",
-                answer:53
-            },{
-                question:"Iodine's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Iodine's abbreviation",
-                answer:"I"
-            },
-            {
-                question:"Electronegativity in Iodine. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.66
-            },
-            {
-                question:"Number of valence electrons in Iodine. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:7
-            },
-            {
-                question:"Iodine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:-1
-            },
-            {
-                question:"Iodine's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^5"
-            },
-            {
-                question:"Iodine's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:1008
-            }
-            
-        ]
-    },
-    {
-        elementName: "Xenon",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Xenon",
-                answer:54
-            },
-            {
-                question:"Xenon's State at room temperature",
-                answer:"gas"
-            },
-            {
-                question:"Xenon's abbreviation",
-                answer:"Xe"
-            },
-            {
-                question:"Electronegativity in Xneon. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.6
-            },
-            {
-                question:"Number of valence electrons in Xneon. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:8
-            },
-            {
-                question:"Xeneon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:0
-            },
-            {
-                question:"Xeneon's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6"
-            },
-            {
-                question:"Xeneon's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:1170
-            }
-        ]
-    },
-    {
-        elementName: "Cesium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Cesium",
-                answer:55
-            },{
-                question:"Cesium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Cesium's abbreviation",
-                answer:"Cs"
-            },
-            {
-                question:"Electronegativity in Cesium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:0.79
-            },
-            {
-                question:"Number of valence electrons in Cesium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:1
-            },
-            {
-                question:"Cesium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+1
-            },
-            {
-                question:"Cesium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^1"
-            },
-            {
-                question:"Cesium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:376
-            }
-        ]
-    },
-    {
-        elementName: "Barium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Barium",
-                answer:56
-            },{
-                question:"Barium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Barium's abbreviation",
-                answer:"Ba"
-            },
-            {
-                question:"Electronegativity in Barium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:0.89
-            },
-            {
-                question:"Number of valence electrons in Barium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:2
-            },
-            {
-                question:"Barium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+2
-            },
-            {
-                question:"Barium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2"
-            },
-            {
-                question:"Barium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:503
-            }
-        ]
-    },
-    {
-        elementName: "Lanthanum",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Lanthanum",
-                answer:57
-            },{
-                question:"Lanthanum's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Lanthanum's abbreviation",
-                answer:"La"
-            },
-            {
-                question:"Electronegativity in Lanthanum. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.10
-            },
-            {
-                question:"Number of valence electrons in Lanthanum. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:3
-            },
-            {
-                question:"Lanthanum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Lanthanum's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 5d^1"
-            },
-            {
-                question:"Lanthanum's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:538
-            }
-        ]
-    },
-    {
-        elementName: "Cerium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Cerium",
-                answer:58
-            },{
-                question:"Cerium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Cerium's abbreviation",
-                answer:"Ce"
-            },
-            {
-                question:"Electronegativity in Cerium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.12
-            },
-            {
-                question:"Number of valence electrons in Cerium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:4
-            },
-            {
-                question:"Cerium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Cerium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 5d^1 4f^1"
-            },
-            {
-                question:"Cerium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:527
-            }
-        ]
-    },
-    {
-        elementName: "Praseodymium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Praseodymium",
-                answer:59
-            },{
-                question:"Praseodymium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Praseodymium's abbreviation",
-                answer:"Pr"
-            },
-            {
-                question:"Electronegativity in Praseodymium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.13
-            },
-            {
-                question:"Number of valence electrons in Praseodymium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:5
-            },
-            {
-                question:"Praseodymium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Praseodymium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^3"
-            },
-            {
-                question:"Praseodymium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:523
-            }
-        ]
-    },
-    {
-        elementName: "Neodymium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Neodymium",
-                answer:60
-            },{
-                question:"Neodymium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Neodymium's abbreviation",
-                answer:"Nd"
-            },
-            {
-                question:"Electronegativity in Neodymium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.14
-            },
-            {
-                question:"Number of valence electrons in Neodymium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:6
-            },
-            {
-                question:"Neodymium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Neodymium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^4"
-            },
-            {
-                question:"Neodymium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:530
-            }
-        ]
-    },
-    {
-        elementName: "Promethium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Promethium",
-                answer:61
-            },{
-                question:"Promethium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Promethium's abbreviation",
-                answer:"Pm"
-            },
-            {
-                question:"Electronegativity in Promethium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.13
-            },
-            {
-                question:"Number of valence electrons in Promethium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:7
-            },
-            {
-                question:"Promethium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Promethium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^5"
-            },
-            {
-                question:"Promethium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:536
-            }
-        ]
-    },
-    {
-        elementName: "Samarium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Samarium",
-                answer:62
-            },{
-                question:"Samarium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Samarium's abbreviation",
-                answer:"Sm"
-            },
-            {
-                question:"Electronegativity in Samarium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.17
-            },
-            {
-                question:"Number of valence electrons in Samarium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:8
-            },
-            {
-                question:"Samarium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Samarium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^6"
-            },
-            {
-                question:"Samarium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:543
-            }
-        ]
-    },
-    {
-        elementName: "Europium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Europium",
-                answer:63
-            },{
-                question:"Europium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Europium's abbreviation",
-                answer:"Eu"
-            },
-            {
-                question:"Electronegativity in Europium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.2
-            },
-            {
-                question:"Number of valence electrons in Europium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:9
-            },
-            {
-                question:"Europium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Europium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^7"
-            },
-            {
-                question:"Europium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:547
-            }
-        ]
-    },
-    {
-        elementName: "Gadolinium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Gadolinium",
-                answer:64
-            },{
-                question:"Gadolinium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Gadolinium's abbreviation",
-                answer:"Gd"
-            },
-            {
-                question:"Electronegativity in Gadolinium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.2
-            },
-            {
-                question:"Number of valence electrons in Gadolinium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:10
-            },
-            {
-                question:"Gadolinium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Gadolinium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^75d^1"
-            },
-            {
-                question:"Gadolinium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:592
-            }
-        ]
-    },
-    {
-        elementName: "Terbium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Terbium",
-                answer:65
-            },{
-                question:"Terbium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Terbium's abbreviation",
-                answer:"Tb"
-            },
-            {
-                question:"Electronegativity in Terbium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.2
-            },
-            {
-                question:"Number of valence electrons in Terbium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:11
-            },
-            {
-                question:"Terbium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Terbium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^9"
-            },
-            {
-                question:"Terbium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:565
-            }
-        ]
-    },
-    {
-        elementName: "Dysprosium",
-        questionAndPoints: [
-            {
-                question:"Number of electrons in Dysprosium",
-                answer:66
-            },{
-                question:"Dysprosium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Dysprosium's abbreviation",
-                answer:"Dy"
-            },
-            {
-                question:"Electronegativity in Dysprosium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.22
-            },
-            {
-                question:"Number of valence electrons in Dysprosium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:12
-            },
-            {
-                question:"Dysprosium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Dysprosium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^10"
-            },
-            {
-                question:"Dysprosium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:572
-            }
-        ]
-    },
-    {
-        elementName: "Holmium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Holmium",
-                answer:67
-            },{
-                question:"Holmium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Holmium's abbreviation",
-                answer:"Ho"
-            },
-            {
-                question:"Electronegativity in Holmium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.23
-            },
-            {
-                question:"Number of valence electrons in Holmium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:13
-            },
-            {
-                question:"Holmium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Holmium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^11"
-            },
-            {
-                question:"Holmium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:581
-            }
-        ]
-    },
-    {
-        elementName: "Erbium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Erbium",
-                answer:68
-            },{
-                question:"Erbium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Erbium's abbreviation",
-                answer:"Er"
-            },
-            {
-                question:"Electronegativity in Erbium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.24
-            },
-            {
-                question:"Number of valence electrons in Erbium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:14
-            },
-            {
-                question:"Erbium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Erbium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^12"
-            },
-            {
-                question:"Erbium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:589
-            }
-        ]
-    },
-    {
-        elementName: "Thulium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Thulium",
-                answer:69
-            },{
-                question:"Thulium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Thulium's abbreviation",
-                answer:"Tm"
-            },
-            {
-                question:"Electronegativity in Thulium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.25
-            },
-            {
-                question:"Number of valence electrons in Thulium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:15
-            },
-            {
-                question:"Thulium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Thulium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^13"
-            },
-            {
-                question:"Thulium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:597
-            }
-        ]
-    },
-    {
-        elementName: "Ytterbium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Ytterbium",
-                answer:70
-            },{
-                question:"Ytterbium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Ytterbium's abbreviation",
-                answer:"Yb"
-            },
-            {
-                question:"Electronegativity in Ytterbium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.1
-            },
-            {
-                question:"Number of valence electrons in Ytterbium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:16
-            },
-            {
-                question:"Ytterbium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Ytterbium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14"
-            },
-            {
-                question:"Ytterbium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:603
-            }
-        ]
-    },
-    {
-        elementName: "Lutetium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Lutetium",
-                answer:71
-            },{
-                question:"Lutetium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Lutetium's abbreviation",
-                answer:"Lu"
-            },
-            {
-                question:"Electronegativity in Lutetium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.27
-            },
-            {
-                question:"Number of valence electrons in Lutetium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:3
-            },
-            {
-                question:"Lutetium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Lutetium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^1"
-            },
-            {
-                question:"Lutetium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:524
-            }
-        ]
-    },
-    {
-        elementName: "Hafnium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Hafnium",
-                answer:72
-            },{
-                question:"Hafnium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Hafnium's abbreviation",
-                answer:"Hf"
-            },
-            {
-                question:"Electronegativity in Hafnium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.3
-            },
-            {
-                question:"Number of valence electrons in Hafnium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:4
-            },
-            {
-                question:"Hafnium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+4
-            },
-            {
-                question:"Hafnium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^2"
-            },
-            {
-                question:"Hafnium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:642
-            }
-        ]
-    },
-    {
-        elementName: "Tantalum",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Tantalum",
-                answer:73
-            },{
-                question:"Tantalum's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Tantalum's abbreviation",
-                answer:"Ta"
-            },
-            {
-                question:"Electronegativity in Tantalum. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.5
-            },
-            {
-                question:"Number of valence electrons in Tantalum. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:5
-            },
-            {
-                question:"Tantalum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+5
-            },
-            {
-                question:"Tantalum's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^3"
-            },
-            {
-                question:"Tantalum's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:761
-            }
-        ]
-    },
-    {
-        elementName: "Tungsten",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Tungsten",
-                answer:74
-            },{
-                question:"Tungsten's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Tungsten's abbreviation",
-                answer:"W"
-            },
-            {
-                question:"Electronegativity in Tungsten. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.36
-            },
-            {
-                question:"Number of valence electrons in Tungsten. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:6
-            },
-            {
-                question:"Tungsten's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+6
-            },
-            {
-                question:"Tungsten's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^4"
-            },
-            {
-                question:"Tungsten's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:770
-            }
-        ]
-    },
-    {
-        elementName: "Rhenium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Rhenium",
-                answer:75
-            },{
-                question:"Rhenium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Rhenium's abbreviation",
-                answer:"Re"
-            },
-            {
-                question:"Electronegativity in Rhenium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.9
-            },
-            {
-                question:"Number of valence electrons in Rhenium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:7
-            },
-            {
-                question:"Rhenium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+7
-            },
-            {
-                question:"Rhenium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^5"
-            },
-            {
-                question:"Rhenium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:760
-            }
-        ]
-    },
-    {
-        elementName: "Osmium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Osmium",
-                answer:76
-            },{
-                question:"Osmium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Osmium's abbreviation",
-                answer:"Os"
-            },
-            {
-                question:"Electronegativity in Osmium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.2
-            },
-            {
-                question:"Number of valence electrons in Osmium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:8
-            },
-            {
-                question:"Osmium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+4
-            },
-            {
-                question:"Osmium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^6"
-            },
-            {
-                question:"Osmium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:840
-            }
-        ]
-    },
-    {
-        elementName: "Iridium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Iridium",
-                answer:77
-            },{
-                question:"Iridium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Iridium's abbreviation",
-                answer:"Ir"
-            },
-            {
-                question:"Electronegativity in Irdium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.2
-            },
-            {
-                question:"Number of valence electrons in Irdium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:9
-            },
-            {
-                question:"Irdium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+4
-            },
-            {
-                question:"Irdium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^7"
-            },
-            {
-                question:"Irdium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:880
-            }
-        ]
-    },
-    {
-        elementName: "Platinum",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Platinum",
-                answer:77
-            },{
-                question:"Platinum's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Platinum's abbreviation",
-                answer:"Pt"
-            },
-            {
-                question:"Electronegativity in Platinum. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.28
-            },
-            {
-                question:"Number of valence electrons in Platinum. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:10
-            },
-            {
-                question:"Platinum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+4
-            },
-            {
-                question:"Platinum's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^9"
-            },
-            {
-                question:"Platinum's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:870
-            }
-        ]
-    },
-    {
-        elementName: "Gold",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Gold",
-                answer:79
-            },{
-                question:"Gold's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Gold's abbreviation",
-                answer:"Au"
-            },
-            {
-                question:"Electronegativity in Gold. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.54
-            },
-            {
-                question:"Number of valence electrons in Gold. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:11
-            },
-            {
-                question:"Gold's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Gold's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10"
-            },
-            {
-                question:"Gold's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:890
-            }
-        ]
-    },
-    {
-        elementName: "Mercury",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Mercury",
-                answer:80
-            },{
-                question:"Mercury's State at room temperature",
-                answer:"liquid"
-            },
-            {
-                question:"Mercury's abbreviation",
-                answer:"Au"
-            },
-            {
-                question:"Electronegativity in Mercury. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.6
-            },
-            {
-                question:"Number of valence electrons in Mercury. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:12
-            },
-            {
-                question:"Mercury's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+2
-            },
-            {
-                question:"Mercury's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10"
-            },
-            {
-                question:"Mercury's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:1007
-            }
-        ]
-    },
-    {
-        elementName: "Thallium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Thallium",
-                answer:81
-            },{
-                question:"Thallium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Thallium's abbreviation",
-                answer:"Tl"
-            },
-            {
-                question:"Electronegativity in Thallium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.62
-            },
-            {
-                question:"Number of valence electrons in Thallium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:3
-            },
-            {
-                question:"Thallium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Thallium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1"
-            },
-            {
-                question:"Thallium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:589
-            }
-        ]
-    },
-    {
-        elementName: "Lead",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Lead",
-                answer:82
-            },{
-                question:"Lead's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Lead's abbreviation",
-                answer:"Pb"
-            },
-            {
-                question:"Electronegativity in Lead. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.33
-            },
-            {
-                question:"Number of valence electrons in Lead. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:4
-            },
-            {
-                question:"Lead's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+4
-            },
-            {
-                question:"Lead's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^2"
-            },
-            {
-                question:"Lead's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:716
-            }
-        ]
-    },
-    {
-        elementName: "Bismuth",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Bismuth",
-                answer:83
-            },{
-                question:"Bismuth's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Bismuth's abbreviation",
-                answer:"Bi"
-            },
-            {
-                question:"Electronegativity in Bismuth. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.02
-            },
-            {
-                question:"Number of valence electrons in Bismuth. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:5
-            },
-            {
-                question:"Bismuth's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:-3
-            },
-            {
-                question:"Bismuth's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^3"
-            },
-            {
-                question:"Bismuth's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:703
-            }
-        ]
-    },
-    {
-        elementName: "Polonium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Polonium",
-                answer:84
-            },{
-                question:"Polonium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Polonium's abbreviation",
-                answer:"Po"
-            },
-            {
-                question:"Electronegativity in Polonium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2
-            },
-            {
-                question:"Number of valence electrons in Polonium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:6
-            },
-            {
-                question:"Polonium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:-2
-            },
-            {
-                question:"Polonium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^4"
-            },
-            {
-                question:"Polonium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:812
-            }
-        ]
-    },
-    {
-        elementName: "Astatine",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Astatine",
-                answer:85
-            },{
-                question:"Astatine's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Astatine's abbreviation",
-                answer:"At"
-            },
-            {
-                question:"Electronegativity in Astaine. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:2.2
-            },
-            {
-                question:"Number of valence electrons in Astatine. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:7
-            },
-            {
-                question:"Astatine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:-1
-            },
-            {
-                question:"Astatine's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^5"
-            },
-            {
-                question:"Astatine's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:930
-            }
-        ]
-    },
-    {
-        elementName: "Radon",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Radon",
-                answer:86
-            },{
-                question:"Radon's State at room temperature",
-                answer:"gas"
-            },
-            {
-                question:"Radon's abbreviation",
-                answer:"Rn"
-            },
-            {
-                question:"Electronegativity in Radon. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"none"
-            },
-            {
-                question:"Number of valence electrons in Radon. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:8
-            },
-            {
-                question:"Radon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:0
-            },
-            {
-                question:"Radon's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6"
-            },
-            {
-                question:"Radon's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:1040
-            }
-        ]
-    },
-    {
-        elementName: "Francium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Francium",
-                answer:87
-            },{
-                question:"Francium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Francium's abbreviation",
-                answer:"Fr"
-            },
-            {
-                question:"Electronegativity in Francium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:0.7
-            },
-            {
-                question:"Number of valence electrons in Francium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:1
-            },
-            {
-                question:"Francium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+1
-            },
-            {
-                question:"Francium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6 7s^1"
-            },
-            {
-                question:"Francium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:400
-            }
-        ]
-    },
-    {
-        elementName: "Radium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Radium",
-                answer:88
-            },{
-                question:"Radium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Radium's abbreviation",
-                answer:"Ra"
-            },
-            {
-                question:"Electronegativity in Radium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:0.89
-            },
-            {
-                question:"Number of valence electrons in Radium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:2
-            },
-            {
-                question:"Radium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+2
-            },
-            {
-                question:"Radium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6 7s^2"
-            },
-            {
-                question:"Radium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:509
-            }
-        ]
-    },
-    {
-        elementName: "Actinium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Actinium",
-                answer:89
-            },{
-                question:"Actinium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Actinium's abbreviation",
-                answer:"Ac"
-            },
-            {
-                question:"Electronegativity in Actinium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.1
-            },
-            {
-                question:"Number of valence electrons in Actinium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:3
-            },
-            {
-                question:"Actinium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Actinium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6 7s^2 6d^1"
-            },
-            {
-                question:"Actinium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:499
-            }
-        ]
-    },
-    {
-        elementName: "Thorium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Thorium",
-                answer:90
-            },{
-                question:"Thorium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Thorium's abbreviation",
-                answer:"Th"
-            },
-            {
-                question:"Electronegativity in Thorium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.3
-            },
-            {
-                question:"Number of valence electrons in Thorium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:4
-            },
-            {
-                question:"Thorium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+4
-            },
-            {
-                question:"Thorium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6 7s^2 6d^2"
-            },
-            {
-                question:"Thorium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:587
-            }
-        ]
-    },
-    {
-        elementName: "Protactinium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Protactinium",
-                answer:91
-            },{
-                question:"Protactinium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Protactinium's abbreviation",
-                answer:"Pa"
-            },
-            {
-                question:"Electronegativity in Protactinium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.5
-            },
-            {
-                question:"Number of valence electrons in Protactinium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:5
-            },
-            {
-                question:"Protactinium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Protactinium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^2 6d^1"
-            },
-            {
-                question:"Protactinium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:568
-            }
-        ]
-    },
-    {
-        elementName: "Uranium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Uranium",
-                answer:92
-            },{
-                question:"Uranium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Uranium's abbreviation",
-                answer:"U"
-            },
-            {
-                question:"Electronegativity in Uranium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.38
-            },
-            {
-                question:"Number of valence electrons in Uranium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:6
-            },
-            {
-                question:"Uranium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Uranium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^3 6d^1"
-            },
-            {
-                question:"Uranium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:584
-            }
-        ]
-    },
-    {
-        elementName: "Neptunium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Neptunium ",
-                answer:93
-            },{
-                question:"Neptunium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Neptunium's abbreviation",
-                answer:"Np"
-            },
-            {
-                question:"Electronegativity in Neptunium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.36
-            },
-            {
-                question:"Number of valence electrons in Neptunium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:7
-            },
-            {
-                question:"Neptunium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Neptunium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^4 6d^1"
-            },
-            {
-                question:"Neptunium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:597
-            }
-        ]
-    },
-    {
-        elementName: "Plutonium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Plutonium ",
-                answer:94
-            },{
-                question:"Plutonium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Plutonium's abbreviation",
-                answer:"Pu"
-            },
-            {
-                question:"Electronegativity in Plutonium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.28
-            },
-            {
-                question:"Number of valence electrons in Plutonium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:8
-            },
-            {
-                question:"Plutonium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Plutonium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^6"
-            },
-            {
-                question:"Plutonium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:585
-            }
-        ]
-    },
-    {
-        elementName: "Americium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Americium",
-                answer:95
-            },{
-                question:"Americium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Americium's abbreviation",
-                answer:"Am"
-            },
-            {
-                question:"Electronegativity in Americium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.3
-            },
-            {
-                question:"Number of valence electrons in Americium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:9
-            },
-            {
-                question:"Americium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Americium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^7"
-            },
-            {
-                question:"Americium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:578
-            }
-        ]
-    },
-    {
-        elementName: "Curium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Curium",
-                answer:96
-            },{
-                question:"Curium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Curium's abbreviation",
-                answer:"Cm"
-            },
-            {
-                question:"Electronegativity in Curium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.3
-            },
-            {
-                question:"Number of valence electrons in Curium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:10
-            },
-            {
-                question:"Curium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Curium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^7 6d^1"
-            },
-            {
-                question:"Curium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:581
-            }
-        ]
-    },
-    {
-        elementName: "Berkelium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Berkelium",
-                answer:97
-            },{
-                question:"Berkelium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Berkelium's abbreviation",
-                answer:"Bk"
-            },
-            {
-                question:"Electronegativity in Berkelium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.3
-            },
-            {
-                question:"Number of valence electrons in Berkelium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:11
-            },
-            {
-                question:"Berkelium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Berkelium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^9"
-            },
-            {
-                question:"Berkelium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:601
-            }
-        ]
-    },
-    {
-        elementName: "Californium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Californium",
-                answer:98
-            },{
-                question:"Californium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Californium's abbreviation",
-                answer:"Cf"
-            },
-            {
-                question:"Electronegativity in Californium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.3
-            },
-            {
-                question:"Number of valence electrons in Californium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:12            
-            },
-            {
-                question:"Californium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Californium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^10"
-            },
-            {
-                question:"Californium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:608
-            }
-        ]
-    },
-    {
-        elementName: "Einstenium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Einsteinium",
-                answer:99
-            },{
-                question:"Einsteinium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Einsteinium's abbreviation",
-                answer:"Es"
-            },
-            {
-                question:"Electronegativity in Ensteinium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.3
-            },
-            {
-                question:"Number of valence electrons in Ensteinium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:13
-            },
-            {
-                question:"Ensteinium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Enstenium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^11"
-            },
-            {
-                question:"Enstenium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:619
-            }
-        ]
-    },
-    {
-        elementName: "Fermium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Fermium",
-                answer:100
-            },{
-                question:"Fermium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Fermium's abbreviation",
-                answer:"Fm"
-            },
-            {
-                question:"Electronegativity in Fermium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.3
-            },
-            {
-                question:"Number of valence electrons in Fermium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:14
-            },
-            {
-                question:"Fermium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Fermium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^12"
-            },
-            {
-                question:"Fermium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:627
-            }
-        ]
-    },
-    {
-        elementName: "Mendelevium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Mendelevium",
-                answer:101
-            },{
-                question:"Mendelevium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Mendelevium's abbreviation",
-                answer:"Md"
-            },
-            {
-                question:"Electronegativity in Mendelevium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.3
-            },
-            {
-                question:"Number of valence electrons in Mendelevium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:15
-            },
-            {
-                question:"Mendelevium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Mendelevium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^13"
-            },
-            {
-                question:"Mendelevium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:635
-            }
-        ]
-    },
-    {
-        elementName: "Nobelium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Nobelium",
-                answer:102
-            },{
-                question:"Nobelium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Nobelium's abbreviation",
-                answer:"No"
-            },
-            {
-                question:"Electronegativity in Nobelium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:1.3
-            },
-            {
-                question:"Number of valence electrons in Nobelium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:16
-            },
-            {
-                question:"Nobelium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Nobelium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14"
-            },
-            {
-                question:"Nobelium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:642
-            }
-        ]
-    },
-    {
-        elementName:"Lawrencium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Lawrencium",
-                answer:103
-            },{
-                question:"Lawrencium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Lawrencium's abbreviation",
-                answer:"Lr"
-            },
-            {
-                question:"Electronegativity in Lawrencium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"unknown"
-            },
-            {
-                question:"Number of valence electrons in Lawrencium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:3
-            },
-            {
-                question:"Lawrencium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+3
-            },
-            {
-                question:"Lawrencium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 7p^1"
-            },
-            {
-                question:"Lawrencium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:"n.a."
-            }
-        ]
-    },
-    {
-        elementName: "Rutherfordium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Rutherfordium",
-                answer:104
-            },{
-                question:"Rutherfordium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Rutherfordium's abbreviation",
-                answer:"Rf"
-            },
-            {
-                question:"Electronegativity in Rutherfordium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"unknown"
-            },
-            {
-                question:"Number of valence electrons in Rutherfordium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:4
-            },
-            {
-                question:"Rutherfordium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+4
-            },
-            {
-                question:"Rutherfordium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^2"
-            },
-            {
-                question:"Rutherfordium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:490
-            }
-        ]
-    },
-    {
-        elementName: "Dubnium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Dubnium",
-                answer:105
-            },{
-                question:"Dubnium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Dubnium's abbreviation",
-                answer:"Db"
-            },
-            {
-                question:"Electronegativity in Dubnium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"unknown"
-            },
-            {
-                question:"Number of valence electrons in Dubnium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:5
-            },
-            {
-                question:"Dubnium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+5
-            },
-            {
-                question:"Dubnium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^3"
-            },
-            {
-                question:"Dubnium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:640
-            }
-        ]
-    },
-    {
-        elementName: "Seaborgium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Seaborgium",
-                answer:106
-            },{
-                question:"Seaborgium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Seaborgium's abbreviation",
-                answer:"Sg"
-            },
-            {
-                question:"Electronegativity in Seaborgium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"unknown"
-            },
-            {
-                question:"Number of valence electrons in Seaborgium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:6
-            },
-            {
-                question:"Seaborgium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+6
-            },
-            {
-                question:"Seaborgium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^4"
-            },
-            {
-                question:"Seaborgium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:730
-            }
-        ]
-    },
-    {
-        elementName: "Bohrium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Bohrium",
-                answer:107
-            },{
-                question:"Bohrium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Bohrium's abbreviation",
-                answer:"Bh"
-            },
-            {
-                question:"Electronegativity in Bohrium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"unknown"
-            },
-            {
-                question:"Number of valence electrons in Bohrium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:7
-            },
-            {
-                question:"Bohrium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+7
-            },
-            {
-                question:"Bohrium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^5"
-            },
-            {
-                question:"Bohrium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:660
-            }
-        ]
-    },
-    {
-        elementName: "Hassium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Hassium",
-                answer:108
-            },{
-                question:"Hassium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Hassium's abbreviation",
-                answer:"Hs"
-            },
-            {
-                question:"Electronegativity in Hassium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"unknown"
-            },
-            {
-                question:"Number of valence electrons in Hassium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:8
-            },
-            {
-                question:"Hassium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
-                answer:+8
-            },
-            {
-                question:"Hassium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^6"
-            },
-            {
-                question:"Hassium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:750
-            }
-        ]
-    },
-    {
-        elementName: "Meitnerium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Meitnerium",
-                answer:109
-            },{
-                question:"Meitnerium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Meitnerium's abbreviation",
-                answer:"Mt"
-            },
-            {
-                question:"Electronegativity in Meitnerium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"unknown"
-            } ,
-            {
-                question:"Number of valence electrons in Meitnerium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:9
-            },
-            {
-                question:"Meitnerium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
-                answer:"unknown"
-            },
-            {
-                question:"Meitnerium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^7"
-            },
-            {
-                question:"Meitnerium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:640
-            }
-        ]
-    },
-    {
-        elementName: "Darmstadtium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Darmstadtium",
-                answer:110
-            },{
-                question:"Darmstadtium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Darmstadtium's abbreviation",
-                answer:"Ds"
-            },
-            {
-                question:"Electronegativity in Darmstadtium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"unknown"
-            },
-            {
-                question:"Number of valence electrons in Darmstadtium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:10
-            },
-            {
-                question:"Darmstadtium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
-                answer:"unknown"
-            },
-            {
-                question:"Darmstadtium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^8"
-            },
-            {
-                question:"Damrstadtium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:"n.a."
-            }
-        ]
-    },
-    {
-        elementName: "Roentgenium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Roentgenium",
-                answer:111
-            },{
-                question:"Roentgenium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Roentgenium's abbreviation",
-                answer:"Rg"
-            },
-            {
-                question:"Electronegativity in Roentgenium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"unknown"
-            },
-            {
-                question:"Number of valence electrons in Roentgenium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:11
-            },
-            {
-                question:"Roentgenium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
-                answer:"unknown"
-            },
-            {
-                question:"Roentgenium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^9"
-            },
-            {
-                question:"Roentgenium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:"n.a."
-            }
-        ]
-    },
-    {
-        elementName: "Copernicium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Copernicium",
-                answer:112
-            },{
-                question:"Copernicium's State at room temperature",
-                answer:"liquid"
-            },
-            {
-                question:"Copernicium's abbreviation",
-                answer:"Cn"
-            },
-            {
-                question:"Electronegativity in Copernicium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"unknown"
-            },
-            {
-                question:"Number of valence electrons in Copernicium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:12
-            },
-            {
-                question:"Copernicium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
-                answer:+2
-            },
-            {
-                question:"Copernicium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10"
-            },
-            {
-                question:"Copernicium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:"n.a."
-            }
-        ]
-    },
-    {
-        elementName: "Nihonium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Nihonium",
-                answer:113
-            },
-            {
-                question:"Nihonium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Nihonium's abbreviation",
-                answer:"Nh"
-            },
-            {
-                question:"Electronegativity in Nihonium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"unknown"
-            },
-            {
-                question:"Number of valence electrons in Nihonium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:3
-            },
-            {
-                question:"Nihonium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
-                answer:"unknown"
-            },
-            {
-                question:"Nihonium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^1"
-            },
-            {
-                question:"Nihonium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:"n.a."
-            }
-        ]
-    },
-    {
-        elementName: "Flerovium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Flerovium",
-                answer:114
-            },{
-                question:"Flerovium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Flerovium's abbreviation",
-                answer:"Fl"
-            },
-            {
-                question:"Electronegativity in Flerovium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"unknown"
-            },
-            {
-                question:"Number of valence electrons in Flerovium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:4
-            },
-            {
-                question:"Flerovium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
-                answer:"unknown"
-            },
-            {
-                question:"Flerovium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^2"
-            },
-            {
-                question:"Flerovium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:"n.a."
-            }
-        ]
-    },
-    {
-        elementName: "Moscovium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Moscovium",
-                answer:115
-            },{
-                question:"Moscovium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Moscovium's abbreviation",
-                answer:"Mc"
-            },
-            {
-                question:"Electronegativity in Moscovium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"unknown"
-            },
-            {
-                question:"Number of valence electrons in Moscovium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:5
-            },
-            {
-                question:"Moscovium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
-                answer:"unknown"
-            },
-            {
-                question:"Moscovium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^3"
-            },
-            {
-                question:"Moscovium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:"n.a."
-            }
-        ]
-    },
-    {
-        elementName: "Livermorium",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Livermorium",
-                answer:116
-            },{
-                question:"Livermorium's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Livermorium's abbreviation",
-                answer:"Lv"
-            },
-            {
-                question:"Electronegativity in Livermorium. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"unknown"
-            },
-            {
-                question:"Number of valence electrons in Livermorium. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:6
-            },
-            {
-                question:"Livermorium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
-                answer:"unknown"
-            },
-            {
-                question:"Livermorium's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^4"
-            },
-            {
-                question:"Livermorium's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:"n.a."
-            }
-        ]
-    },
-    {
-        elementName: "Tennessine",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Tennessine",
-                answer:117
-            },{
-                question:"Tennessine's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Tennessine's abbreviation",
-                answer:"Ts"
-            },
-            {
-                question:"Electronegativity in Tennessine. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"unknown"
-            },
-            {
-                question:"Number of valence electrons in Tennessine. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:7
-            },
-            {
-                question:"Tennessine's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
-                answer:"unknown"
-            },
-            {
-                question:"Tennessine's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^5"
-            },
-            {
-                question:"Tennessine's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:"n.a."
-            }
-        ]
-    },
-    {
-        elementName: "Oganesson",
-        questionAndPoints: [
-            {
-                question:"Number of protons in Oganesson",
-                answer:118
-            },{
-                question:"Oganesson's State at room temperature",
-                answer:"solid"
-            },
-            {
-                question:"Oganesson's abbreviation",
-                answer:"Og"
-            },
-            {
-                question:"Electronegativity in Oganesson. (If their is none, type 'none' and if it is not known yet as of 2020, type 'unknown'",
-                answer:"unknown"
-            },
-            {
-                question:"Number of valence electrons in Oganesson. (including the d-subshell and s-subshell for the d-block and f-block elements!)",
-                answer:8
-            },
-            {
-                question:"Oganesson's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unkown, type 'unknown')",
-                answer:"unknown"
-            },
-            {
-                question:"Oganesson's Electron Configuration. (Powers displayed as '^', so 2^3 = 8 and after each exponent, their is a SPACE)",
-                answer:"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^6"
-            },
-            {
-                question:"Oganesson's Ionization Energy in kilojoules per mole (kJ/mol)",
-                answer:"n.a."
+	
+	{
+		"elementName":"Hydrogen",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Hydrogen",
+					"answer":1
+			},
+			{
+					"question":" Hydrogen's State at room temperature",
+					"answer":"gas"
+			},
+			{
+					"question":"Hydrogen's abbreviation",
+					"answer":"H"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Hydrogen or Arsenic?",
+					"answer":"Hydrogen"
+			},
+			{
+					"question":"Hydrogen's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":1
+			},
+			{
+					"question":"Number of valence electrons in Hydrogen",
+					"answer":1
+			},
+			{
+					"question":"Hydrogen's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'): Hydrogen or Oxygen?",
+					"answer":"Hydrogen"
+			}
+		]
+	},
+	{
+		"elementName":"Helium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Helium",
+					"answer":2
+			},
+			{
+					"question":" Helium's State at room temperature",
+					"answer":"gas"
+			},
+			{
+					"question":"Helium's abbreviation",
+					"answer":"He"
+			},
+			{
+				"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Helium or Gallium?",
+				"answer":"unknown"
+			},
+			{
+					"question":"Helium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":0
+			},
+			{
+					"question":"Number of valence electrons in Helium",
+					"answer":2
+			},
+			{
+					"question":"Helium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'): Helium or Radon?",
+					"answer":"Helium"
+			}
+		]
+	},
+	{
+		"elementName":"Lithium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Lithium",
+					"answer":3
+			},
+			{
+					"question":"Lithium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Lithium's abbreviation",
+					"answer":"Li"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Lithium or Xenon?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Lithium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":1
+			},
+			{
+					"question":"Number of valence electrons in Lithium",
+					"answer":1
+			},
+			{
+					"question":"Lithium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'): Lithium or Lutetium",
+					"answer":"Lutetium"
+			}
+		]
+	},
+	{
+		"elementName":"Beryllium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Beryllium",
+					"answer":4
+			},
+			{
+					"question":"Beryllium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Beryllium's abbreviation",
+					"answer":"Be"
+			},
+			{
+				"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Beryllium or Promethium?",
+				"answer":"Beryllium"
+			},
+			{
+					"question":"Beryllium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":2
+			},
+			{
+					"question":"Number of valence electrons in Beryllium",
+					"answer":2
+			},
+			{
+					"question":"Beryllium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2"
+			},
+			{
+					"question":" Which element has a higher ionization energy (if one element's is unknown, type 'unknown'): Beryllium or Zinc ",
+					"answer":"Zinc"
+			}
+		]
+	},
+	{
+		"elementName":"Boron",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Boron",
+					"answer":5
+			},
+			{
+					"question":"Boron's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Boron's abbreviation",
+					"answer":"B"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Boron or Ruthenium?",
+					"answer":"Ruthenium"
+			},
+			{
+					"question":"Boron's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Number of valence electrons in Boron",
+					"answer":3
+			},
+			{
+					"question":"Boron's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'): Boron or Silicon",
+					"answer":"Boron"
+			}
+		]
+	},
+	{
+		"elementName":"Carbon",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Carbon",
+					"answer":6
+			},
+			{
+					"question":"Carbon's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Carbon's abbreviation",
+					"answer":"C"
+			},
+			{
+				"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Carbon or Beryllium?",
+				"answer":"Carbon"
+			},
+			{
+					"question":"Carbon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":4
+			},
+			{
+					"question":"Number of valence electrons in Carbon",
+					"answer":4
+			},
+			{
+					"question":"Carbon's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'): Carbon or Nitrogen",
+					"answer":"Nitrogen"
+			}
+		]
+	},
+	{
+		"elementName":"Nitrogen",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Nitrogen",
+					"answer":7
+			},
+			{
+					"question":"Nitrogen's State at room temperature",
+					"answer":"gas"
+			},
+			{
+					"question":"Nitrogen's abbreviation",
+					"answer":"N"
+			},
+			{
+				"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Nitrogen or Cesium?",
+				"answer":"Nitrogen"
+			},
+			{
+					"question":"Nitrogen's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":-3
+			},
+			{
+					"question":"Number of valence electrons in Nitrogen",
+					"answer":5
+			},
+			{
+					"question":"Nitrogen's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^3"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'): Nitrogen or Krypton",
+					"answer":"Nitrogen"
+			}
+		]
+	},
+	{
+		"elementName":"Oxygen",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Oxygen",
+					"answer":8
+			},
+			{
+					"question":"Oxygen's State at room temperature",
+					"answer":"gas"
+			},
+			{
+					"question":"Oxygen's abbreviation",
+					"answer":"O"
+			},
+			{
+				"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Oxygen or Astatine?",
+				"answer":"Oxygen"
+			},
+			{
+					"question":"Oxygen's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":-2
+			},
+			{
+					"question":"Number of valence electrons in Oxygen",
+					"answer":6
+			},
+			{
+					"question":"Oxygen's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^4"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'): Oxygen or Argon",
+					"answer":"Argon"
+			}
+		]
+	},
+	{
+		"elementName":"Fluorine",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Fluorine",
+					"answer":9
+			},
+			{
+					"question":"Fluorine's State at room temperature",
+					"answer":"gas"
+			},
+			{
+					"question":"Fluorine's abbreviation",
+					"answer":"F"
+			},
+			{
+				"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Fluorine or Bismuth?",
+				"answer":"Fluorine"
+			},
+			{
+					"question":"Fluorine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":-1
+			},
+			{
+					"question":"Number of valence electrons in Fluorine",
+					"answer":7
+			},
+			{
+					"question":"Fluorine's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^5"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'): Fluorine or Helium",
+					"answer":"Helium"
+			}
+		]
+	},
+	{
+		"elementName":"Neon",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Neon",
+					"answer":10
+			},
+			{
+					"question":"Neon's State at room temperature",
+					"answer":"gas"
+			},
+			{
+					"question":"Neon's abbreviation",
+					"answer":"Ne"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Neon or Selenium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Neon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":0
+			},
+			{
+					"question":"Number of valence electrons in Neon",
+					"answer":8
+			},
+			{
+					"question":"Neon's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^6"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'): Neon or Iodine",
+					"answer":"Neon"
+			}
+		]
+	},
+	{
+		"elementName":"Sodium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Sodium",
+					"answer":11
+			},
+			{
+					"question":"Sodium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Sodium's abbreviation",
+					"answer":"Na"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Sodium or Copernicium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Sodium",
+					"answer":1
+			},
+			{
+					"question":"Sodium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":1
+			},
+			{
+					"question":"Sodium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^6 3s^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'): Sodium or Lawrencium",
+					"answer":"Sodium"
+			}
+		]
+	},
+	{
+		"elementName":"Magnesium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Magnesium",
+					"answer":12
+			},
+			{
+					"question":"Magnesium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Magnesium's abbreviation",
+					"answer":"Mg"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Magnesium or Rhodium?",
+					"answer":"Rhodium"
+			},
+			{
+					"question":"Number of valence electrons in Magnesium",
+					"answer":2
+			},
+			{
+					"question":"Magnesium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":2
+			},
+			{
+					"question":"Magnesium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^6 3s^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'): Magnesium or Copper",
+					"answer":"Copper"
+			}
+		]
+	},
+	{
+		"elementName":"Aluminum",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Aluminum",
+					"answer":13
+			},
+			{
+					"question":"Aluminum 's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Aluminum 's abbreviation",
+					"answer":"Al"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Aluminum or Erbium?",
+					"answer":"Aluminum"
+			},
+			{
+					"question":"Number of valence electrons in Aluminum",
+					"answer":3
+			},
+			{
+					"question":"Aluminum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Aluminum's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'): Aluminum or Americium",
+					"answer":"Aluminum"
+			}
+		]
+	},
+	{
+		"elementName":"Silicon",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Silicon          ",
+					"answer":14
+			},
+			{
+					"question":"Silicon 's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Silicon 's abbreviation",
+					"answer":"Si"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Silicon or Neon?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Silicon",
+					"answer":4
+			},
+			{
+					"question":"Silicon's oxidation state that makes the outer shell of itself 'full' when combined with another element.",
+					"answer":4
+			},
+			{
+					"question":"Silicon's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'): Silicon or Palladium",
+					"answer":"Palladium"
+			}
+		]
+	},
+	{
+		"elementName":"Phosphorus",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Phosphorus  ",
+					"answer":15
+			},
+			{
+					"question":"Phosphorus 's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Phosphorus 's abbreviation",
+					"answer":"P"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Phosphorus or Mendelevium?",
+					"answer":"Phosphorus"
+			},
+			{
+					"question":"Number of valence electrons in Phosphorus",
+					"answer":5
+			},
+			{
+					"question":"Phosphorus's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":-3
+			},
+			{
+					"question":"Phosphorus's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^3"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'): Phosphorus or Iodine",
+					"answer":"Phosphorus"
+			}
+		]
+	},
+	{
+		"elementName":"Sulfur",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Sulfur  ",
+					"answer":16
+			},
+			{
+					"question":"Sulfur 's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Sulfur's abbreviation",
+					"answer":"S"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Sulfur or Ytterbium?",
+					"answer":"Sulfur"
+			},
+			{
+					"question":"Number of valence electrons in Sulfur",
+					"answer":6
+			},
+			{
+					"question":"Sulfur's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":"Sul"
+			},
+			{
+					"question":"Sulfur's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^4"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'): Sulfur or Zinc",
+					"answer":"Sulfur"
+			}
+		]
+	},
+	{
+		"elementName":"Chlorine",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Chlorine  ",
+					"answer":17
+			},
+			{
+					"question":"Chlorine 's State at room temperature",
+					"answer":"gas"
+			},
+			{
+					"question":"Chlorine's abbreviation",
+					"answer":"Cl"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Chlorine or Molybdenum?",
+					"answer":"Chlorine"
+			},
+			{
+					"question":"Number of valence electrons in Chlorine",
+					"answer":7
+			},
+			{
+					"question":"Chlorine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":-1
+			},
+			{
+					"question":"Chlorine's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^5"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'): Chlorine or Xenon",
+					"answer":"Chlorine"
+			}
+		]
+	},
+	{
+		"elementName":"Argon",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Argon  ",
+					"answer":18
+			},
+			{
+					"question":"Argon's State at room temperature",
+					"answer":"gas"
+			},
+			{
+					"question":"Argon's abbreviation",
+					"answer":"Ar"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Argon or Plutonium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Argon",
+					"answer":8
+			},
+			{
+					"question":"Argon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":0
+			},
+			{
+					"question":"Argon's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'): Argon or Fluorine",
+					"answer":"Fluorine"
+			}
+		]
+	},
+	{
+		"elementName":"Potassium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Potassium ",
+					"answer":19
+			},
+			{
+					"question":"Potassium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Potassium's abbreviation",
+					"answer":"K"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Potassium or Calcium?",
+					"answer":"Calcium"
+			},
+			{
+					"question":"Number of valence electrons in Potassium",
+					"answer":1
+			},
+			{
+					"question":"Potassium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":1
+			},
+			{
+					"question":"Potassium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'): Potassium or Francium",
+					"answer":"Potassium"
+			}
+		]
+	},
+	{
+		"elementName":"Calcium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Calcium ",
+					"answer":20
+			},
+			{
+					"question":"Calcium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Calcium's abbreviation",
+					"answer":"Ca"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Calcium or Scandium?",
+					"answer":"Scandium"
+			},
+			{
+					"question":"Number of valence electrons in Calcium",
+					"answer":2
+			},
+			{
+					"question":"Calcium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":2
+			},
+			{
+					"question":"Calcium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'): Calcium or Gadolinium",
+					"answer":"Gadolinium"
+			}
+		]
+	},
+	{
+		"elementName":"Scandium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Scandium",
+					"answer":21
+			},
+			{
+					"question":"Scandiums State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Scandium's abbreviation",
+					"answer":"Sc"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Scandium or Osmium?",
+					"answer":"Osmium"
+			},
+			{
+					"question":"Number of valence electrons in Scandium",
+					"answer":3
+			},
+			{
+					"question":"Scandium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Scandium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'): Scandium or Fermium",
+					"answer":"Scandium"
+			}
+		]
+	},
+	{
+		"elementName":"Titanium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Titanium",
+					"answer":22
+			},
+			{
+					"question":"Titanium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Titanium's abbreviation",
+					"answer":"Ti"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Titanium or Sodium?",
+					"answer":"Titanium"
+			},
+			{
+					"question":"Number of valence electrons in Titanium",
+					"answer":4
+			},
+			{
+					"question":"Titanium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":4
+			},
+			{
+					"question":"Titanium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'): Titanium or Hafnium",
+					"answer":"Titanium"
+			}
+		]
+	},
+	{
+		"elementName":"Vanadium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Vanadium",
+					"answer":23
+			},
+			{
+					"question":"Vanadium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Vanadium's abbreviation",
+					"answer":"V"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Vanadium or Calcium?",
+					"answer":"Vanadium"
+			},
+			{
+					"question":"Number of valence electrons in Vanadium",
+					"answer":5
+			},
+			{
+					"question":"Vanadium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":5
+			},
+			{
+					"question":"Vanadium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^3"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'): Vanadium or Nobelium",
+					"answer":"Vanadium"
+			}
+		]
+	},
+	{
+		"elementName":"Chromium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Chromium",
+					"answer":24
+			},
+			{
+					"question":"Chromium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Chromium's abbreviation",
+					"answer":"Cr"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Chromium or Cobalt?",
+					"answer":"Cobalt"
+			},
+			{
+					"question":"Number of valence electrons in Chromium",
+					"answer":6
+			},
+			{
+					"question":"Chromium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":6
+			},
+			{
+					"question":"Chromium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^5"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'): Ruthenium or Chromium",
+					"answer":"Ruthenium"
+			}
+		]
+	},
+	{
+		"elementName":"Manganese",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Manganese",
+					"answer":25
+			},
+			{
+					"question":"Manganese's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Manganese's abbreviation",
+					"answer":"Mn"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Manganese or Meitnerium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Manganese",
+					"answer":7
+			},
+			{
+					"question":"Maganese's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":7
+			},
+			{
+					"question":"Maganese's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^5"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Thorium or Manganese",
+					"answer":"Manganese"
+			}
+		]
+	},
+	{
+		"elementName":"Iron",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Iron",
+					"answer":26
+			},
+			{
+					"question":"Iron's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Iron's abbreviation",
+					"answer":"Fe"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Iron or Rubidium?",
+					"answer":"Iron"
+			},
+			{
+					"question":"Number of valence electrons in Iron",
+					"answer":8
+			},
+			{
+					"question":"Iron's oxidation state that makes the outer shell of itself 'full' when combined with another element.",
+					"answer":2
+			},
+			{
+					"question":"Iron's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Hassium or Iron?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Cobalt",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Cobalt",
+					"answer":27
+			},
+			{
+					"question":"Cobalt's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Cobalt's abbreviation",
+					"answer":"Co"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Cobalt or Gallium?",
+					"answer":"Cobalt"
+			},
+			{
+					"question":"Number of valence electrons in Cobalt",
+					"answer":9
+			},
+			{
+					"question":"Cobalt's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Cobalt's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^7"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Thallium or Cobalt",
+					"answer":"Cobalt"
+			}
+		]
+	},
+	{
+		"elementName":"Nickel",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Nickel",
+					"answer":28
+			},
+			{
+					"question":"Nickel's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Nickel's abbreviation",
+					"answer":"Ni"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Nickel or Iron?",
+					"answer":"Nickel"
+			},
+			{
+					"question":"Number of valence electrons in Nickel",
+					"answer":10
+			},
+			{
+					"question":"Nickel's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":2
+			},
+			{
+					"question":"Nickel's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^8"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Einsteinium or Nickel?",
+					"answer":"Nickel"
+			}
+		]
+	},
+	{
+		"elementName":"Copper",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Copper",
+					"answer":29
+			},
+			{
+					"question":"Copper's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Copper's abbreviation",
+					"answer":"Cu"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Copper or Calcium?",
+					"answer":"Copper"
+			},
+			{
+					"question":"Number of valence electrons in Copper",
+					"answer":11
+			},
+			{
+					"question":"Copper's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":2
+			},
+			{
+					"question":"Copper's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Germanium or Copper?",
+					"answer":"Germanium"
+			}
+		]
+	},
+	{
+		"elementName":"Zinc",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Zinc",
+					"answer":30
+			},
+			{
+					"question":"Zinc's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Zinc's abbreviation",
+					"answer":"Zn"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Zinc or Meitnerium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Zinc",
+					"answer":12
+			},
+			{
+					"question":"Zinc's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":2
+			},
+			{
+					"question":"Zinc's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Nobelium or Zinc?",
+					"answer":"Zinc"
+			}
+		]
+	},
+	{
+		"elementName":"Gallium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Gallium",
+					"answer":31
+			},
+			{
+					"question":"Gallium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Gallium's abbreviation",
+					"answer":"Ga"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Gallium or Zirconium?",
+					"answer":"Gallium"
+			},
+			{
+					"question":"Number of valence electrons in Gallium",
+					"answer":3
+			},
+			{
+					"question":"Gallium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Gallium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Iridium or Gallium?",
+					"answer":"Iridium"
+			}
+		]
+	},
+	{
+		"elementName":"Germanium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Germanium",
+					"answer":32
+			},
+			{
+					"question":"Germanium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Germanium's abbreviation",
+					"answer":"Ge"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Germanium or Krypton?",
+					"Answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Germanium",
+					"answer":4
+			},
+			{
+					"question":"Germanium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":4
+			},
+			{
+					"question":"Germanium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^3"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Lawrencium or Germanium?",
+					"answer":"Germanium"
+			}
+		]
+	},
+	{
+		"elementName":"Arsenic",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Arsenic",
+					"answer":33
+			},
+			{
+					"question":"Arsenic's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Arsenic's abbreviation",
+					"answer":"As"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Arsenic or Dubnium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Arsenic",
+					"answer":5
+			},
+			{
+					"question":"Arsenic's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":-3
+			},
+			{
+					"question":"Arsenic's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^3"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'): Hafnium or Arsenic?",
+					"answer":"Arsenic"
+			}
+		]
+	},
+	{
+		"elementName":"Selenium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Selenium",
+					"answer":34
+			},
+			{
+					"question":"Selenium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Selenium's abbreviation",
+					"answer":"Se"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Selenium or Ruthenium?",
+					"answer":"Selenium"
+			},
+			{
+					"question":"Number of valence electrons in Selenium",
+					"answer":6
+			},
+			{
+					"question":"Selenium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":-2
+			},
+			{
+					"question":"Selenium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^4"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Fermium or Selenium?",
+					"answer":"Selenium"
+			}
+		]
+	},
+	{
+		"elementName":"Bromine",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Bromine",
+					"answer":35
+			},
+			{
+					"question":"Bromine's State at room temperature",
+					"answer":"liquid"
+			},
+			{
+					"question":"Bromine's abbreviation",
+					"answer":"Br"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Bromine or Chromium?",
+					"answer":"Bromine"
+			},
+			{
+					"question":"Number of valence electrons in Bromine",
+					"answer":7
+			},
+			{
+					"question":"Bromine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":-1
+			},
+			{
+					"question":"Bromine's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^5"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Tungsten or Bromine?",
+					"answer":"Bromine"
+			}
+		]
+	},
+	{
+		"elementName":"Krypton",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Krypton",
+					"answer":36
+			},
+			{
+					"question":"Krypton's State at room temperature",
+					"answer":"liquid"
+			},
+			{
+					"question":"Krypton's abbreviation",
+					"answer":"Kr"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Krypton or Lutetium?",
+					"answer": "Krypton"
+			},
+			{
+					"question":"Number of valence electrons in Krypton.",
+					"answer":8
+			},
+			{
+					"question":"Krypton's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":0
+			},
+			{
+					"question":"Krypton's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Iodine or Krypton?",
+					"answer":"Krypton"
+			}
+		]
+	},
+	{
+		"elementName":"Rubidium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Rubidium",
+					"answer":37
+			},
+			{
+					"question":"Rubidium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Rubidium's abbreviation",
+					"answer":"Rb"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Rubidium or Helium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Rubidium.",
+					"answer":1
+			},
+			{
+					"question":"Rubidium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":1
+			},
+			{
+					"question":"Rubidium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Niobium or Rubidium?",
+					"answer":"Niobium"
+			}
+		]
+	},
+	{
+		"elementName":"Strontium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Strontium",
+					"answer":37
+			},
+			{
+					"question":"Strontium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Strontium's abbreviation",
+					"answer":"Sr"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Strontium or Fermium?",
+					"answer":"Fermium"
+			},
+			{
+					"question":"Number of valence electrons in Strontium.",
+					"answer":2
+			},
+			{
+					"question":"Strontium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":2
+			},
+			{
+					"question":"Strontium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Actinium or Strontium?",
+					"answer":"Strontium"
+			}
+		]
+	},
+	{
+		"elementName":"Yttrium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Yttrium",
+					"answer":39
+			},
+			{
+					"question":"Yttrium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Yttrium's abbreviation",
+					"answer":"Y"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Yttrium or Strontium?",
+					"answer":"Yttrium"
+			},
+			{
+					"question":"Number of valence electrons in Yttrium.",
+					"answer":3
+			},
+			{
+					"question":"Yttrium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Yttrium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Fermium or Yttrium?",
+					"answer":"Fermium"
+			}
+		]
+	},
+	{
+		"elementName":"Zirconium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Zirconium",
+					"answer":40
+			},
+			{
+					"question":"Zirconium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Zirconium's abbreviation",
+					"answer":"Zr"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Zirconium or Germanium?",
+					"answer":"Germanium"
+			},
+			{
+					"question":"Number of valence electrons in Zirconium.",
+					"answer":4
+			},
+			{
+					"question":"Zirocnium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":4
+			},
+			{
+					"question":"Zirocnium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Fermium or Zirconium?",
+					"answer":"Zirconium"
+			}
+		]
+	},
+	{
+		"elementName":"Niobium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Niobium",
+					"answer":41
+			},
+			{
+					"question":"Niobium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Niobium's abbreviation",
+					"answer":"Nb"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Niobium or Scandium?",
+					"answer":"Niobium"
+			},
+			{
+					"question":"Number of valence electrons in Niobium.",
+					"answer":5
+			},
+			{
+					"question":"Niobium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":5
+			},
+			{
+					"question":"Niobium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^4"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Plutonium or Niobium?",
+					"answer":"Niobium"
+			}
+		]
+	},
+	{
+		"elementName":"Molybdenum",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Molybdenum",
+					"answer":42
+			},
+			{
+					"question":"Molybdenum's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Molybdenum's abbreviation",
+					"answer":"Mo"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Molybdenum or Krypton?",
+					"answer":"Krypton"
+			},
+			{
+					"question":"Number of valence electrons in Molybdenum.",
+					"answer":6
+			},
+			{
+					"question":"Molybdenum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":6
+			},
+			{
+					"question":"Molybdenum's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^5"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Moscovium or Molybdenum?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Technetium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Technetium",
+					"answer":43
+			},
+			{
+					"question":"Technetium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Technetium's abbreviation",
+					"answer":"Tc"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Technetium or Oganesson?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Technetium.",
+					"answer":7
+			},
+			{
+					"question":"Technetium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":7
+			},
+			{
+					"question":"Technetium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2 4d^5"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Polonium or Technetium?",
+					"answer":"Polonium"
+			}
+		]
+	},
+	{
+		"elementName":"Ruthenium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Ruthenium",
+					"answer":44
+			},
+			{
+					"question":"Ruthenium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Ruthenium's abbreviation",
+					"answer":"Ru"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Ruthenium or Antimony?",
+					"answer":"Ruthenium"
+			},
+			{
+					"question":"Number of valence electrons in Ruthenium.",
+					"answer":8
+			},
+			{
+					"question":"Ruthenium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Ruthenium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^7"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Polonium or Technetium?",
+					"answer":"Ruthenium"
+			}
+		]
+	},
+	{
+		"elementName":"Rhodium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Rhodium",
+					"answer":45
+			},
+			{
+					"question":"Rhodium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Rhodium's abbreviation",
+					"answer":"Rh"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Rhodium or Nihonium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Rhodium.",
+					"answer":9
+			},
+			{
+					"question":"Rhodium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":4
+			},
+			{
+					"question":"Rhodium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^8"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Mendelevium or Rhodium?",
+					"answer":"Rhodium"
+			}
+		]
+	},
+	{
+		"elementName":"Palladium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Palladium",
+					"answer":46
+			},
+			{
+					"question":"Palladium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Palladium's abbreviation",
+					"answer":"Pd"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Palladium or Selenium?",
+					"answer":"Selenium"
+			},
+			{
+					"question":"Number of valence electrons in Palladium.",
+					"answer":10
+			},
+			{
+					"question":"Palladium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":2
+			},
+			{
+					"question":"Palladium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 4d^10"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Californium or Palladium?",
+					"answer":"Palladium"
+			}
+		]
+	},
+	{
+		"elementName":"Silver",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Silver",
+					"answer":47
+			},
+			{
+					"question":"Silver's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Silver's abbreviation",
+					"answer":"Ag"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Silver or Osmium?",
+					"answer":"Osmium"
+			},
+			{
+					"question":"Number of valence electrons in Silver.",
+					"answer":11
+			},
+			{
+					"question":"Silver's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":1
+			},
+			{
+					"question":"Silver's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Tennessine or Silver?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Cadmium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Cadmium",
+					"answer":48
+			},
+			{
+					"question":"Cadmium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Cadmium's abbreviation",
+					"answer":"Cd"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Cadmium or Livermorium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Cadmium.",
+					"answer":12
+			},
+			{
+					"question":"Cadmium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":2
+			},
+			{
+					"question":"Cadmium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2 4d^10"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Radon or Cadmium?",
+					"answer":"Radon"
+			}
+		]
+	},
+	{
+		"elementName":"Indium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Indium",
+					"answer":49
+			},
+			{
+					"question":"Indium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Indium's abbreviation",
+					"answer":"In"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Indium or Hassium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Indium.",
+					"answer":3
+			},
+			{
+					"question":"Indium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Indium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Moscovium or Indium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Tin",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Tin",
+					"answer":50
+			},
+			{
+					"question":"Tin's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Tin's abbreviation",
+					"answer":"Sn"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Tin or Cerium?",
+					"answer":"Tin"
+			},
+			{
+					"question":"Number of valence electrons in Tin.",
+					"answer":4
+			},
+			{
+					"question":"Tin's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":4
+			},
+			{
+					"question":"Tin's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Platinum or Tin?",
+					"answer":"Platinum"
+			}
+		]
+	},
+	{
+		"elementName":"Antimony",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Antimony",
+					"answer":51
+			},
+			{
+					"question":"Antimony's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Antimony's abbreviation",
+					"answer":"Sb"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Antimony or Bohrium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Antimony.",
+					"answer":5
+			},
+			{
+					"question":"Antimony's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":-3
+			},
+			{
+					"question":"Antimony's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^3"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Californium or Antimony?",
+					"answer":"Antimony"
+			}
+		]
+	},
+	{
+		"elementName":"Tellurium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Tellurium",
+					"answer":52
+			},
+			{
+					"question":"Tellurium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Tellurium's abbreviation",
+					"answer":"Te"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Tellurium or Sodium?",
+					"answer":"Tellurium"
+			},
+			{
+					"question":"Number of valence electrons in Tellurium.",
+					"answer":6
+			},
+			{
+					"question":"Tellirum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":-2
+			},
+			{
+					"question":"Tellirum's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^4"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Astatine or Tellurium?",
+					"answer":"Astatine"
+			}
+		]
+	},
+	{
+		"elementName":"Iodine",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Iodine",
+					"answer":53
+			},
+			{
+					"question":"Iodine's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Iodine's abbreviation",
+					"answer":"I"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Iodine or Platinum?",
+					"answer":"Iodine"
+			},
+			{
+					"question":"Number of valence electrons in Iodine.",
+					"answer":7
+			},
+			{
+					"question":"Iodine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":-1
+			},
+			{
+					"question":"Iodine's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^5"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Thorium or Iodine?",
+					"answer":"Iodine"
+			}
+		]
+	},
+	{
+		"elementName":"Xenon",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Xenon",
+					"answer":54
+			},
+			{
+					"question":"Xenon's State at room temperature",
+					"answer":"gas"
+			},
+			{
+					"question":"Xenon's abbreviation",
+					"answer":"Xe"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Xenon or Sulfur?",
+					"answer":"Xenon"
+			},
+			{
+					"question":"Number of valence electrons in Neon.",
+					"answer":8
+			},
+			{
+					"question":"Xeneon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":0
+			},
+			{
+					"question":"Xeneon's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Hassium or Xenon?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Cesium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Cesium",
+					"answer":55
+			},
+			{
+					"question":"Cesium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Cesium's abbreviation",
+					"answer":"Cs"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Cesium or Hafnium?",
+					"answer":"Hafnium"
+			},
+			{
+					"question":"Number of valence electrons in Cesium.",
+					"answer":1
+			},
+			{
+					"question":"Cesium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":1
+			},
+			{
+					"question":"Cesium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Tennessine or Cesium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Barium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Barium",
+					"answer":56
+			},
+			{
+					"question":"Barium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Barium's abbreviation",
+					"answer":"Ba"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Barium or Californium?",
+					"answer":"Californium"
+			},
+			{
+					"question":"Number of valence electrons in Barium.",
+					"answer":2
+			},
+			{
+					"question":"Barium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":2
+			},
+			{
+					"question":"Barium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Mercury or Barium?",
+					"answer":"Mercury"
+			}
+		]
+	},
+	{
+		"elementName":"Lanthanum",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Lanthanum",
+					"answer":57
+			},
+			{
+					"question":"Lanthanum's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Lanthanum's abbreviation",
+					"answer":"La"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Lanthanum or Rhodium?",
+					"answer":"Rhodium"
+			},
+			{
+					"question":"Number of valence electrons in Lanthanum.",
+					"answer":3
+			},
+			{
+					"question":"Lanthanum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Lanthanum's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 5d^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Gold or Lanthanum?",
+					"answer":"Gold"
+			}
+		]
+	},
+	{
+		"elementName":"Cerium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Cerium",
+					"answer":58
+			},
+			{
+					"question":"Cerium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Cerium's abbreviation",
+					"answer":"Ce"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Cerium or Iridium?",
+					"answer":"Iridium"
+			},
+			{
+					"question":"Number of valence electrons in Cerium.",
+					"answer":4
+			},
+			{
+					"question":"Cerium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Cerium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 5d^1 4f^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Terbium or Cerium?",
+					"answer":"Terbium"
+			}
+		]
+	},
+	{
+		"elementName":"Praseodymium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Praseodymium",
+					"answer":59
+			},
+			{
+					"question":"Praseodymium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Praseodymium's abbreviation",
+					"answer":"Pr"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Praseodymium or Copper?",
+					"answer":"Copper"
+			},
+			{
+					"question":"Number of valence electrons in Praseodymium.",
+					"answer":5
+			},
+			{
+					"question":"Praseodymium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Praseodymium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^3"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Rutherfordium or Praseodymium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Neodymium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Neodymium",
+					"answer":60
+			},
+			{
+					"question":"Neodymium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Neodymium's abbreviation",
+					"answer":"Nd"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Neodymium or Xenon?",
+					"answer":"Xenon"
+			},
+			{
+					"question":"Number of valence electrons in Neodymium.",
+					"answer":6
+			},
+			{
+					"question":"Neodymium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Neodymium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^4"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Thorium or Neodymium?",
+					"answer":"Thorium"
+			}
+		]
+	},
+	{
+		"elementName":"Promethium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Promethium",
+					"answer":61
+			},
+			{
+					"question":"Promethium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Promethium's abbreviation",
+					"answer":"Pm"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Promethium or Rhodium?",
+					"answer":"Rhodium"
+			},
+			{
+					"question":"Number of valence electrons in Promethium.",
+					"answer":7
+			},
+			{
+					"question":"Promethium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Promethium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^5"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Osmium or Promethium?",
+					"answer":"Osmium"
+			}
+		]
+	},
+	{
+		"elementName":"Samarium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Samarium",
+					"answer":62
+			},
+			{
+					"question":"Samarium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Samarium's abbreviation",
+					"answer":"Sm"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Samarium or Mercury?",
+					"answer":"Mercury"
+			},
+			{
+					"question":"Number of valence electrons in Samarium.",
+					"answer":8
+			},
+			{
+					"question":"Samarium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Samarium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^6"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Osmium or Samarium?",
+					"answer":"Osmium"
+			}
+		]
+	},
+	{
+		"elementName":"Europium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Europium",
+					"answer":63
+			},
+			{
+					"question":"Europium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Europium's abbreviation",
+					"answer":"Eu"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Europium or Vanadium?",
+					"answer":"Vanadium"
+			},
+			{
+					"question":"Number of valence electrons in Europium.",
+					"answer":9
+			},
+			{
+					"question":"Europium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Europium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^7"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Polonium or Europium?",
+					"answer":"Polonium"
+			}
+		]
+	},
+	{
+		"elementName":"Gadolinium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Gadolinium",
+					"answer":64
+			},
+			{
+					"question":"Gadolinium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Gadolinium's abbreviation",
+					"answer":"Gd"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Gadolinium or Oganesson?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Gadolinium.",
+					"answer":10
+			},
+			{
+					"question":"Gadolinium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Gadolinium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^75d^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Polonium or Gadolinium?",
+					"answer":"Polonium"
+			}
+		]
+	},
+	{
+		"elementName":"Terbium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Terbium",
+					"answer":65
+			},
+			{
+					"question":"Terbium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Terbium's abbreviation",
+					"answer":"Tb"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Terbium or Thulium?",
+					"answer":"Thulium"
+			},
+			{
+					"question":"Number of valence electrons in Terbium.",
+					"answer":11
+			},
+			{
+					"question":"Terbium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Terbium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^9"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Copernicium or Terbium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Dysprosium",
+		"questionAndPoints":[
+			{
+					"question":"Number of electrons in Dysprosium",
+					"answer":66
+			},
+			{
+					"question":"Dysprosium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Dysprosium's abbreviation",
+					"answer":"Dy"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Dysprosium or Livermorium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Dysprosium.",
+					"answer":12
+			},
+			{
+					"question":"Dysprosium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Dysprosium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^10"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Thulium or Dysprosium?",
+					"answer":"Thulium"
+			}
+		]
+	},
+	{
+		"elementName":"Holmium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Holmium",
+					"answer":67
+			},
+			{
+					"question":"Holmium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Holmium's abbreviation",
+					"answer":"Ho"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Holmium or Rhodium?",
+					"answer":"Rhodium"
+			},
+			{
+					"question":"Number of valence electrons in Holmium.",
+					"answer":13
+			},
+			{
+					"question":"Holmium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Holmium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^11"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Hassium or Holmium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Erbium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Erbium",
+					"answer":68
+			},
+			{
+					"question":"Erbium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Erbium's abbreviation",
+					"answer":"Er"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Erbium or Promethium?",
+					"answer":"Erbium"
+			},
+			{
+					"question":"Number of valence electrons in Erbium.",
+					"answer":14
+			},
+			{
+					"question":"Erbium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Erbium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^12"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Mendelevium or Erbium?",
+					"answer":"Mendelevium"
+			}
+		]
+	},
+	{
+		"elementName":"Thulium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Thulium",
+					"answer":69
+			},
+			{
+					"question":"Thulium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Thulium's abbreviation",
+					"answer":"Tm"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Thulium or Sodium?",
+					"answer":"Thulium"
+			},
+			{
+					"question":"Number of valence electrons in Thulium.",
+					"answer":15
+			},
+			{
+					"question":"Thulium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Thulium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^13"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Rutherfordium or Thulium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Ytterbium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Ytterbium",
+					"answer":70
+			},
+			{
+					"question":"Ytterbium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Ytterbium's abbreviation",
+					"answer":"Yb"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Ytterbium or Moscovium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Ytterbium.",
+					"answer":16
+			},
+			{
+					"question":"Ytterbium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Ytterbium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Curium or Ytterbium?",
+					"answer":"Ytterbium"
+			}
+		]
+	},
+	{
+		"elementName":"Lutetium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Lutetium",
+					"answer":71
+			},
+			{
+					"question":"Lutetium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Lutetium's abbreviation",
+					"answer":"Lu"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Lutetium or Dysprosium?",
+					"answer":"Lutetium"
+			},
+			{
+					"question":"Number of valence electrons in Lutetium.",
+					"answer":3
+			},
+			{
+					"question":"Lutetium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Lutetium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Radium or Lutetium?",
+					"answer":"Lutetium"
+			}
+		]
+	},
+	{
+		"elementName":"Hafnium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Hafnium",
+					"answer":72
+			},
+			{
+					"question":"Hafnium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Hafnium's abbreviation",
+					"answer":"Hf"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Hafnium or Hassium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Hafnium.",
+					"answer":4
+			},
+			{
+					"question":"Hafnium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":4
+			},
+			{
+					"question":"Hafnium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Iridium or Hafnium?",
+					"answer":"Iridium"
+			}
+		]
+	},
+	{
+		"elementName":"Tantalum",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Tantalum",
+					"answer":73
+			},
+			{
+					"question":"Tantalum's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Tantalum's abbreviation",
+					"answer":"Ta"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Tantalum or Magnesium?",
+					"answer":"Tantalum"
+			},
+			{
+					"question":"Number of valence electrons in Tantalum.",
+					"answer":5
+			},
+			{
+					"question":"Tantalum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":5
+			},
+			{
+					"question":"Tantalum's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^3"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Dubnium or Tantalum?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Tungsten",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Tungsten",
+					"answer":74
+			},
+			{
+					"question":"Tungsten's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Tungsten's abbreviation",
+					"answer":"W"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Tungsten or Krypton?",
+					"answer":"Krypton"
+			},
+			{
+					"question":"Number of valence electrons in Tungsten.",
+					"answer":6
+			},
+			{
+					"question":"Tungsten's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":6
+			},
+			{
+					"question":"Tungsten's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^4"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Francium or Tungsten?",
+					"answer":"Tungsten"
+			}
+		]
+	},
+	{
+		"elementName":"Rhenium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Rhenium",
+					"answer":75
+			},
+			{
+					"question":"Rhenium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Rhenium's abbreviation",
+					"answer":"Re"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Rhenium or Aluminum?",
+					"answer":"Rhenium"
+			},
+			{
+					"question":"Number of valence electrons in Rhenium.",
+					"answer":7
+			},
+			{
+					"question":"Rhenium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":7
+			},
+			{
+					"question":"Rhenium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^5"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Astatine or Rhenium?",
+					"answer":"Astatine"
+			}
+		]
+	},
+	{
+		"elementName":"Osmium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Osmium",
+					"answer":76
+			},
+			{
+					"question":"Osmium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Osmium's abbreviation",
+					"answer":"Os"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Osmium or Ytterbium?",
+					"answer":"Osmium"
+			},
+			{
+					"question":"Number of valence electrons in Osmium.",
+					"answer":8
+			},
+			{
+					"question":"Osmium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":4
+			},
+			{
+					"question":"Osmium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^6"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Oganesson or Osmium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Iridium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Iridium",
+					"answer":77
+			},
+			{
+					"question":"Iridium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Iridium's abbreviation",
+					"answer":"Ir"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Iridium or Thallium?",
+					"answer":"Iridium"
+			},
+			{
+					"question":"Number of valence electrons in Iridium.",
+					"answer":9
+			},
+			{
+					"question":"Irdium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":4
+			},
+			{
+					"question":"Irdium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^7"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Lawrencium or Iridium?",
+					"answer":"Iridium"
+			}
+		]
+	},
+	{
+		"elementName":"Platinum",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Platinum",
+					"answer":77
+			},
+			{
+					"question":"Platinum's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Platinum's abbreviation",
+					"answer":"Pt"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Platinum or Tin?",
+					"answer":"Platinum"
+			},
+			{
+					"question":"Number of valence electrons in Platinum.",
+					"answer":10
+			},
+			{
+					"question":"Platinum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":4
+			},
+			{
+					"question":"Platinum's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^9"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Iridium or Platinum?",
+					"answer":"Iridium"
+			}
+		]
+	},
+	{
+		"elementName":"Gold",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Gold",
+					"answer":79
+			},
+			{
+					"question":"Gold's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Gold's abbreviation",
+					"answer":"Au"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Gold or Niobium?",
+					"answer":"Gold"
+			},
+			{
+					"question":"Number of valence electrons in Gold.",
+					"answer":11
+			},
+			{
+					"question":"Gold's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Gold's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Bohrium or Gold?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Mercury",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Mercury",
+					"answer":80
+			},
+			{
+					"question":"Mercury's State at room temperature",
+					"answer":"liquid"
+			},
+			{
+					"question":"Mercury's abbreviation",
+					"answer":"Au"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Mercury or Chromium?",
+					"answer":"Mercury"
+			},
+			{
+					"question":"Number of valence electrons in Mercury.",
+					"answer":12
+			},
+			{
+					"question":"Mercury's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":2
+			},
+			{
+					"question":"Mercury's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Thorium or Mercury?",
+					"answer":"Mercury"
+			}
+		]
+	},
+	{
+		"elementName":"Thallium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Thallium",
+					"answer":81
+			},
+			{
+					"question":"Thallium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Thallium's abbreviation",
+					"answer":"Tl"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Thallium or Praseodymium?",
+					"answer":"Thallium"
+			},
+			{
+					"question":"Number of valence electrons in Thallium.",
+					"answer":3
+			},
+			{
+					"question":"Thallium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Thallium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Tennessine or Thallium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Lead",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Lead",
+					"answer":82
+			},
+			{
+					"question":"Lead's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Lead's abbreviation",
+					"answer":"Pb"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Lead or Oganesson?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Lead.",
+					"answer":4
+			},
+			{
+					"question":"Lead's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":4
+			},
+			{
+					"question":"Lead's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Uranium or Lead?",
+					"answer":"Lead"
+			}
+		]
+	},
+	{
+		"elementName":"Bismuth",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Bismuth",
+					"answer":83
+			},
+			{
+					"question":"Bismuth's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Bismuth's abbreviation",
+					"answer":"Bi"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Bismuth or Darmstadtium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Bismuth.",
+					"answer":5
+			},
+			{
+					"question":"Bismuth's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":-3
+			},
+			{
+					"question":"Bismuth's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^3"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'): Lead or Bismuth?",
+					"answer":"Lead"
+			}
+		]
+	},
+	{
+		"elementName":"Polonium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Polonium",
+					"answer":84
+			},
+			{
+					"question":"Polonium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Polonium's abbreviation",
+					"answer":"Po"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Polonium or Argon?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Polonium.",
+					"answer":6
+			},
+			{
+					"question":"Polonium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":-2
+			},
+			{
+					"question":"Polonium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^4"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Francium or Polonium?",
+					"answer":"Polonium"
+			}
+		]
+	},
+	{
+		"elementName":"Astatine",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Astatine",
+					"answer":85
+			},
+			{
+					"question":"Astatine's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Astatine's abbreviation",
+					"answer":"At"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Astatine or Cobalt?",
+					"answer":"Astatine"
+			},
+			{
+					"question":"Number of valence electrons in Astatine.",
+					"answer":7
+			},
+			{
+					"question":"Astatine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":-1
+			},
+			{
+					"question":"Astatine's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^5"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Actinium or Astatine?",
+					"answer":"Astatine"
+			}
+		]
+	},
+	{
+		"elementName":"Radon",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Radon",
+					"answer":86
+			},
+			{
+					"question":"Radon's State at room temperature",
+					"answer":"gas"
+			},
+			{
+					"question":"Radon's abbreviation",
+					"answer":"Rn"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Radon or Zirconium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Radon.",
+					"answer":8
+			},
+			{
+					"question":"Radon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":0
+			},
+			{
+					"question":"Radon's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Curium or Radon?",
+					"answer":"Radon"
+			}
+		]
+	},
+	{
+		"elementName":"Francium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Francium",
+					"answer":87
+			},
+			{
+					"question":"Francium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Francium's abbreviation",
+					"answer":"Fr"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Francium or Europium?",
+					"answer":"Europium"
+			},
+			{
+					"question":"Number of valence electrons in Francium.",
+					"answer":1
+			},
+			{
+					"question":"Francium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":1
+			},
+			{
+					"question":"Francium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6 7s^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Nihonium or Francium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Radium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Radium",
+					"answer":88
+			},
+			{
+					"question":"Radium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Radium's abbreviation",
+					"answer":"Ra"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Radium or Manganese?",
+					"answer":"Manganese"
+			},
+			{
+					"question":"Number of valence electrons in Radium.",
+					"answer":2
+			},
+			{
+					"question":"Radium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":2
+			},
+			{
+					"question":"Radium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6 7s^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Seaborgium or Radium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Actinium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Actinium",
+					"answer":89
+			},
+			{
+					"question":"Actinium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Actinium's abbreviation",
+					"answer":"Ac"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Actinium or Fermium?",
+					"answer":1.1
+			},
+			{
+					"question":"Number of valence electrons in Actinium.",
+					"answer":3
+			},
+			{
+					"question":"Actinium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Actinium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6 7s^2 6d^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Plutonium or Actinium?",
+					"answer":"Plutonium"
+			}
+		]
+	},
+	{
+		"elementName":"Thorium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Thorium",
+					"answer":90
+			},
+			{
+					"question":"Thorium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Thorium's abbreviation",
+					"answer":"Th"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Thorium or Promethium?",
+					"answer":"Thorium"
+			},
+			{
+					"question":"Number of valence electrons in Thorium.",
+					"answer":4
+			},
+			{
+					"question":"Thorium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":4
+			},
+			{
+					"question":"Thorium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6 7s^2 6d^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Seaborgium or Thorium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Protactinium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Protactinium",
+					"answer":91
+			},
+			{
+					"question":"Protactinium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Protactinium's abbreviation",
+					"answer":"Pa"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Protactinium or Tennessine?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Protactinium.",
+					"answer":5
+			},
+			{
+					"question":"Protactinium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Protactinium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^2 6d^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Nobelium or Protactinium?",
+					"answer":"Nobelium"
+			}
+		]
+	},
+	{
+		"elementName":"Uranium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Uranium",
+					"answer":92
+			},
+			{
+					"question":"Uranium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Uranium's abbreviation",
+					"answer":"U"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Uranium or Iodine?",
+					"answer":"Iodine"
+			},
+			{
+					"question":"Number of valence electrons in Uranium.",
+					"answer":6
+			},
+			{
+					"question":"Uranium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Uranium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^3 6d^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Mendelevium or Uranium?",
+					"answer":"Mendelevium"
+			}
+		]
+	},
+	{
+		"elementName":"Neptunium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Neptunium ",
+					"answer":93
+			},
+			{
+					"question":"Neptunium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Neptunium's abbreviation",
+					"answer":"Np"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Neptunium or Fermium?",
+					"answer":"Neptunium"
+			},
+			{
+					"question":"Number of valence electrons in Neptunium.",
+					"answer":7
+			},
+			{
+					"question":"Neptunium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Neptunium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^4 6d^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Neptunium or Aluminum?",
+					"answer":"Neptunium"
+			}
+		]
+	},
+	{
+		"elementName":"Plutonium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Plutonium ",
+					"answer":94
+			},
+			{
+					"question":"Plutonium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Plutonium's abbreviation",
+					"answer":"Pu"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Plutonium or Argon?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Plutonium.",
+					"answer":8
+			},
+			{
+					"question":"Plutonium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Plutonium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^6"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Tennessine or Plutonium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Americium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Americium",
+					"answer":95
+			},
+			{
+					"question":"Americium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Americium's abbreviation",
+					"answer":"Am"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Americium or Cerium?",
+					"answer":"Americium"
+			},
+			{
+					"question":"Number of valence electrons in Americium.",
+					"answer":9
+			},
+			{
+					"question":"Americium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Americium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^7"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Rutherfordium or Americium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Curium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Curium",
+					"answer":96
+			},
+			{
+					"question":"Curium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Curium's abbreviation",
+					"answer":"Cm"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Curium or Hassium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Curium.",
+					"answer":10
+			},
+			{
+					"question":"Curium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Curium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^7 6d^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Tennessine or Curium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Berkelium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Berkelium",
+					"answer":97
+			},
+			{
+					"question":"Berkelium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Berkelium's abbreviation",
+					"answer":"Bk"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Berkelium or Iodine?",
+					"answer":"Iodine"
+			},
+			{
+					"question":"Number of valence electrons in Berkelium.",
+					"answer":11
+			},
+			{
+					"question":"Berkelium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Berkelium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^9"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Flerovium or Berkelium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Californium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Californium",
+					"answer":98
+			},
+			{
+					"question":"Californium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Californium's abbreviation",
+					"answer":"Cf"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Californium or Tungsten?",
+					"answer":"Tungsten"
+			},
+			{
+					"question":"Number of valence electrons in Californium.",
+					"answer":12
+			},
+			{
+					"question":"Californium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Californium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^10"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Darmstadtium or Californium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Einstenium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Einsteinium",
+					"answer":99
+			},
+			{
+					"question":"Einsteinium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Einsteinium's abbreviation",
+					"answer":"Es"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Einstenium or Phosphorus?",
+					"answer":"Phosphorus"
+			},
+			{
+					"question":"Number of valence electrons in Ensteinium.",
+					"answer":13
+			},
+			{
+					"question":"Ensteinium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Enstenium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^11"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Meitnerium or Ensteinium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Fermium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Fermium",
+					"answer":100
+			},
+			{
+					"question":"Fermium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Fermium's abbreviation",
+					"answer":"Fm"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Fermium or Seaborgium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Fermium.",
+					"answer":14
+			},
+			{
+					"question":"Fermium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Fermium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^12"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Nobelium or Fermium?",
+					"answer":"Nobelium"
+			}
+		]
+	},
+	{
+		"elementName":"Mendelevium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Mendelevium",
+					"answer":101
+			},
+			{
+					"question":"Mendelevium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Mendelevium's abbreviation",
+					"answer":"Md"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Mendelevium or Beryllium?",
+					"answer": "Beryllium"
+			},
+			{
+					"question":"Number of valence electrons in Mendelevium.",
+					"answer":15
+			},
+			{
+					"question":"Mendelevium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Mendelevium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^13"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Hassium or Mendelevium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Nobelium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Nobelium",
+					"answer":102
+			},
+			{
+					"question":"Nobelium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Nobelium's abbreviation",
+					"answer":"No"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Nobelium or Antimony?",
+					"answer":"Antimony"
+			},
+			{
+					"question":"Number of valence electrons in Nobelium.",
+					"answer":16
+			},
+			{
+					"question":"Nobelium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Nobelium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Meitnerium or Nobelium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Lawrencium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Lawrencium",
+					"answer":103
+			},
+			{
+					"question":"Lawrencium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Lawrencium's abbreviation",
+					"answer":"Lr"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Lawrencium or Nickel?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Lawrencium.",
+					"answer":3
+			},
+			{
+					"question":"Lawrencium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":3
+			},
+			{
+					"question":"Lawrencium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 7p^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Darmstadtium or Lawrencium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Rutherfordium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Rutherfordium",
+					"answer":104
+			},
+			{
+					"question":"Rutherfordium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Rutherfordium's abbreviation",
+					"answer":"Rf"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Rutherfordium or Curium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Rutherfordium.",
+					"answer":4
+			},
+			{
+					"question":"Rutherfordium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":4
+			},
+			{
+					"question":"Rutherfordium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Dubnium or Rutherfordium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Dubnium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Dubnium",
+					"answer":105
+			},
+			{
+					"question":"Dubnium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Dubnium's abbreviation",
+					"answer":"Db"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Dubnium or Holmium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Dubnium.",
+					"answer":5
+			},
+			{
+					"question":"Dubnium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":5
+			},
+			{
+					"question":"Dubnium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^3"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Flerovium or Dubnium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Seaborgium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Seaborgium",
+					"answer":106
+			},
+			{
+					"question":"Seaborgium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Seaborgium's abbreviation",
+					"answer":"Sg"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Seaborgium or Krypton?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Seaborgium.",
+					"answer":6
+			},
+			{
+					"question":"Seaborgium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":6
+			},
+			{
+					"question":"Seaborgium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^4"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Darmstadtium or Seaborgium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Bohrium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Bohrium",
+					"answer":107
+			},
+			{
+					"question":"Bohrium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Bohrium's abbreviation",
+					"answer":"Bh"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Bohrium or Nickel?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Bohrium.",
+					"answer":7
+			},
+			{
+					"question":"Bohrium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":7
+			},
+			{
+					"question":"Bohrium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^5"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Tennessine or Bohrium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Hassium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Hassium",
+					"answer":108
+			},
+			{
+					"question":"Hassium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Hassium's abbreviation",
+					"answer":"Hs"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Hassium or Germanium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Hassium.",
+					"answer":8
+			},
+			{
+					"question":"Hassium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+					"answer":8
+			},
+			{
+					"question":"Hassium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^6"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Moscovium or Hassium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Meitnerium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Meitnerium",
+					"answer":109
+			},
+			{
+					"question":"Meitnerium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Meitnerium's abbreviation",
+					"answer":"Mt"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Meitnerium or Fermium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Meitnerium.",
+					"answer":9
+			},
+			{
+					"question":"Meitnerium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unknown, type 'unknown')",
+					"answer":"unknown"
+			},
+			{
+					"question":"Meitnerium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^7"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Darmstadtium or Meitnerium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Darmstadtium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Darmstadtium",
+					"answer":110
+			},
+			{
+					"question":"Darmstadtium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Darmstadtium's abbreviation",
+					"answer":"Ds"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Darmstadtium or Selenium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Darmstadtium.",
+					"answer":10
+			},
+			{
+					"question":"Darmstadtium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unknown, type 'unknown')",
+					"answer":"unknown"
+			},
+			{
+					"question":"Darmstadtium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^8"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Nihonium or Darmstadtium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Roentgenium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Roentgenium",
+					"answer":111
+			},
+			{
+					"question":"Roentgenium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Roentgenium's abbreviation",
+					"answer":"Rg"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Roentgenium or Antimony?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Roentgenium.",
+					"answer":11
+			},
+			{
+					"question":"Roentgenium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unknown, type 'unknown')",
+					"answer":"unknown"
+			},
+			{
+					"question":"Roentgenium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^9"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Lead or Roentgenium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Copernicium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Copernicium",
+					"answer":112
+			},
+			{
+					"question":"Copernicium's State at room temperature",
+					"answer":"liquid"
+			},
+			{
+					"question":"Copernicium's abbreviation",
+					"answer":"Cn"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Copernicium or Niobium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Copernicium.",
+					"answer":12
+			},
+			{
+					"question":"Copernicium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unknown, type 'unknown')",
+					"answer":2
+			},
+			{
+					"question":"Copernicium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Flerovium or Copernicium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Nihonium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Nihonium",
+					"answer":113
+			},
+			{
+					"question":"Nihonium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Nihonium's abbreviation",
+					"answer":"Nh"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Nihonium or Copernicium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Nihonium.",
+					"answer":3
+			},
+			{
+					"question":"Nihonium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unknown, type 'unknown')",
+					"answer":"unknown"
+			},
+			{
+					"question":"Nihonium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^1"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Moscovium or Nihonium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Flerovium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Flerovium",
+					"answer":114
+			},
+			{
+					"question":"Flerovium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Flerovium's abbreviation",
+					"answer":"Fl"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Flerovium or Terbium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Flerovium.",
+					"answer":4
+			},
+			{
+					"question":"Flerovium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unknown, type 'unknown')",
+					"answer":"unknown"
+			},
+			{
+					"question":"Flerovium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^2"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Moscovium or Flerovium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Moscovium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Moscovium",
+					"answer":115
+			},
+			{
+					"question":"Moscovium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Moscovium's abbreviation",
+					"answer":"Mc"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Moscovium or Tungsten?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Moscovium.",
+					"answer":5
+			},
+			{
+					"question":"Moscovium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unknown, type 'unknown')",
+					"answer":"unknown"
+			},
+			{
+					"question":"Moscovium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^3"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'): Hydrogen or Moscovium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Livermorium",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Livermorium",
+					"answer":116
+			},
+			{
+					"question":"Livermorium's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Livermorium's abbreviation",
+					"answer":"Lv"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Livermorium or Neodymium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Livermorium.",
+					"answer":6
+			},
+			{
+					"question":"Livermorium's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unknown, type 'unknown')",
+					"answer":"unknown"
+			},
+			{
+					"question":"Livermorium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^4"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Moscovium or Livermorium?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Tennessine",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Tennessine",
+					"answer":117
+			},
+			{
+					"question":"Tennessine's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Tennessine's abbreviation",
+					"answer":"Ts"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Tennessine or Zinc?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Tennessine.",
+					"answer":7
+			},
+			{
+					"question":"Tennessine's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unknown, type 'unknown')",
+					"answer":"unknown"
+			},
+			{
+					"question":"Tennessine's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^5"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element is unknown, type 'unknown'):  Oganesson or Tennessine?",
+					"answer":"unknown"
+			}
+		]
+	},
+	{
+		"elementName":"Oganesson",
+		"questionAndPoints":[
+			{
+					"question":"Number of protons in Oganesson",
+					"answer":118
+			},
+			{
+					"question":"Oganesson's State at room temperature",
+					"answer":"solid"
+			},
+			{
+					"question":"Oganesson's abbreviation",
+					"answer":"Og"
+			},
+			{
+					"question":"Which element has a higher Electronegativity (if unknown type 'unknown'):  Oganesson or Erbium?",
+					"answer":"unknown"
+			},
+			{
+					"question":"Number of valence electrons in Oganesson.",
+					"answer":8
+			},
+			{
+					"question":"Oganesson's oxidation state that makes the outer shell of itself 'full' when combined with another element (if unknown, type 'unknown')",
+					"answer":"unknown"
+			},
+			{
+					"question":"Oganesson's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
+					"answer":"1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^10 7p^6"
+			},
+			{
+					"question":"Which element has a higher ionization energy (if one element's is unknown, type 'unknown'):  Tennessine or Oganesson?",
+					"answer":"unknown"
+			}
+		]
+	},
+    {
+        "elementName":"General Knowledge",
+        "questionAndPoints": [
+            {
+                "question":"How many valence electrons do the alkali metals have?",
+                "answer": 1
+            },
+            {
+                "question":"How many valence electrons do the alkaline metals have?",
+                "answer": 2
+            },
+            {
+                "question":"How many valence electrons do the halogens have?",
+                "answer": 7
+            },
+            {
+                "question":"True or False? Noble gasses have full valence electron shells",
+                "answer":"True" 
+            },
+            {
+                "question":"True or False? Hydrogen is an alkali metal",
+                "answer": "False"
+            },
+            {
+                "question":"True or False? Strontium is an alkaline metal",
+                "answer": "True"
+            },
+            {
+                "question":"True or False? Irdium is a halogen",
+                "answer": "False"
+            },
+            {
+                "question":"True or False? Helium is a Noble gas have full valence electron shells",
+                "answer":"True" 
             }
         ]
     }
 ]
+
