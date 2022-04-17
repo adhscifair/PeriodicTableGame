@@ -2,15 +2,18 @@
 let questionsAnsweredArray = {}
 let question
 let questionNumber = 7
-
+let icon;
 
 function onLoad() {
     if(localStorage.getItem("progress") === null) {
         localStorage.setItem("progress", "")
     }else{
-        let savedProgress  = JSON.parse(localStorage.getItem("progress"))
-        questionsAnsweredArray = savedProgress
+        if(localStorage.getItem("progress") != ""){
+            let savedProgress  = JSON.parse(localStorage.getItem("progress"))
+            questionsAnsweredArray = savedProgress
+        }
     }
+    $("#exampleModal").modal("show");
 }
 
 function checkAndInitializeQAarray(elementName) {
@@ -37,7 +40,6 @@ function storeQA(elementName, question, answer, isCorrect) {
         questionsAnsweredArray[elementName]['score'] = curScore
     }
     localStorage.setItem("progress", JSON.stringify(questionsAnsweredArray))
-    console.log(JSON.parse(localStorage.getItem("progress")))
     $("#arrayText").append(JSON.stringify(questionsAnsweredArray))
 }
 
@@ -56,9 +58,11 @@ function resetForNextQuestion() {
 }
 
 function checkAnswer(answerInputed, correctAnswer) {
-    
     if(questionNumber == 1) {
+        answerInputed = answerInputed.toLowerCase();
+    }else if( questionNumber == 7 || questionNumber == 3 || arrayNumber == 118){
         answerInputed = answerInputed.toLowerCase()
+        correctAnswer = correctAnswer.toLowerCase()
     }
     return answerInputed == correctAnswer
 }
@@ -110,15 +114,40 @@ function displayProgress(elementName) {
         let curArray = questionsAnsweredArray[elementName]
         let score = curArray['score']
         let qaArray = curArray['QA']
-
-        $("#arrayText").append(`Your overall score for this element is ${score}/8`)
-
+        let tableRow1 = '<tr></tr>'
+        let tableRow2 = '<tr></tr>'
+        let tableRow3 = '<tr></tr>'
+        let tableRow4 = '<tr></tr>'
+        $("#arrayText").append(`<div class="card"><h2 style="text-align:center">Score: ${score}/8</h2></div> <hr/> <br/>`)
+        
         for(let i=0; i< qaArray.length; i++) {
-            let curText = `<br/> Question: ${qaArray[i]['question']}`
-            curText += `<br/> Answer: ${qaArray[i]['answer']}`
-            curText += `<br/> Is Correct: ${qaArray[i]['isCorrect']} <br/>`
-            $("#arrayText").append(`<li class="list-group-item arrayList">${curText}</li>`)
+            if(qaArray[i]['isCorrect']){
+                icon = `<img src="./pictures/correct.png" alt="Correct!" width = "40px">`
+            }else{
+                icon = `<img src="./pictures/incorrect.png" alt="Incorrect!" width = "40px">`
+            }
+            let curText = `<br/> <h5>Question: ${qaArray[i]['question']} </h5>`
+            curText += `<h6>Your answer: ${qaArray[i]['answer']} ${icon}</h6>`
+            if(i == 0){
+                tableRow1 += `<td>${curText}</td>`
+            }else if(i==1) {
+                tableRow2 += `<td>${curText}</td>`
+            }else if(i==2){
+                tableRow3 += `<td>${curText}</td>`
+            }else if(i==3){
+                tableRow4 += `<td>${curText}</td>`
+            }else if(i==4){
+                tableRow1 += `<td>${curText}</td>`
+            }else if(i==5){
+                tableRow2 += `<td>${curText}</td>`
+            }else if(i==6){
+                tableRow3 += `<td>${curText}</td>`
+            }else if(i==7){
+                tableRow4 += `<td>${curText}</td>`
+            }
         }
+        let arrayTextHtml = `<tr><th>Questions<th/><th></th><tbody>${tableRow1}${tableRow2}${tableRow3}${tableRow4}</tbody></tr>`
+        $("#arrayText").append(arrayTextHtml)
     } else {
         $("#quickNote").text('Answer a question to see your progress!')
         $('#quickNote').show()
@@ -142,8 +171,8 @@ function displayModal (clicked_id) {
     document.getElementById("questionModalLabel").innerHTML = title
     $("#quickMessage").show()
     $("#questionInputBody").show()
-
     question = data[arrayNumber].questionAndPoints[questionNumber].question
+
     document.getElementById("questionBody").innerHTML = question
 
     displayProgress(title)
@@ -175,9 +204,4 @@ function evaluateAnswer(){
     }
     displayProgress(elementName)
     
-}
-
-function makeData() {
-    
-
 }
