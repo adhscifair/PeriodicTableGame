@@ -15,7 +15,7 @@
   <!--
     Instructions Modal
   -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div data-backdrop="static" data-keyboard="false" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -67,8 +67,8 @@
   <!--
     Question Panel / Modal
   -->
-  <div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="exampleModalLabel">
-    <div class="modal-dialog">
+  <div data-backdrop="static" data-keyboard="false" class="modal fade " id="questionModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="questionModalLabel"></h5>
@@ -77,7 +77,7 @@
           </button>
         </div>
         <br/>
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
+        &nbsp;<ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
             <a class="nav-link active" id="questions-tab" data-toggle="tab" href="#questions" role="tab" aria-controls="questions" aria-selected="true">Questions</a>
           </li>
@@ -106,9 +106,8 @@
           <div class="tab-pane fade" id="progress" role="tabpanel" aria-labelledby="progress-tab">
             <div class="modal-body">
               <p id="quickNote">Answer a question to see your progress!</p>
-                <div  id= "test" class="card" style="width: 18rem;">
-                  <ul class="list-group list-group-flush" id="arrayText"></ul>
-                </div>
+                  <table id="arrayText">
+                  </table>
             </div>
           </div>
 
@@ -124,7 +123,31 @@
 
  
     <div class="periodic">
+      <div class="periodic-row">
+        <div class="cell"></div>
+        <div class="cell label">1</div>
+        <div class="cell label">2</div>
+        <div class="cell label">3</div>
+        <div class="cell label">4</div>
+        <div class="cell label">5</div>
+        <div class="cell label">6</div>
+        <div class="cell label">7</div>
+        <div class="cell label">8</div>
+        <div class="cell label">9</div>
+        <div class="cell label">10</div>
+        <div class="cell label">11</div>
+        <div class="cell label">12</div>
+        <div class="cell label">13</div>
+        <div class="cell label">14</div>
+        <div class="cell label">15</div>
+        <div class="cell label">16</div>
+        <div class="cell label">17</div>
+        <div class="cell label">18</div>
+      </div>
         <div class="periodic-row">
+          <div class="cell label">
+            1
+          </div>
           <div class="cell">
             <div onclick="displayModal(this.id)" id = "el1"  class="element" data-toggle="modal2" data-target="#questionModal">
               <span class="at_num">1</span><br/>
@@ -132,7 +155,22 @@
               <span id="el1-title" class="at_details">Hydrogen </span>
             </div>
           </div>
-          <div class="specialcell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
           <div class="cell">
             <div onclick="displayModal(this.id)" id = "el2" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">2</div>
@@ -142,6 +180,9 @@
           </div>
         </div>
         <div class="periodic-row">
+          <div class="cell label">
+            2
+          </div>
           <div class="cell">
             <div onclick="displayModal(this.id)" id="el3" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">3</div>
@@ -219,6 +260,9 @@
           </div>
         </div>
         <div class="periodic-row">
+          <div class="cell label">
+            3
+          </div>
           <div class="cell">
             <div onclick="displayModal(this.id)" id="el11" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">11</div>
@@ -295,6 +339,9 @@
           </div>
         </div>
         <div class="periodic-row">
+          <div class="cell label">
+            4
+          </div>
           <div class="cell">
             <div onclick="displayModal(this.id)" id="el19" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">19</div>
@@ -441,6 +488,9 @@
           </div>
         </div>
         <div class="periodic-row">
+          <div class="cell label">
+            5
+          </div>
           <div class="cell">
             <div onclick="displayModal(this.id)" id="el37" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">37</div>
@@ -587,6 +637,9 @@
           </div>
         </div>
         <div class="periodic-row">
+          <div class="cell label">
+            6
+          </div>
           <div class="cell">
             <div onclick="displayModal(this.id)" id="el55" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">55</div>
@@ -726,6 +779,9 @@
           </div>
         </div>
         <div class="periodic-row">
+          <div class="cell label">
+            7
+          </div>
           <div class="cell">
             <div onclick="displayModal(this.id)" id="el87" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">87</div>
@@ -869,6 +925,7 @@
           <div class="cell"></div>
           <div class="cell"></div>
           <div class="cell"></div>
+          <div class="cell"></div>
           <div class="cell">
             <div onclick="displayModal(this.id)" id="el57" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">57</div>
@@ -994,6 +1051,7 @@
           <div class="cell"></div>
           <div class="cell"></div>
           <div class="cell"></div>
+          <div class="cell"></div>
           <div class="cell">
             <div onclick="displayModal(this.id)" id="el89" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">89</div>
@@ -1114,6 +1172,14 @@
               <br/>
             </div>
           </div>
+          <br/><br/><br/><br/><br/>
+          <div class="cell" style="text-align: center;">
+            <div onclick="displayModal(this.id)" id="el119" class="element" data-toggle="modal2" data-target="#questionModal">
+              <b>General Questions</b>
+              <br/>
+            </div>
+        </div>
+        
         </div>
         <div style="clear: both;"></div>
       </div>
@@ -1121,7 +1187,7 @@
     
   </div>
 
-  <script src="js/data.js"></script>
+    <script src="js/data.js"></script>
     <script src="js/main.js"></script>
     <script src="js/confetti.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
