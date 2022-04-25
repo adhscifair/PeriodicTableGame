@@ -302,6 +302,13 @@ hr {
     font-size: 24px;
     color: black;
   }
+  #score {
+    text-align: center;
+    width: 192.5%;
+  }
+  hr {
+    width: 192.5%;
+  }
 }
 @media (min-width: 1200px) {
   .periodic {
