@@ -5,17 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Periodic Table Game</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/new.css">
-    <link rel="shortcut icon" type="image/jpg" href="./pictures/logo.png"/>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body onload="onLoad()">
-
+  <script>
+    $( function() {
+    $("#modalDialog").draggable({
+        handle:".modal-header",
+        cursor:"move",
+    });
+  } );
+</script>
+ 
   <!--
     Instructions Modal
   -->
-  <div data-backdrop="static" data-keyboard="false" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div  id="myModal" data-backdrop="static" data-keyboard="false" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" draggable>
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -33,7 +42,7 @@
           <br/><br/>
           <img src="pictures/begin.png" alt="Clicking on Hydrogen" width="25%"/>
           <br/>
-          Then a modal should pop up. Enter the answer into the input box, and 
+          Then a pop-up should. Enter the answer into the input box, and 
           click submit. (As shown below)
           <br/><br/>
           <img src="pictures/answerQuestion.png" alt="Clicking on Hydrogen" width="100%"/>
@@ -63,12 +72,8 @@
       </div>
     </div>
   </div>
-
-  <!--
-    Question Panel / Modal
-  -->
   <div data-backdrop="static" data-keyboard="false" class="modal fade " id="questionModal" tabindex="-1" aria-labelledby="exampleModalLabel">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-lg" id="modalDialog">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="questionModalLabel"></h5>
@@ -85,15 +90,23 @@
             <a class="nav-link" id="progress-tab" data-toggle="tab" href="#progress" role="tab" aria-controls="progress" aria-selected="false">Progress</a>
           </li>
         </ul>
-
+        <br/>
         <div class="tab-content" id="myTabContent">
 
           <div class="tab-pane fade show active" id="questions" role="tabpanel" aria-labelledby="questions-tab">
             <div class="modal-body" id="modalBody">
+              <div class="progress">
+                <div class="progress-bar-animated progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <br/>
               <div id="quickMessage">
-                Please note that you will not be able to click out 
+                <div class="alert alert-info" role="alert">
+                  Please note that you will not be able to click out 
                 of this modal until you answer ALL the questions, 
-                otherwise, your progress will be lost. 
+                otherwise, your progress will be lost. If you answer all 
+                the questions and exit, the progrees bar will be blank,
+                but your progress will be still saved on the progress tab.
+                </div>
               </div>
               <div class="modal-body" id="questionBody"></div>
               <div class="modal-body" id="questionInputBody">
@@ -103,11 +116,11 @@
             </div>
           </div>
 
+
           <div class="tab-pane fade" id="progress" role="tabpanel" aria-labelledby="progress-tab">
             <div class="modal-body">
               <p id="quickNote">Answer a question to see your progress!</p>
-                  <table id="arrayText">
-                  </table>
+              <table id="arrayText"></table>
             </div>
           </div>
 
@@ -117,10 +130,8 @@
     </div> <!-- end of modal dialogue-->
   </div>
   
-
-  <button style="float:right;" class="btn-primary btn" href="#" id="rules" data-toggle="modal" data-target="#exampleModal" >Rules</button>
   <h1 id = "header" style="text-align: center;">The Periodic Table Game</h1>
-
+  <button style="margin-left:90%;" class="btn-primary btn" href="#" id="rules" data-toggle="modal" data-target="#myModal" >Rules</button>
  
     <div class="periodic">
       <div class="periodic-row">
@@ -142,7 +153,7 @@
         <div class="cell label">15</div>
         <div class="cell label">16</div>
         <div class="cell label">17</div>
-        <div class="cell label">18</div>
+        <div class="cell label"> 18</div>
       </div>
         <div class="periodic-row">
           <div class="cell label">
@@ -1186,11 +1197,9 @@
     <br/>
     
   </div>
-
-    <script src="js/data.js"></script>
+      <script src="js/data.js"></script>
     <script src="js/main.js"></script>
     <script src="js/confetti.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
