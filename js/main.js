@@ -1,8 +1,8 @@
-//making lots of VARIBLES. NUM NUM NUM
 let questionsAnsweredArray = {}
 let question
-let questionNumber = 7
+let questionNumber = 0
 let icon;
+
 
 function onLoad() {
     if(localStorage.getItem("progress") === null) {
@@ -13,7 +13,7 @@ function onLoad() {
             questionsAnsweredArray = savedProgress
         }
     }
-    $("#exampleModal").modal("show");
+    $("#myModal").modal("show");
 }
 
 function checkAndInitializeQAarray(elementName) {
@@ -24,7 +24,6 @@ function checkAndInitializeQAarray(elementName) {
             'score': 0
         }
         questionsAnsweredArray[elementName] = object
-        
     } 
 }
 
@@ -34,18 +33,31 @@ function storeQA(elementName, question, answer, isCorrect) {
     curQA['question'] = question
     curQA['answer'] = answer
     curQA['isCorrect'] = isCorrect
-    questionsAnsweredArray[elementName].QA.push(curQA)
-    if(isCorrect) {
-        let curScore = questionsAnsweredArray[elementName]['score'] + 1
-        questionsAnsweredArray[elementName]['score'] = curScore
+    let alreadyExists = false
+    let ifPrevAnswerCorrect = false
+    questionsAnsweredArray[elementName].QA.forEach((q, index)=>{
+        if(q.question == question) {
+            ifPrevAnswerCorrect = q.isCorrect
+            questionsAnsweredArray[elementName].QA[index] = curQA
+            alreadyExists = true
+        }
+    })
+
+    if(!alreadyExists) {
+        questionsAnsweredArray[elementName].QA.push(curQA)
+        if(isCorrect) {
+            questionsAnsweredArray[elementName]['score']++
+        }
+    } else { //check and adjust the score if this was previously answered wrong
+        if(!ifPrevAnswerCorrect && isCorrect) {
+            questionsAnsweredArray[elementName]['score']++
+        } else if(ifPrevAnswerCorrect && !isCorrect) {
+            questionsAnsweredArray[elementName]['score']--
+        }
     }
+
     localStorage.setItem("progress", JSON.stringify(questionsAnsweredArray))
-    $("#arrayText").append(JSON.stringify(questionsAnsweredArray))
-}
-
-
-function resetForNextElement() {
-    questionNumber = 7
+    $("#arrayText").append(JSON.stringify(questionsAnsweredArray))    
 }
 
 function resetForNextQuestion() {
@@ -54,13 +66,15 @@ function resetForNextQuestion() {
     if(questionNumber >= 0) {
         question = data[arrayNumber].questionAndPoints[questionNumber].question
         $("#questionBody").html(question)
+        let width = (1/data[arrayNumber].questionAndPoints.length)*100
+        $(".progress").append(`
+          <div  id= "progressBar${questionNumber}" class="progress-bar bg-info" role="progressbar" style="width: ${width}%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        `)
     }
 }
 
 function checkAnswer(answerInputed, correctAnswer) {
-    if(questionNumber == 1) {
-        answerInputed = answerInputed.toLowerCase();
-    }else if( questionNumber == 7 || questionNumber == 3 || arrayNumber == 118){
+    if(typeof correctAnswer === 'string' && typeof correctAnswer === 'string' && question.includes("abbreviation") == false) {
         answerInputed = answerInputed.toLowerCase()
         correctAnswer = correctAnswer.toLowerCase()
     }
@@ -68,8 +82,8 @@ function checkAnswer(answerInputed, correctAnswer) {
 }
 
 function handleEmptyAnswer() {
-    $("#quickMessage").html(`
-        <div class="alert alert-warning" role="alert">
+    $("#quickMessage").html(
+        `<br/><div class="alert alert-warning" role="alert">
             Please answer the question to proceed. 
         </div>
         
@@ -79,15 +93,16 @@ function handleEmptyAnswer() {
 
 function displaySuccessMessage() {
     $("#quickMessage").html(
-        `<div class="alert alert-success" role="alert">
+        `<br/>
+        <div class="alert alert-success" role="alert">
             Great job! You got the last question correct!
         </div>`
     )
 }
 
 function displayFailureMessage(correctAnswer) {
-    $("#quickMessage").html(`
-        <div class="alert alert-danger" role="alert">
+    $("#quickMessage").html(
+        `<br/><div class="alert alert-danger" role="alert">
             You got the last question incorrect. The answer was ${correctAnswer}.
             <br/> Their is always next time!
         </div>
@@ -96,10 +111,10 @@ function displayFailureMessage(correctAnswer) {
 
 function handleCompletedElement(elementName) {
     let score = questionsAnsweredArray[elementName].score
-    if(score >= 4) {
+    if(data[arrayNumber].questionAndPoints.length*100 >= 50) {
         pop()
     }
-    $("#questionBody").html(`You have answered ${score}/8 questions correctly!!`)
+    $("#questionBody").html(`You have answered ${score}/${data[arrayNumber].questionAndPoints.length} questions correctly!!`)
     $("#quickMessage").hide()
     $("#quickMessage").text("")
     $("#questionInputBody").hide()
@@ -114,39 +129,29 @@ function displayProgress(elementName) {
         let curArray = questionsAnsweredArray[elementName]
         let score = curArray['score']
         let qaArray = curArray['QA']
-        let tableRow1 = '<tr></tr>'
-        let tableRow2 = '<tr></tr>'
-        let tableRow3 = '<tr></tr>'
-        let tableRow4 = '<tr></tr>'
-        $("#arrayText").append(`<div class="card"><h2 style="text-align:center">Score: ${score}/8</h2></div> <hr/> <br/>`)
-        
-        for(let i=0; i< qaArray.length; i++) {
-            if(qaArray[i]['isCorrect']){
-                icon = `<img src="./pictures/correct.png" alt="Correct!" width = "40px">`
-            }else{
-                icon = `<img src="./pictures/incorrect.png" alt="Incorrect!" width = "40px">`
+        let denominator = data[arrayNumber].questionAndPoints.length
+
+        $("#arrayText").append(`<div class="card" id="score"><h2 style="text-align:center">Score: ${score}/${denominator} <br/> Percentage: ${Math.round(score/denominator * 100)}%</h2></div> <hr/> <br/>`)
+        let arrayTextHtml = `<tr><th>Questions<th/><th></th><tbody>`
+        for(let i=0; i< qaArray.length; i+=2) {
+            arrayTextHtml += `<tr>`
+
+            for(let j=0; j<2; j++) {
+                let curText = ''
+                if((i+j) < qaArray.length) {
+                    if(qaArray[i+j]['isCorrect']){
+                        icon = `<img src="./pictures/correct.png" alt="Correct!" width = "40px">`
+                    }else{
+                        icon = `<img src="./pictures/incorrect.png" alt="Incorrect!" width = "40px">`
+                    }
+                    curText = `<br/> <h5>Question: ${qaArray[i+j]['question']} </h5>`
+                    curText += `<h6>Your answer: ${qaArray[i+j]['answer']} ${icon}</h6>`
+                }
+                arrayTextHtml += `<td>${curText}</td>`
             }
-            let curText = `<br/> <h5>Question: ${qaArray[i]['question']} </h5>`
-            curText += `<h6>Your answer: ${qaArray[i]['answer']} ${icon}</h6>`
-            if(i == 0){
-                tableRow1 += `<td>${curText}</td>`
-            }else if(i==1) {
-                tableRow2 += `<td>${curText}</td>`
-            }else if(i==2){
-                tableRow3 += `<td>${curText}</td>`
-            }else if(i==3){
-                tableRow4 += `<td>${curText}</td>`
-            }else if(i==4){
-                tableRow1 += `<td>${curText}</td>`
-            }else if(i==5){
-                tableRow2 += `<td>${curText}</td>`
-            }else if(i==6){
-                tableRow3 += `<td>${curText}</td>`
-            }else if(i==7){
-                tableRow4 += `<td>${curText}</td>`
-            }
+            arrayTextHtml += `</tr>`
         }
-        let arrayTextHtml = `<tr><th>Questions<th/><th></th><tbody>${tableRow1}${tableRow2}${tableRow3}${tableRow4}</tbody></tr>`
+        arrayTextHtml += `</tbody></tr>`
         $("#arrayText").append(arrayTextHtml)
     } else {
         $("#quickNote").text('Answer a question to see your progress!')
@@ -157,13 +162,10 @@ function displayProgress(elementName) {
 
 
 function displayModal (clicked_id) {
-      
-    resetForNextElement()
-
     $("#congratMessage").hide()
     //setting up the arrayNumber it should call in data.js using the id.
     arrayNumber = parseInt(clicked_id.slice(2)) - 1
-
+    $(".progress").html("");
     let title = data[arrayNumber].elementName
 
     //making the modal show up
@@ -171,11 +173,17 @@ function displayModal (clicked_id) {
     document.getElementById("questionModalLabel").innerHTML = title
     $("#quickMessage").show()
     $("#questionInputBody").show()
+    questionNumber = data[arrayNumber].questionAndPoints.length - 1
+
+    
     question = data[arrayNumber].questionAndPoints[questionNumber].question
 
     document.getElementById("questionBody").innerHTML = question
-
+    let width = (1/data[arrayNumber].questionAndPoints.length)*100
     displayProgress(title)
+    $(".progress").append(`
+      <div  id= "progressBar${questionNumber}" class="progress-bar bg-info" role="progressbar" style="width: ${width}%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    `)
 }
 
 function evaluateAnswer(){
@@ -184,16 +192,26 @@ function evaluateAnswer(){
         answerInputed = $("#input").val()
         correctAnswer = data[arrayNumber].questionAndPoints[questionNumber].answer
         question = data[arrayNumber].questionAndPoints[questionNumber].question
+        let width = (1/data[arrayNumber].questionAndPoints.length)*100
         if(answerInputed == "") { // if empty answer
             handleEmptyAnswer()
+            $(`#progressBar${questionNumber}`).replaceWith(`
+                <div id= "progressBar${questionNumber}" class="progress-bar bg-warning" role="progressbar" style="width: ${width}%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                `)
         } else {
             if(checkAnswer(answerInputed, correctAnswer)) { //right answer
                 storeQA(elementName, question, answerInputed, true)
                 displaySuccessMessage()
+                $(`#progressBar${questionNumber}`).replaceWith(`
+                <div class="progress-bar bg-success" role="progressbar" style="width: ${width}%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                `)
                 resetForNextQuestion()
             } else { //wrong answer
                 storeQA(elementName, question, answerInputed, false)
                 displayFailureMessage(correctAnswer)
+                $(`#progressBar${questionNumber}`).replaceWith(`
+                <div class="progress-bar bg-danger" role="progressbar" style="width: ${width}%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                `)
                 resetForNextQuestion()
             }
         }
