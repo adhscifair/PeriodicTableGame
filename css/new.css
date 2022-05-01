@@ -22,7 +22,7 @@ body {
 
 #score {
   text-align: center;
-  width: 200%;
+  width: 175%;
 }
 
 hr {
@@ -57,7 +57,7 @@ hr {
   float: left;
   position: relative;
   width: 5.05%;
-  height: 100%;
+  height: 110%;
   text-align: center;
 }
 .specialcell {
@@ -287,13 +287,6 @@ hr {
   }
 }
 @media (min-width: 992px) {
-  .periodic {
-    font-size: 25px;
-  }
-  .elementbutton {
-    font-size: 25px;
-    color: black;
-  }
   .at_num,
   .at_details {
     font-size: 5px;
@@ -302,12 +295,14 @@ hr {
     font-size: 24px;
     color: black;
   }
-  #score {
-    text-align: center;
-    width: 192.5%;
-  }
   hr {
-    width: 192.5%;
+    width: 180%;
+  }
+  .cell {
+    height: 120%;
+  }
+  #score {
+    width: 180%;
   }
 }
 @media (min-width: 1200px) {
