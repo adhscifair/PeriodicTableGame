@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Periodic Table Game</title>
+    <title>Periodic Table Triva</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -52,7 +52,7 @@
           <br/><br/>
           <img src="pictures/alerts.png" alt="Clicking on Hydrogen" width="100%"/>
           <br/>
-          After you answered all the questions for one elemenet, a congradulatory 
+          After you answered all the questions for one elemenet, a congratulatory
           message would've poped up! (As shown below)
           <br/><br/>
           <img src="pictures/completedElement.png" alt="Clicking on Hydrogen" width="100%"/>
@@ -68,6 +68,7 @@
 
           <br/>
           <h4>That's all! Hope you have fun playing this game!</h4>
+          <h5>P.S. The atomic numbers in the elements are rounded to the nearest 1000th!</h5>
         </div>
       </div>
     </div>
@@ -130,7 +131,7 @@
     </div> <!-- end of modal dialogue-->
   </div>
   
-  <h1 id = "header" style="text-align: center;">The Periodic Table Game</h1>
+  <h1 id = "header" style="text-align: center;">Periodic Table Trivia!</h1>
   <button style="margin-left:90%;" class="btn-primary btn" href="#" id="rules" data-toggle="modal" data-target="#myModal" >Rules</button>
  
     <div class="periodic">
@@ -163,7 +164,7 @@
             <div onclick="displayModal(this.id)" id = "el1"  class="element" data-toggle="modal2" data-target="#questionModal">
               <span class="at_num">1</span><br/>
               <span class="symbol">H</span><br/>
-              <span id="el1-title" class="at_details">Hydrogen </span>
+              <span id="el1-title" class="at_details">Hydrogen <br/> 1.008</span>
             </div>
           </div>
           <div class="cell"></div>
@@ -186,7 +187,7 @@
             <div onclick="displayModal(this.id)" id = "el2" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">2</div>
               <div class="symbol">He</div>
-              <span id = "el2-title" class="at_details">Helium</span>
+              <span id = "el2-title" class="at_details">Helium <br/> 4.003</span>
             </div>
           </div>
         </div>
@@ -198,7 +199,7 @@
             <div onclick="displayModal(this.id)" id="el3" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">3</div>
               <div class="symbol">Li</div>
-              <div id = "el3-title" class="at_details">Lithium</div>
+              <div id = "el3-title" class="at_details">Lithium <br/> 6.941</div>
               <br/>
             </div>
           </div>
@@ -206,7 +207,7 @@
             <div onclick="displayModal(this.id)" id="el4" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">4</div>
               <div class="symbol">Be</div>
-              <div  id = "el4-title" class="at_details">Beryllium</div>
+              <div  id = "el4-title" class="at_details">Beryllium <br/> 9.012</div>
               <br/>
             </div>
           </div>
@@ -225,7 +226,7 @@
             <div onclick="displayModal(this.id)" id="el5" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">5</div>
               <div class="symbol">B</div>
-              <div id = "el5-title" class="at_details">Boron</div>
+              <div id = "el5-title" class="at_details">Boron <br/> 10.81</div>
               <br/>
             </div>
           </div>
@@ -233,7 +234,7 @@
             <div onclick="displayModal(this.id)" id="el6" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">6</div>
               <div class="symbol">C</div>
-              <div id = "el6-title" class="at_details">Carbon</div>
+              <div id = "el6-title" class="at_details">Carbon <br/> 12.011</div>
               <br/>
             </div>
           </div>
@@ -241,7 +242,7 @@
             <div onclick="displayModal(this.id)" id="el7" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">7</div>
               <div class="symbol">N</div>
-              <div id = "el7-title" class="at_details">Nitrogen</div>
+              <div id = "el7-title" class="at_details">Nitrogen <br/> 14.007</div>
               <br/>
             </div>
           </div>
@@ -249,7 +250,7 @@
             <div onclick="displayModal(this.id)" id="el8" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">8</div>
               <div class="symbol">O</div>
-              <div id = "el8-title" class="at_details">Oxygen</div>
+              <div id = "el8-title" class="at_details">Oxygen <br/> 16</div>
               <br/>
             </div>
           </div>
@@ -257,7 +258,7 @@
             <div onclick="displayModal(this.id)" id="el9" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">9</div>
               <div class="symbol">F</div>
-              <div id = "el9-title" class="at_details">Fluorine</div>
+              <div id = "el9-title" class="at_details">Fluorine <br/> 18.998</div>
               <br/>
             </div>
           </div>
@@ -265,7 +266,7 @@
             <div onclick="displayModal(this.id)" id="el10" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">10</div>
               <div class="symbol">Ne</div>
-              <div id = "el10-title" class="at_details">Neon</div>
+              <div id = "el10-title" class="at_details">Neon <br/> 20.179</div>
               <br/>
             </div>
           </div>
@@ -278,7 +279,7 @@
             <div onclick="displayModal(this.id)" id="el11" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">11</div>
               <div class="symbol">Na</div>
-              <div id = "el-11title" class="at_details">Sodium</div>
+              <div id = "el-11title" class="at_details">Sodium <br/> 22.99</div>
               <br/>
             </div>
           </div>
@@ -286,7 +287,7 @@
             <div onclick="displayModal(this.id)" id="el12" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">12</div>
               <div class="symbol">Mg</div>
-              <div id = "el12-title" class="at_details">Magnesium</div>
+              <div id = "el12-title" class="at_details">Magnesium <br/> 24.305</div>
               <br/>
             </div>
           </div>
@@ -304,7 +305,7 @@
             <div onclick="displayModal(this.id)" id="el13" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">13</div>
               <div class="symbol">Al</div>
-              <div id = "el13-title" class="at_details">Aluminum</div>
+              <div id = "el13-title" class="at_details">Aluminum <br/> 26.982</div>
               <br/>
             </div>
           </div>
@@ -312,7 +313,7 @@
             <div onclick="displayModal(this.id)" id="el14" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">14</div>
               <div class="symbol">Si</div>
-              <div id = "el14-title" class="at_details">Silicon</div>
+              <div id = "el14-title" class="at_details">Silicon <br/> 28.086</div>
               <br/>
             </div>
           </div>
@@ -320,7 +321,7 @@
             <div onclick="displayModal(this.id)" id="el15" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">15</div>
               <div class="symbol">P</div>
-              <div id = "el15-title" class="at_details">Phosphorus</div>
+              <div id = "el15-title" class="at_details">Phosphorus <br/> 30.974</div>
               <br/>
             </div>
           </div>
@@ -328,7 +329,7 @@
             <div onclick="displayModal(this.id)" id="el16" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">16</div>
               <div class="symbol">S</div>
-              <div id = "el16-title" class="at_details">Sulfur</div>
+              <div id = "el16-title" class="at_details">Sulfur <br/> 32.06</div>
               <br/>
             </div>
           </div>
@@ -336,7 +337,7 @@
             <div onclick="displayModal(this.id)" id="el17" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">17</div>
               <div class="symbol">Cl</div>
-              <div id = "el17-title" class="at_details">Chlorine</div>
+              <div id = "el17-title" class="at_details">Chlorine <br/> 35.453</div>
               <br/>
             </div>
           </div>
@@ -344,7 +345,7 @@
             <div onclick="displayModal(this.id)" id="el18" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">18</div>
               <div class="symbol">Ar</div>
-              <div id = "el18-title" class="at_details">Argon</div>
+              <div id = "el18-title" class="at_details">Argon <br/> 39.948</div>
               <br/>
             </div>
           </div>
@@ -357,7 +358,7 @@
             <div onclick="displayModal(this.id)" id="el19" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">19</div>
               <div class="symbol">K</div>
-              <div id = "el19-title" class="at_details">Potassium</div>
+              <div id = "el19-title" class="at_details">Potassium<br/> 39.098</div>
               <br/>
             </div>
           </div>
@@ -365,7 +366,7 @@
             <div onclick="displayModal(this.id)" id="el20" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">20</div>
               <div class="symbol">Ca</div>
-              <div id = "el20-title" class="at_details">Calcium</div>
+              <div id = "el20-title" class="at_details">Calcium<br/> 40.08</div>
               <br/>
             </div>
           </div>
@@ -373,7 +374,7 @@
             <div onclick="displayModal(this.id)" id="el21" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">21</div>
               <div class="symbol">Sc</div>
-              <div id = "el21-title" class="at_details">Scandium</div>
+              <div id = "el21-title" class="at_details">Scandium<br/> 44.956</div>
               <br/>
             </div>
           </div>
@@ -381,7 +382,7 @@
             <div onclick="displayModal(this.id)" id="el22" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">22</div>
               <div class="symbol">Ti</div>
-              <div id = "el22-title" class="at_details">Titanium</div>
+              <div id = "el22-title" class="at_details">Titanium<br/> 47.9</div>
               <br/>
             </div>
           </div>
@@ -389,7 +390,7 @@
             <div onclick="displayModal(this.id)" id="el23" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">23</div>
               <div class="symbol">V</div>
-              <div id = "el23-title" class="at_details">Vanadium</div>
+              <div id = "el23-title" class="at_details">Vanadium<br/> 50.942</div>
               <br/>
             </div>
           </div>
@@ -397,7 +398,7 @@
             <div onclick="displayModal(this.id)" id="el24" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">24</div>
               <div class="symbol">Cr</div>
-              <div id = "el24-title" class="at_details">Chromium</div>
+              <div id = "el24-title" class="at_details">Chromium<br/> 51.996</div>
               <br/>
             </div>
           </div>
@@ -405,7 +406,7 @@
             <div onclick="displayModal(this.id)" id="el25" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">25</div>
               <div class="symbol">Mn</div>
-              <div id = "el25-title" class="at_details">Manganese</div>
+              <div id = "el25-title" class="at_details">Manganese<br/> 54.938</div>
               <br/>
             </div>
           </div>
@@ -413,7 +414,7 @@
             <div onclick="displayModal(this.id)" id="el26" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">26</div>
               <div class="symbol">Fe</div>
-              <div id = "el26-title" class="at_details">Iron</div>
+              <div id = "el26-title" class="at_details">Iron<br/> 55.847</div>
               <br/>
             </div>
           </div>
@@ -421,7 +422,7 @@
             <div onclick="displayModal(this.id)" id="el27" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">27</div>
               <div class="symbol">Co</div>
-              <div id = "el27-title" class="at_details">Cobalt</div>
+              <div id = "el27-title" class="at_details">Cobalt<br/> 58.933</div>
               <br/>
             </div>
           </div>
@@ -429,7 +430,7 @@
             <div onclick="displayModal(this.id)" id="el28" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">28</div>
               <div class="symbol">Ni</div>
-              <div id = "el28-title" class="at_details">Nickel</div>
+              <div id = "el28-title" class="at_details">Nickel<br/> 58.7</div>
               <br/>
             </div>
           </div>
@@ -437,7 +438,7 @@
             <div onclick="displayModal(this.id)" id="el29" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">29</div>
               <div class="symbol">Cu</div>
-              <div id = "el29-title" class="at_details">copper</div>
+              <div id = "el29-title" class="at_details">Copper <br/> 63.546</div>
               <br/>
             </div>
           </div>
@@ -445,7 +446,7 @@
             <div onclick="displayModal(this.id)" id="el30" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">30</div>
               <div class="symbol">Zn</div>
-              <div id = "el30-title" class="at_details">Zinc</div>
+              <div id = "el30-title" class="at_details">Zinc<br/> 65.38</div>
               <br/>
             </div>
           </div>
@@ -453,7 +454,7 @@
             <div onclick="displayModal(this.id)" id="el31" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">31</div>
               <div class="symbol">Ga</div>
-              <div id = "el31-title" class="at_details">Gallium</div>
+              <div id = "el31-title" class="at_details">Gallium<br/> 69.72</div>
               <br/>
             </div>
           </div>
@@ -461,7 +462,7 @@
             <div onclick="displayModal(this.id)" id="el32" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">32</div>
               <div class="symbol">Ge</div>
-              <div id = "el32-title" class="at_details">Germanium</div>
+              <div id = "el32-title" class="at_details">Germanium<br/> 72.59</div>
               <br/>
             </div>
           </div>
@@ -469,7 +470,7 @@
             <div onclick="displayModal(this.id)" id="el33" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">33</div>
               <div class="symbol">As</div>
-              <div id = "el33-title" class="at_details">Arsenic</div>
+              <div id = "el33-title" class="at_details">Arsenic<br/> 74.922</div>
               <br/>
             </div>
           </div>
@@ -477,7 +478,7 @@
             <div onclick="displayModal(this.id)" id="el34" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">34</div>
               <div class="symbol">Se</div>
-              <div id = "el34-title" class="at_details">Selenium</div>
+              <div id = "el34-title" class="at_details">Selenium<br/> 78.96</div>
               <br/>
             </div>
           </div>
@@ -485,7 +486,7 @@
             <div onclick="displayModal(this.id)" id="el35" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">35</div>
               <div class="symbol">Br</div>
-              <div id = "el35-title" class="at_details">Bromine</div>
+              <div id = "el35-title" class="at_details">Bromine<br/> 79.904</div>
               <br/>
             </div>
           </div>
@@ -493,7 +494,7 @@
             <div onclick="displayModal(this.id)" id="el36" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">36</div>
               <div class="symbol">Kr</div>
-              <div id = "el36-title" class="at_details">Krypton</div>
+              <div id = "el36-title" class="at_details">Krypton<br/> 83.8</div>
               <br/>
             </div>
           </div>
@@ -506,7 +507,7 @@
             <div onclick="displayModal(this.id)" id="el37" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">37</div>
               <div class="symbol">Rb</div>
-              <div id = "el37-title" class="at_details">Rubidium</div>
+              <div id = "el37-title" class="at_details">Rubidium<br/> 85.468</div>
               <br/>
             </div>
           </div>
@@ -514,7 +515,7 @@
             <div onclick="displayModal(this.id)" id="el38" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">38</div>
               <div class="symbol">Sr</div>
-              <div id = "el38-title" class="at_details">Strontium</div>
+              <div id = "el38-title" class="at_details">Strontium<br/> 87.62</div>
               <br/>
             </div>
           </div>
@@ -522,7 +523,7 @@
             <div onclick="displayModal(this.id)" id="el39" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">39</div>
               <div class="symbol">Y</div>
-              <div id = "el39-title" class="at_details">Ytterbium</div>
+              <div id = "el39-title" class="at_details">Ytterbium <br/> 88.906</div>
               <br/>
             </div>
           </div>
@@ -530,7 +531,7 @@
             <div onclick="displayModal(this.id)" id="el40" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">40</div>
               <div class="symbol">Zr</div>
-              <div id = "el40-title" class="at_details">Zirconium</div>
+              <div id = "el40-title" class="at_details">Zirconium<br/> 91.22</div>
               <br/>
             </div>
           </div>
@@ -538,7 +539,7 @@
             <div onclick="displayModal(this.id)" id="el41" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">41</div>
               <div class="symbol">Nb</div>
-              <div id = "el41-title" class="at_details">Niobium</div>
+              <div id = "el41-title" class="at_details">Niobium <br/> 92.906</div>
               <br/>
             </div>
           </div>
@@ -546,7 +547,7 @@
             <div onclick="displayModal(this.id)" id="el42" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">42</div>
               <div class="symbol">Mo</div>
-              <div id = "el42-title" class="at_details">Molybdenum</div>
+              <div id = "el42-title" class="at_details">Molybdenum<br/> 95.94</div>
               <br/>
             </div>
           </div>
@@ -554,7 +555,7 @@
             <div onclick="displayModal(this.id)" id="el43" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">43</div>
               <div class="symbol">Tc</div>
-              <div id = "el43-title" class="at_details">Technetium</div>
+              <div id = "el43-title" class="at_details">Technetium<br/> (98)</div>
               <br/>
             </div>
           </div>
@@ -562,7 +563,7 @@
             <div onclick="displayModal(this.id)" id="el44" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">44</div>
               <div class="symbol">Ru</div>
-              <div id = "el44-title" class="at_details">Ruthenium</div>
+              <div id = "el44-title" class="at_details">Ruthenium<br/> 101.07</div>
               <br/>
             </div>
           </div>
@@ -570,7 +571,7 @@
             <div id="el45" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">45</div>
               <div class="symbol">Rh</div>
-              <div id = "el-title" class="at_details">Rhodium</div>
+              <div id = "el-title" class="at_details">Rhodium<br/> 102.906</div>
               <br/>
             </div>
           </div>
@@ -578,7 +579,7 @@
             <div onclick="displayModal(this.id)" id="el46" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">46</div>
               <div class="symbol">Pd</div>
-              <div id = "el46-title" class="at_details">Palladium</div>
+              <div id = "el46-title" class="at_details">Palladium<br/> 106.4</div>
               <br/>
             </div>
           </div>
@@ -586,7 +587,7 @@
             <div onclick="displayModal(this.id)" id="el47" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">47</div>
               <div class="symbol">Ag</div>
-              <div id = "el47-title" class="at_details">Silver</div>
+              <div id = "el47-title" class="at_details">Silver<br/> 107.868</div>
               <br/>
             </div>
           </div>
@@ -594,7 +595,7 @@
             <div onclick="displayModal(this.id)" id="el48" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">48</div>
               <div class="symbol">Cd</div>
-              <div id = "el48-title" class="at_details">Cadmium</div>
+              <div id = "el48-title" class="at_details">Cadmium<br/> 112.41</div>
               <br/>
             </div>
           </div>
@@ -602,7 +603,7 @@
             <div onclick="displayModal(this.id)" id="el49" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">49</div>
               <div class="symbol">In</div>
-              <div id = "el49-title" class="at_details">Indium</div>
+              <div id = "el49-title" class="at_details">Indium<br/> 114.82</div>
               <br/>
             </div>
           </div>
@@ -610,7 +611,7 @@
             <div onclick="displayModal(this.id)" id="el50" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">50</div>
               <div class="symbol">Sn</div>
-              <div id = "el50-title" class="at_details">Tin</div>
+              <div id = "el50-title" class="at_details">Tin<br/> 118.69</div>
               <br/>
             </div>
           </div>
@@ -618,7 +619,7 @@
             <div onclick="displayModal(this.id)" id="el51" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">51</div>
               <div class="symbol">Sb</div>
-              <div id = "el51-title" class="at_details">Antimony</div>
+              <div id = "el51-title" class="at_details">Antimony<br/> 121.75</div>
               <br/>
             </div>
           </div>
@@ -626,7 +627,7 @@
             <div onclick="displayModal(this.id)" id="el52" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">52</div>
               <div class="symbol">Te</div>
-              <div id = "el52-title" class="at_details">Tellurium</div>
+              <div id = "el52-title" class="at_details">Tellurium<br/> 127.6</div>
               <br/>
             </div>
           </div>
@@ -634,7 +635,7 @@
             <div onclick="displayModal(this.id)" id="el53" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">53</div>
               <div class="symbol">I</div>
-              <div id = "el53-title" class="at_details">Iodine</div>
+              <div id = "el53-title" class="at_details">Iodine<br/> 126.905</div>
               <br/>
             </div>
           </div>
@@ -642,7 +643,7 @@
             <div onclick="displayModal(this.id)" id="el54" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">54</div>
               <div class="symbol">Xe</div>
-              <div id = "el54-title" class="at_details">Xenon</div>
+              <div id = "el54-title" class="at_details">Xenon<br/> 131.3</div>
               <br/>
             </div>
           </div>
@@ -655,7 +656,7 @@
             <div onclick="displayModal(this.id)" id="el55" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">55</div>
               <div class="symbol">Cs</div>
-              <div id = "el55-title" class="at_details">Cesium</div>
+              <div id = "el55-title" class="at_details">Cesium<br/> 132.90</div>
               <br/>
             </div>
           </div>
@@ -663,7 +664,7 @@
             <div onclick="displayModal(this.id)" id="el56" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">56</div>
               <div class="symbol">Ba</div>
-              <div id = "el56-title" class="at_details">Barium</div>
+              <div id = "el56-title" class="at_details">Barium <br/> 137.33</div>
               <br/>
             </div>
           </div>
@@ -672,7 +673,7 @@
             <div onclick="displayModal(this.id)" id="el72" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">72</div>
               <div class="symbol">Hf</div>
-              <div id = "el72-title" class="at_details">Hafnium</div>
+              <div id = "el72-title" class="at_details">Hafnium<br/> 178.49</div>
               <br/>
             </div>
           </div>
@@ -680,7 +681,7 @@
             <div onclick="displayModal(this.id)" id="el73" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">73</div>
               <div class="symbol">Ta</div>
-              <div id = "el73-title" class="at_details">Tantalum</div>
+              <div id = "el73-title" class="at_details">Tantalum<br/> 180.948</div>
               <br/>
             </div>
           </div>
@@ -688,7 +689,7 @@
             <div onclick="displayModal(this.id)" id="el74" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">74</div>
               <div class="symbol">W</div>
-              <div id = "el74-title" class="at_details">Tungsten</div>
+              <div id = "el74-title" class="at_details">Tungsten<br/> 183.85</div>
               <br/>
             </div>
           </div>
@@ -696,7 +697,7 @@
             <div onclick="displayModal(this.id)" id="el75" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">75</div>
               <div class="symbol">Re</div>
-              <div id = "el75-title" class="at_details">Rhenium</div>
+              <div id = "el75-title" class="at_details">Rhenium<br/> 186.207</div>
               <br/>
             </div>
           </div>
@@ -704,7 +705,7 @@
             <div onclick="displayModal(this.id)" id="el76" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">76</div>
               <div class="symbol">Os</div>
-              <div id = "el76-title" class="at_details">Osmium</div>
+              <div id = "el76-title" class="at_details">Osmium<br/> 190.2</div>
               <br/>
             </div>
           </div>
@@ -712,7 +713,7 @@
             <div onclick="displayModal(this.id)" id="el77" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">77</div>
               <div class="symbol">Ir</div>
-              <div id = "el77-title" class="at_details">Iridium</div>
+              <div id = "el77-title" class="at_details">Iridium<br/> 192.22</div>
               <br/>
             </div>
           </div>
@@ -720,7 +721,7 @@
             <div onclick="displayModal(this.id)" id="el78" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">78</div>
               <div class="symbol">Pt</div>
-              <div id = "el78-title" class="at_details">Platinum</div>
+              <div id = "el78-title" class="at_details">Platinum<br/> 195.09</div>
               <br/>
             </div>
           </div>
@@ -728,7 +729,7 @@
             <div onclick="displayModal(this.id)" id="el79" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">79</div>
               <div class="symbol">Au</div>
-              <div id = "el79-title" class="at_details">Gold</div>
+              <div id = "el79-title" class="at_details">Gold<br/> 196.967</div>
               <br/>
             </div>
           </div>
@@ -736,7 +737,7 @@
             <div onclick="displayModal(this.id)" id="el80" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">80</div>
               <div class="symbol">Hg</div>
-              <div id = "el80-title" class="at_details">Mercury</div>
+              <div id = "el80-title" class="at_details">Mercury<br/> 200.59</div>
               <br/>
             </div>
           </div>
@@ -744,7 +745,7 @@
             <div onclick="displayModal(this.id)" id="el81" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">81</div>
               <div class="symbol">Tl</div>
-              <div id = "el81-title" class="at_details">Thallium</div>
+              <div id = "el81-title" class="at_details">Thallium<br/> 204.37</div>
               <br/>
             </div>
           </div>
@@ -752,7 +753,7 @@
             <div onclick="displayModal(this.id)" id="el82" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">82</div>
               <div class="symbol">Pb</div>
-              <div id = "el82-title" class="at_details">Lead</div>
+              <div id = "el82-title" class="at_details">Lead<br/> 207.2</div>
               <br/>
             </div>
           </div>
@@ -760,7 +761,7 @@
             <div onclick="displayModal(this.id)" id="el83" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">83</div>
               <div class="symbol">Bi</div>
-              <div id = "el83-title" class="at_details">Bismuth</div>
+              <div id = "el83-title" class="at_details">Bismuth<br/> 208.980</div>
               <br/>
             </div>
           </div>
@@ -768,7 +769,7 @@
             <div onclick="displayModal(this.id)" id="el84" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">84</div>
               <div class="symbol">Po</div>
-              <div id = "el84-title" class="at_details">Polonium</div>
+              <div id = "el84-title" class="at_details">Polonium<br/> (209)</div>
               <br/>
             </div>
           </div>
@@ -776,7 +777,7 @@
             <div onclick="displayModal(this.id)" id="el85" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">85</div>
               <div class="symbol">At</div>
-              <div id = "el85-title" class="at_details">Astatine</div>
+              <div id = "el85-title" class="at_details">Astatine<br/> (210)</div>
               <br/>
             </div>
           </div>
@@ -784,7 +785,7 @@
             <div onclick="displayModal(this.id)" id="el86" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">86</div>
               <div class="symbol">Rn</div>
-              <div id = "el86-title" class="at_details">Radon</div>
+              <div id = "el86-title" class="at_details">Radon<br/> (222)</div>
               <br/>
             </div>
           </div>
@@ -797,7 +798,7 @@
             <div onclick="displayModal(this.id)" id="el87" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">87</div>
               <div class="symbol">Fr</div>
-              <div id = "el87-title" class="at_details">Francium</div>
+              <div id = "el87-title" class="at_details">Francium<br/> (223)</div>
               <br/>
             </div>
           </div>
@@ -805,7 +806,7 @@
             <div onclick="displayModal(this.id)" id="el88" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">88</div>
               <div class="symbol">Ra</div>
-              <div id = "el88-title" class="at_details">Radium</div>
+              <div id = "el88-title" class="at_details">Radium <br/> 226.025</div>
               <br/>
             </div>
           </div>
@@ -814,7 +815,7 @@
             <div onclick="displayModal(this.id)" id="el104" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">104</div>
               <div class="symbol">Rf</div>
-              <div id = "el104-title" class="at_details">Rutherfordium</div>
+              <div id = "el104-title" class="at_details">Rutherfordium<br/> (261)</div>
               <br/>
             </div>
           </div>
@@ -822,7 +823,7 @@
             <div onclick="displayModal(this.id)" id="el105" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">105</div>
               <div class="symbol">Db</div>
-              <div id = "el105-title" class="at_details">Dubnium</div>
+              <div id = "el105-title" class="at_details">Dubnium<br/> (262)</div>
               <br/>
             </div>
           </div>
@@ -830,7 +831,7 @@
             <div onclick="displayModal(this.id)" id="el106" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">106</div>
               <div class="symbol">Sg</div>
-              <div id = "el106-title" class="at_details">Seaborgium</div>
+              <div id = "el106-title" class="at_details">Seaborgium<br/> (263)</div>
               <br/>
             </div>
           </div>
@@ -838,7 +839,7 @@
             <div onclick="displayModal(this.id)" id="el107" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">107</div>
               <div class="symbol">Bh</div>
-              <div id = "el107-title" class="at_details">Bohrium</div>
+              <div id = "el107-title" class="at_details">Bohrium<br/> (264)</div>
               <br/>
             </div>
           </div>
@@ -846,7 +847,7 @@
             <div onclick="displayModal(this.id)" id="el108" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">108</div>
               <div class="symbol">Hs</div>
-              <div id = "el108-title" class="at_details">Hassium</div>
+              <div id = "el108-title" class="at_details">Hassium<br/> (255)</div>
               <br/>
             </div>
           </div>
@@ -854,7 +855,7 @@
             <div onclick="displayModal(this.id)" id="el109" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">109</div>
               <div class="symbol">Mt</div>
-              <div id = "el109-title" class="at_details">Meitnerium</div>
+              <div id = "el109-title" class="at_details">Meitnerium<br/> (261)</div>
               <br/>
             </div>
           </div>
@@ -862,7 +863,7 @@
             <div onclick="displayModal(this.id)" id="el110" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">110</div>
               <div class="symbol">Ds</div>
-              <div id = "el110-title" class="at_details">Darmstadtium</div>
+              <div id = "el110-title" class="at_details">Darmstadtium<br/> (269)</div>
               <br/>
             </div>
           </div>
@@ -870,7 +871,7 @@
             <div onclick="displayModal(this.id)" id="el111" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">111</div>
               <div class="symbol">Rg</div>
-              <div id = "el111-title" class="at_details">Roentgenium</div>
+              <div id = "el111-title" class="at_details">Roentgenium<br/> (272)</div>
               <br/>
             </div>
           </div>
@@ -878,7 +879,7 @@
             <div onclick="displayModal(this.id)" id="el112" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">112</div>
               <div class="symbol">Cn</div>
-              <div id = "el112-title" class="at_details">Copernicium</div>
+              <div id = "el112-title" class="at_details">Copernicium <br/> n/a</div>
               <br/>
             </div>
           </div>
@@ -886,7 +887,7 @@
             <div onclick="displayModal(this.id)" id="el113" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">113</div>
               <div class="symbol">Nh</div>
-              <div id = "el113-title" class="at_details">Nihonium</div>
+              <div id = "el113-title" class="at_details">Nihonium <br/> n/a</div>
               <br/>
             </div>
           </div>
@@ -894,7 +895,7 @@
             <div onclick="displayModal(this.id)" id="el114" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">114</div>
               <div class="symbol">Fl</div>
-              <div id = "el114-title" class="at_details">Flerovium</div>
+              <div id = "el114-title" class="at_details">Flerovium <br/> n/a</div>
               <br/>
             </div>
           </div>
@@ -902,7 +903,7 @@
             <div onclick="displayModal(this.id)" id="el115" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">115</div>
               <div class="symbol">Mc</div>
-              <div id = "el115-title" class="at_details">Moscovium</div>
+              <div id = "el115-title" class="at_details">Moscovium <br/> n/a</div>
               <br/>
             </div>
           </div>
@@ -910,7 +911,7 @@
             <div onclick="displayModal(this.id)" id="el116" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">116</div>
               <div class="symbol">Lv</div>
-              <div id = "el116-title" class="at_details">Livermorium</div>
+              <div id = "el116-title" class="at_details">Livermorium <br/> n/a</div>
               <br/>
             </div>
           </div>
@@ -918,7 +919,7 @@
             <div onclick="displayModal(this.id)" id="el117" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">117</div>
               <div class="symbol">Ts</div>
-              <div id = "el117-title" class="at_details">Tennessine</div>
+              <div id = "el117-title" class="at_details">Tennessine <br/> n/a</div>
               <br/>
             </div>
           </div>
@@ -926,7 +927,7 @@
             <div onclick="displayModal(this.id)" id="el118" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">118</div>
               <div class="symbol">Og</div>
-              <div id = "el118-title" class="at_details">Oganesson</div>
+              <div id = "el118-title" class="at_details">Oganesson<br/> n/a</div>
               <br/>
             </div>
           </div>
@@ -941,7 +942,7 @@
             <div onclick="displayModal(this.id)" id="el57" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">57</div>
               <div class="symbol">La</div>
-              <div id = "el57-title" class="at_details">Lanthanum</div>
+              <div id = "el57-title" class="at_details">Lanthanum <br/> 138.906</div>
               <br/>
             </div>
           </div>
@@ -949,7 +950,7 @@
             <div onclick="displayModal(this.id)" id="el58" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">58</div>
               <div class="symbol">Ce</div>
-              <div id = "el58-title" class="at_details">Cerium</div>
+              <div id = "el58-title" class="at_details">Cerium<br/> 140.12</div>
               <br/>
             </div>
           </div>
@@ -957,7 +958,7 @@
             <div onclick="displayModal(this.id)" id="el59" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">59</div>
               <div class="symbol">Pr</div>
-              <div id = "el59-title" class="at_details">Praseodymium</div>
+              <div id = "el59-title" class="at_details">Praseodymium<br/> 162.50</div>
               <br/>
             </div>
           </div>
@@ -965,7 +966,7 @@
             <div onclick="displayModal(this.id)" id="el60" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">60</div>
               <div class="symbol">Nd</div>
-              <div id = "el60-title" class="at_details">Neodymium</div>
+              <div id = "el60-title" class="at_details">Neodymium<br/> 144.24</div>
               <br/>
             </div>
           </div>
@@ -973,7 +974,7 @@
             <div onclick="displayModal(this.id)" id="el61" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">61</div>
               <div class="symbol">Pm</div>
-              <div id = "el61-title" class="at_details">Promethium</div>
+              <div id = "el61-title" class="at_details">Promethium<br/> (145)</div>
               <br/>
             </div>
           </div>
@@ -981,7 +982,7 @@
             <div onclick="displayModal(this.id)" id="el62" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">62</div>
               <div class="symbol">Sm</div>
-              <div id = "el62-title" class="at_details">Samarium</div>
+              <div id = "el62-title" class="at_details">Samarium<br/> 150.4</div>
               <br/>
             </div>
           </div>
@@ -989,7 +990,7 @@
             <div onclick="displayModal(this.id)" id="el63" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">63</div>
               <div class="symbol">Eu</div>
-              <div id = "el63-title" class="at_details">Europium</div>
+              <div id = "el63-title" class="at_details">Europium<br/> 157.25</div>
               <br/>
             </div>
           </div>
@@ -997,7 +998,7 @@
             <div onclick="displayModal(this.id)" id="el64" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">64</div>
               <div class="symbol">Gd</div>
-              <div id = "el64-title" class="at_details">Gadolinium</div>
+              <div id = "el64-title" class="at_details">Gadolinium<br/> 157.25</div>
               <br/>
             </div>
           </div>
@@ -1005,7 +1006,7 @@
             <div onclick="displayModal(this.id)" id="el65" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">65</div>
               <div class="symbol">Tb</div>
-              <div id = "el65-title" class="at_details">Terbium</div>
+              <div id = "el65-title" class="at_details">Terbium<br/> 158.925</div>
               <br/>
             </div>
           </div>
@@ -1013,7 +1014,7 @@
             <div onclick="displayModal(this.id)" id="el66" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">66</div>
               <div class="symbol">Dy</div>
-              <div id = "el66-title" class="at_details">Dysprosium</div>
+              <div id = "el66-title" class="at_details">Dysprosium<br/> 162.5</div>
               <br/>
             </div>
           </div>
@@ -1021,7 +1022,7 @@
             <div onclick="displayModal(this.id)" id="el67" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">67</div>
               <div class="symbol">Ho</div>
-              <div id = "el67-title" class="at_details">Holmium</div>
+              <div id = "el67-title" class="at_details">Holmium<br/> 164.930</div>
               <br/>
             </div>
           </div>
@@ -1029,7 +1030,7 @@
             <div onclick="displayModal(this.id)" id="el68" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">68</div>
               <div class="symbol">Er</div>
-              <div id = "el68-title" class="at_details">Erbium</div>
+              <div id = "el68-title" class="at_details">Erbium<br/> 167.26</div>
               <br/>
             </div>
           </div>
@@ -1037,7 +1038,7 @@
             <div onclick="displayModal(this.id)" id="el69" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">69</div>
               <div class="symbol">Tm</div>
-              <div id = "el69-title" class="at_details">Thulium</div>
+              <div id = "el69-title" class="at_details">Thulium<br/> 168.934</div>
               <br/>
             </div>
           </div>
@@ -1045,7 +1046,7 @@
             <div onclick="displayModal(this.id)" id="el70" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">70</div>
               <div class="symbol">Yb</div>
-              <div id = "el70-title" class="at_details">Ytterbium</div>
+              <div id = "el70-title" class="at_details">Ytterbium<br/> 173.04</div>
               <br/>
             </div>
           </div>
@@ -1053,7 +1054,7 @@
             <div onclick="displayModal(this.id)" id="el71" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">71</div>
               <div class="symbol">Lu</div>
-              <div id = "el71-title" class="at_details">Lutetium</div>
+              <div id = "el71-title" class="at_details">Lutetium<br/> 174.97</div>
               <br/>
             </div>
           </div>
@@ -1067,7 +1068,7 @@
             <div onclick="displayModal(this.id)" id="el89" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">89</div>
               <div class="symbol">Ac</div>
-              <div id = "el89-title" class="at_details">Actinium</div>
+              <div id = "el89-title" class="at_details">Actinium<br/>227.028</div>
               <br/>
             </div>
           </div>
@@ -1075,7 +1076,7 @@
             <div onclick="displayModal(this.id)" id="el90" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">90</div>
               <div class="symbol">Th</div>
-              <div id = "el90-title" class="at_details">Thorium</div>
+              <div id = "el90-title" class="at_details">Thorium<br/> 232.038</div>
               <br/>
             </div>
           </div>
@@ -1083,7 +1084,7 @@
             <div onclick="displayModal(this.id)" id="el91" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">91</div>
               <div class="symbol">Pa</div>
-              <div id = "el91-title" class="at_details">Protactinium</div>
+              <div id = "el91-title" class="at_details">Protactinium<br/> 231.036</div>
               <br/>
             </div>
           </div>
@@ -1091,7 +1092,7 @@
             <div onclick="displayModal(this.id)" id="el92" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">92</div>
               <div class="symbol">U</div>
-              <div id = "el92-title" class="at_details">Uranium</div>
+              <div id = "el92-title" class="at_details">Uranium<br/> 238.029</div>
               <br/>
             </div>
           </div>
@@ -1099,7 +1100,7 @@
             <div onclick="displayModal(this.id)" id="el93" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">93</div>
               <div class="symbol">Np</div>
-              <div id = "el93-title" class="at_details">Neptunium</div>
+              <div id = "el93-title" class="at_details">Neptunium<br/> 237.048</div>
               <br/>
             </div>
           </div>
@@ -1107,7 +1108,7 @@
             <div onclick="displayModal(this.id)" id="el94" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">94</div>
               <div class="symbol">Pu</div>
-              <div id = "el94-title" class="at_details">Plutonium</div>
+              <div id = "el94-title" class="at_details">Plutonium<br/> (242)</div>
               <br/>
             </div>
           </div>
@@ -1115,7 +1116,7 @@
             <div onclick="displayModal(this.id)" id="el95" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">95</div>
               <div class="symbol">Am</div>
-              <div id = "el95-title" class="at_details">Americium</div>
+              <div id = "el95-title" class="at_details">Americium<br/> (243)</div>
               <br/>
             </div>
           </div>
@@ -1123,7 +1124,7 @@
             <div onclick="displayModal(this.id)" id="el96" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">96</div>
               <div class="symbol">Cm</div>
-              <div id = "el96-title" class="at_details">Curium</div>
+              <div id = "el96-title" class="at_details">Curium<br/> (247)</div>
               <br/>
             </div>
           </div>
@@ -1131,7 +1132,7 @@
             <div onclick="displayModal(this.id)" id="el97" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">97</div>
               <div class="symbol">Bk</div>
-              <div id = "el97-title" class="at_details">Berkelium</div>
+              <div id = "el97-title" class="at_details">Berkelium<br/> (247)</div>
               <br/>
             </div>
           </div>
@@ -1139,7 +1140,7 @@
             <div onclick="displayModal(this.id)" id="el98" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">98</div>
               <div class="symbol">Cf</div>
-              <div id = "el98-title" class="at_details">Californium</div>
+              <div id = "el98-title" class="at_details">Californium<br/> (251)</div>
               <br/>
             </div>
           </div>
@@ -1147,7 +1148,7 @@
             <div onclick="displayModal(this.id)" id="el99" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">99</div>
               <div class="symbol">Es</div>
-              <div id = "el99-title" class="at_details">Einsteinium</div>
+              <div id = "el99-title" class="at_details">Einsteinium<br/> (252)</div>
               <br/>
             </div>
           </div>
@@ -1155,7 +1156,7 @@
             <div onclick="displayModal(this.id)" id="el100" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">100</div>
               <div class="symbol">Fm</div>
-              <div id = "el100-title" class="at_details">Fermium</div>
+              <div id = "el100-title" class="at_details">Fermium<br/> (257)</div>
               <br/>
             </div>
           </div>
@@ -1163,7 +1164,7 @@
             <div onclick="displayModal(this.id)" id="el101" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">101</div>
               <div class="symbol">Md</div>
-              <div id = "el101-title" class="at_details">Mendelevium</div>
+              <div id = "el101-title" class="at_details">Mendelevium<br/> (258)</div>
               <br/>
             </div>
           </div>
@@ -1171,7 +1172,7 @@
             <div onclick="displayModal(this.id)" id="el102" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">102</div>
               <div class="symbol">No</div>
-              <div id = "el102-title" class="at_details">Nobelium</div>
+              <div id = "el102-title" class="at_details">Nobelium<br/> (250)</div>
               <br/>
             </div>
           </div>
@@ -1179,11 +1180,11 @@
             <div onclick="displayModal(this.id)" id="el103" class="element" data-toggle="modal2" data-target="#questionModal">
               <div class="at_num">103</div>
               <div class="symbol">Lr</div>
-              <div id = "el103-title" class="at_details">Lawrencium</div>
+              <div id = "el103-title" class="at_details">Lawrencium<br/> (260)</div>
               <br/>
             </div>
           </div>
-          <br/><br/><br/><br/><br/>
+          <br/><br/>
           <div class="cell" style="text-align: center;">
             <div onclick="displayModal(this.id)" id="el119" class="element" data-toggle="modal2" data-target="#questionModal">
               <b>General Questions</b>
