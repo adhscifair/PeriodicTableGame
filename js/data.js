@@ -23,7 +23,7 @@ let data = [
 			"answer": "1"
 		 },
 		 {
-			"question": "Hydrogen's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Hydrogen's oxidation state",
 			"answer": "+1"
 		 },
 		 {
@@ -56,7 +56,7 @@ let data = [
 			"answer": "He"
 		 },
 		 {
-			"question": "Helium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Helium's oxidation state",
 			"answer": "0"
 		 },
 		 {
@@ -102,7 +102,7 @@ let data = [
 			"answer": "1"
 		 },
 		 {
-			"question": "Lithium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Lithium's oxidation state",
 			"answer": "+1"
 		 },
 		 {
@@ -143,7 +143,7 @@ let data = [
 			"answer": "2"
 		 },
 		 {
-			"question": "Beryllium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Beryllium's oxidation state",
 			"answer": "+2"
 		 },
 		 {
@@ -184,7 +184,7 @@ let data = [
 			"answer": "3"
 		 },
 		 {
-			"question": "Boron's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Boron's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -225,7 +225,7 @@ let data = [
 			"answer": "4"
 		 },
 		 {
-			"question": "Carbon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Carbon's oxidation state",
 			"answer": "+4"
 		 },
 		 {
@@ -266,7 +266,7 @@ let data = [
 			"answer": "5"
 		 },
 		 {
-			"question": "Nitrogen's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Nitrogen's oxidation state",
 			"answer": "-3"
 		 },
 		 {
@@ -307,7 +307,7 @@ let data = [
 			"answer": "6"
 		 },
 		 {
-			"question": "Oxygen's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Oxygen's oxidation state",
 			"answer": "-2"
 		 },
 		 {
@@ -348,7 +348,7 @@ let data = [
 			"answer": "7"
 		 },
 		 {
-			"question": "Fluorine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Fluorine's oxidation state",
 			"answer": "-1"
 		 },
 		 {
@@ -381,7 +381,7 @@ let data = [
 			"answer": "Ne"
 		 },
 		 {
-			"question": "Neon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Neon's oxidation state",
 			"answer": "0"
 		 },
 		 {
@@ -427,7 +427,7 @@ let data = [
 			"answer": "+1"
 		 },
 		 {
-			"question": "Sodium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Sodium's oxidation state",
 			"answer": "1"
 		 },
 		 {
@@ -468,7 +468,7 @@ let data = [
 			"answer": "+2"
 		 },
 		 {
-			"question": "Magnesium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Magnesium's oxidation state",
 			"answer": "2"
 		 },
 		 {
@@ -509,7 +509,7 @@ let data = [
 			"answer": "+3"
 		 },
 		 {
-			"question": "Aluminum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Aluminum's oxidation state",
 			"answer": "3"
 		 },
 		 {
@@ -550,7 +550,7 @@ let data = [
 			"answer": "+4"
 		 },
 		 {
-			"question": "Silicon's oxidation state that makes the outer shell of itself 'full' when combined with another element.",
+			"question": "Silicon's oxidation state.",
 			"answer": "4"
 		 },
 		 {
@@ -591,7 +591,7 @@ let data = [
 			"answer": "5"
 		 },
 		 {
-			"question": "Phosphorus's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Phosphorus's oxidation state",
 			"answer": "-3"
 		 },
 		 {
@@ -632,7 +632,7 @@ let data = [
 			"answer": "6"
 		 },
 		 {
-			"question": "Sulfur's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Sulfur's oxidation state",
 			"answer": "+4"
 		 },
 		 {
@@ -673,7 +673,7 @@ let data = [
 			"answer": "7"
 		 },
 		 {
-			"question": "Chlorine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Chlorine's oxidation state",
 			"answer": "-1"
 		 },
 		 {
@@ -710,7 +710,7 @@ let data = [
 			"answer": "8"
 		 },
 		 {
-			"question": "Argon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Argon's oxidation state",
 			"answer": "0"
 		 },
 		 {
@@ -752,7 +752,7 @@ let data = [
 			"answer": "1"
 		 },
 		 {
-			"question": "Potassium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Potassium's oxidation state",
 			"answer": "+1"
 		 },
 		 {
@@ -793,7 +793,7 @@ let data = [
 			"answer": "2"
 		 },
 		 {
-			"question": "Calcium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Calcium's oxidation state",
 			"answer": "+2"
 		 },
 		 {
@@ -834,7 +834,7 @@ let data = [
 			"answer": "3"
 		 },
 		 {
-			"question": "Scandium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Scandium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -875,7 +875,7 @@ let data = [
 			"answer": "4"
 		 },
 		 {
-			"question": "Titanium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Titanium's oxidation state",
 			"answer": "+4"
 		 },
 		 {
@@ -916,7 +916,7 @@ let data = [
 			"answer": "5"
 		 },
 		 {
-			"question": "Vanadium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Vanadium's oxidation state",
 			"answer": "+5"
 		 },
 		 {
@@ -957,7 +957,7 @@ let data = [
 			"answer": "6"
 		 },
 		 {
-			"question": "Chromium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Chromium's oxidation state",
 			"answer": "6"
 		 },
 		 {
@@ -998,7 +998,7 @@ let data = [
 			"answer": "7"
 		 },
 		 {
-			"question": "Maganese's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Maganese's oxidation state",
 			"answer": "+7"
 		 },
 		 {
@@ -1039,7 +1039,7 @@ let data = [
 			"answer": "8"
 		 },
 		 {
-			"question": "Iron's oxidation state that makes the outer shell of itself 'full' when combined with another element.",
+			"question": "Iron's oxidation state.",
 			"answer": "+2"
 		 },
 		 {
@@ -1080,7 +1080,7 @@ let data = [
 			"answer": "9"
 		 },
 		 {
-			"question": "Cobalt's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Cobalt's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -1121,7 +1121,7 @@ let data = [
 			"answer": "10"
 		 },
 		 {
-			"question": "Nickel's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Nickel's oxidation state",
 			"answer": "+2"
 		 },
 		 {
@@ -1162,7 +1162,7 @@ let data = [
 			"answer": "11"
 		 },
 		 {
-			"question": "Copper's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Copper's oxidation state",
 			"answer": "+2"
 		 },
 		 {
@@ -1203,7 +1203,7 @@ let data = [
 			"answer": "12"
 		 },
 		 {
-			"question": "Zinc's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Zinc's oxidation state",
 			"answer": "+2"
 		 },
 		 {
@@ -1244,7 +1244,7 @@ let data = [
 			"answer": "3"
 		 },
 		 {
-			"question": "Gallium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Gallium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -1285,7 +1285,7 @@ let data = [
 			"answer": "4"
 		 },
 		 {
-			"question": "Germanium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Germanium's oxidation state",
 			"answer": "+4"
 		 },
 		 {
@@ -1326,7 +1326,7 @@ let data = [
 			"answer": "5"
 		 },
 		 {
-			"question": "Arsenic's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Arsenic's oxidation state",
 			"answer": "-3"
 		 },
 		 {
@@ -1367,7 +1367,7 @@ let data = [
 			"answer": "6"
 		 },
 		 {
-			"question": "Selenium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Selenium's oxidation state",
 			"answer": "-2"
 		 },
 		 {
@@ -1408,7 +1408,7 @@ let data = [
 			"answer": "7"
 		 },
 		 {
-			"question": "Bromine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Bromine's oxidation state",
 			"answer": "-1"
 		 },
 		 {
@@ -1449,7 +1449,7 @@ let data = [
 			"answer": "8"
 		 },
 		 {
-			"question": "Krypton's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Krypton's oxidation state",
 			"answer": "0"
 		 },
 		 {
@@ -1490,7 +1490,7 @@ let data = [
 			"answer": "1"
 		 },
 		 {
-			"question": "Rubidium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Rubidium's oxidation state",
 			"answer": "+1"
 		 },
 		 {
@@ -1531,7 +1531,7 @@ let data = [
 			"answer": "2"
 		 },
 		 {
-			"question": "Strontium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Strontium's oxidation state",
 			"answer": "+2"
 		 },
 		 {
@@ -1572,7 +1572,7 @@ let data = [
 			"answer": "3"
 		 },
 		 {
-			"question": "Yttrium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Yttrium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -1613,7 +1613,7 @@ let data = [
 			"answer": "4"
 		 },
 		 {
-			"question": "Zirocnium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Zirocnium's oxidation state",
 			"answer": "+4"
 		 },
 		 {
@@ -1654,7 +1654,7 @@ let data = [
 			"answer": "5"
 		 },
 		 {
-			"question": "Niobium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Niobium's oxidation state",
 			"answer": "+5"
 		 },
 		 {
@@ -1695,7 +1695,7 @@ let data = [
 			"answer": "6"
 		 },
 		 {
-			"question": "Molybdenum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Molybdenum's oxidation state",
 			"answer": "+6"
 		 },
 		 {
@@ -1736,7 +1736,7 @@ let data = [
 			"answer": "7"
 		 },
 		 {
-			"question": "Technetium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Technetium's oxidation state",
 			"answer": "+7"
 		 },
 		 {
@@ -1777,7 +1777,7 @@ let data = [
 			"answer": "8"
 		 },
 		 {
-			"question": "Ruthenium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Ruthenium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -1818,7 +1818,7 @@ let data = [
 			"answer": "9"
 		 },
 		 {
-			"question": "Rhodium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Rhodium's oxidation state",
 			"answer": "+4"
 		 },
 		 {
@@ -1859,7 +1859,7 @@ let data = [
 			"answer": "10"
 		 },
 		 {
-			"question": "Palladium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Palladium's oxidation state",
 			"answer": "+2"
 		 },
 		 {
@@ -1900,7 +1900,7 @@ let data = [
 			"answer": "11"
 		 },
 		 {
-			"question": "Silver's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Silver's oxidation state",
 			"answer": "+1"
 		 },
 		 {
@@ -1941,7 +1941,7 @@ let data = [
 			"answer": "12"
 		 },
 		 {
-			"question": "Cadmium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Cadmium's oxidation state",
 			"answer": "+2"
 		 },
 		 {
@@ -1982,7 +1982,7 @@ let data = [
 			"answer": "3"
 		 },
 		 {
-			"question": "Indium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Indium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2023,7 +2023,7 @@ let data = [
 			"answer": "4"
 		 },
 		 {
-			"question": "Tin's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Tin's oxidation state",
 			"answer": "+4"
 		 },
 		 {
@@ -2064,7 +2064,7 @@ let data = [
 			"answer": "5"
 		 },
 		 {
-			"question": "Antimony's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Antimony's oxidation state",
 			"answer": "-3"
 		 },
 		 {
@@ -2105,7 +2105,7 @@ let data = [
 			"answer": "6"
 		 },
 		 {
-			"question": "Tellirum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Tellirum's oxidation state",
 			"answer": "-2"
 		 },
 		 {
@@ -2146,7 +2146,7 @@ let data = [
 			"answer": "7"
 		 },
 		 {
-			"question": "Iodine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Iodine's oxidation state",
 			"answer": "-1"
 		 },
 		 {
@@ -2187,7 +2187,7 @@ let data = [
 			"answer": "8"
 		 },
 		 {
-			"question": "Xeneon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Xeneon's oxidation state",
 			"answer": "0"
 		 },
 		 {
@@ -2228,7 +2228,7 @@ let data = [
 			"answer": "1"
 		 },
 		 {
-			"question": "Cesium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Cesium's oxidation state",
 			"answer": "+1"
 		 },
 		 {
@@ -2269,7 +2269,7 @@ let data = [
 			"answer": "2"
 		 },
 		 {
-			"question": "Barium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Barium's oxidation state",
 			"answer": "+2"
 		 },
 		 {
@@ -2310,7 +2310,7 @@ let data = [
 			"answer": "3"
 		 },
 		 {
-			"question": "Lanthanum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Lanthanum's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2351,7 +2351,7 @@ let data = [
 			"answer": "4"
 		 },
 		 {
-			"question": "Cerium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Cerium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2392,7 +2392,7 @@ let data = [
 			"answer": "5"
 		 },
 		 {
-			"question": "Praseodymium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Praseodymium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2433,7 +2433,7 @@ let data = [
 			"answer": "6"
 		 },
 		 {
-			"question": "Neodymium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Neodymium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2474,7 +2474,7 @@ let data = [
 			"answer": "7"
 		 },
 		 {
-			"question": "Promethium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Promethium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2515,7 +2515,7 @@ let data = [
 			"answer": "8"
 		 },
 		 {
-			"question": "Samarium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Samarium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2556,7 +2556,7 @@ let data = [
 			"answer": "9"
 		 },
 		 {
-			"question": "Europium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Europium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2597,7 +2597,7 @@ let data = [
 			"answer": "10"
 		 },
 		 {
-			"question": "Gadolinium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Gadolinium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2638,7 +2638,7 @@ let data = [
 			"answer": "11"
 		 },
 		 {
-			"question": "Terbium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Terbium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2679,7 +2679,7 @@ let data = [
 			"answer": "12"
 		 },
 		 {
-			"question": "Dysprosium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Dysprosium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2720,7 +2720,7 @@ let data = [
 			"answer": "13"
 		 },
 		 {
-			"question": "Holmium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Holmium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2761,7 +2761,7 @@ let data = [
 			"answer": "14"
 		 },
 		 {
-			"question": "Erbium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Erbium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2802,7 +2802,7 @@ let data = [
 			"answer": "15"
 		 },
 		 {
-			"question": "Thulium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Thulium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2843,7 +2843,7 @@ let data = [
 			"answer": "16"
 		 },
 		 {
-			"question": "Ytterbium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Ytterbium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2884,7 +2884,7 @@ let data = [
 			"answer": "3"
 		 },
 		 {
-			"question": "Lutetium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Lutetium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2925,7 +2925,7 @@ let data = [
 			"answer": "4"
 		 },
 		 {
-			"question": "Hafnium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Hafnium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -2966,7 +2966,7 @@ let data = [
 			"answer": "5"
 		 },
 		 {
-			"question": "Tantalum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Tantalum's oxidation state",
 			"answer": "+5"
 		 },
 		 {
@@ -3007,7 +3007,7 @@ let data = [
 			"answer": "6"
 		 },
 		 {
-			"question": "Tungsten's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Tungsten's oxidation state",
 			"answer": "+6"
 		 },
 		 {
@@ -3048,7 +3048,7 @@ let data = [
 			"answer": "7"
 		 },
 		 {
-			"question": "Rhenium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Rhenium's oxidation state",
 			"answer": "+7"
 		 },
 		 {
@@ -3089,7 +3089,7 @@ let data = [
 			"answer": "8"
 		 },
 		 {
-			"question": "Osmium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Osmium's oxidation state",
 			"answer": "+4"
 		 },
 		 {
@@ -3130,7 +3130,7 @@ let data = [
 			"answer": "9"
 		 },
 		 {
-			"question": "Irdium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Irdium's oxidation state",
 			"answer": "+4"
 		 },
 		 {
@@ -3171,7 +3171,7 @@ let data = [
 			"answer": "10"
 		 },
 		 {
-			"question": "Platinum's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Platinum's oxidation state",
 			"answer": "+4"
 		 },
 		 {
@@ -3212,7 +3212,7 @@ let data = [
 			"answer": "11"
 		 },
 		 {
-			"question": "Gold's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Gold's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -3253,7 +3253,7 @@ let data = [
 			"answer": "12"
 		 },
 		 {
-			"question": "Mercury's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Mercury's oxidation state",
 			"answer": "+2"
 		 },
 		 {
@@ -3294,7 +3294,7 @@ let data = [
 			"answer": "3"
 		 },
 		 {
-			"question": "Thallium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Thallium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -3335,7 +3335,7 @@ let data = [
 			"answer": "4"
 		 },
 		 {
-			"question": "Lead's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Lead's oxidation state",
 			"answer": "+4"
 		 },
 		 {
@@ -3376,7 +3376,7 @@ let data = [
 			"answer": "5"
 		 },
 		 {
-			"question": "Bismuth's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Bismuth's oxidation state",
 			"answer": "-3"
 		 },
 		 {
@@ -3417,7 +3417,7 @@ let data = [
 			"answer": "6"
 		 },
 		 {
-			"question": "Polonium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Polonium's oxidation state",
 			"answer": "-2"
 		 },
 		 {
@@ -3458,7 +3458,7 @@ let data = [
 			"answer": "7"
 		 },
 		 {
-			"question": "Astatine's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Astatine's oxidation state",
 			"answer": "-1"
 		 },
 		 {
@@ -3495,7 +3495,7 @@ let data = [
 			"answer": "8"
 		 },
 		 {
-			"question": "Radon's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Radon's oxidation state",
 			"answer": "0"
 		 },
 		 {
@@ -3537,7 +3537,7 @@ let data = [
 			"answer": "1"
 		 },
 		 {
-			"question": "Francium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Francium's oxidation state",
 			"answer": "+1"
 		 },
 		 {
@@ -3578,7 +3578,7 @@ let data = [
 			"answer": "2"
 		 },
 		 {
-			"question": "Radium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Radium's oxidation state",
 			"answer": "+2"
 		 },
 		 {
@@ -3619,7 +3619,7 @@ let data = [
 			"answer": "3"
 		 },
 		 {
-			"question": "Actinium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Actinium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -3660,7 +3660,7 @@ let data = [
 			"answer": "4"
 		 },
 		 {
-			"question": "Thorium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Thorium's oxidation state",
 			"answer": "+4"
 		 },
 		 {
@@ -3701,7 +3701,7 @@ let data = [
 			"answer": "5"
 		 },
 		 {
-			"question": "Protactinium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Protactinium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -3742,7 +3742,7 @@ let data = [
 			"answer": "6"
 		 },
 		 {
-			"question": "Uranium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Uranium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -3783,7 +3783,7 @@ let data = [
 			"answer": "7"
 		 },
 		 {
-			"question": "Neptunium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Neptunium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -3824,7 +3824,7 @@ let data = [
 			"answer": "8"
 		 },
 		 {
-			"question": "Plutonium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Plutonium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -3865,7 +3865,7 @@ let data = [
 			"answer": "9"
 		 },
 		 {
-			"question": "Americium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Americium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -3906,7 +3906,7 @@ let data = [
 			"answer": "10"
 		 },
 		 {
-			"question": "Curium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Curium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -3947,7 +3947,7 @@ let data = [
 			"answer": "11"
 		 },
 		 {
-			"question": "Berkelium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Berkelium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -3988,7 +3988,7 @@ let data = [
 			"answer": "12"
 		 },
 		 {
-			"question": "Californium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Californium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -4029,7 +4029,7 @@ let data = [
 			"answer": "13"
 		 },
 		 {
-			"question": "Ensteinium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Ensteinium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -4070,7 +4070,7 @@ let data = [
 			"answer": "14"
 		 },
 		 {
-			"question": "Fermium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Fermium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -4111,7 +4111,7 @@ let data = [
 			"answer": "15"
 		 },
 		 {
-			"question": "Mendelevium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Mendelevium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -4152,7 +4152,7 @@ let data = [
 			"answer": "16"
 		 },
 		 {
-			"question": "Nobelium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Nobelium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -4189,7 +4189,7 @@ let data = [
 			"answer": "3"
 		 },
 		 {
-			"question": "Lawrencium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Lawrencium's oxidation state",
 			"answer": "+3"
 		 },
 		 {
@@ -4227,7 +4227,7 @@ let data = [
 			"answer": "4"
 		 },
 		 {
-			"question": "Rutherfordium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Rutherfordium's oxidation state",
 			"answer": "+4"
 		 },
 		 {
@@ -4257,7 +4257,7 @@ let data = [
 			"answer": "5"
 		 },
 		 {
-			"question": "Dubnium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Dubnium's oxidation state",
 			"answer": "+5"
 		 },
 		 {
@@ -4287,7 +4287,7 @@ let data = [
 			"answer": "6"
 		 },
 		 {
-			"question": "Seaborgium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Seaborgium's oxidation state",
 			"answer": "+6"
 		 },
 		 {
@@ -4316,7 +4316,7 @@ let data = [
 			"answer": "7"
 		 },
 		 {
-			"question": "Bohrium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Bohrium's oxidation state",
 			"answer": "+7"
 		 },
 		 {
@@ -4345,7 +4345,7 @@ let data = [
 			"answer": "8"
 		 },
 		 {
-			"question": "Hassium's oxidation state that makes the outer shell of itself 'full' when combined with another element",
+			"question": "Hassium's oxidation state",
 			"answer": "+8"
 		 },
 		 {
