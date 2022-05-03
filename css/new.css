@@ -20,9 +20,8 @@ body {
   text-align: center;
 }
 
-#score {
+div {
   text-align: center;
-  width: 175%;
 }
 
 hr {
@@ -296,13 +295,10 @@ hr {
     color: black;
   }
   hr {
-    width: 180%;
+    width: 300%;
   }
   .cell {
     height: 120%;
-  }
-  #score {
-    width: 180%;
   }
 }
 @media (min-width: 1200px) {
