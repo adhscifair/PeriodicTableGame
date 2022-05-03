@@ -68,7 +68,14 @@ function resetForNextQuestion() {
         $("#questionBody").html(question)
         let width = (1/data[arrayNumber].questionAndPoints.length)*100
         $(".progress").append(`
-          <div  id= "progressBar${questionNumber}" class="progress-bar bg-info" role="progressbar" style="width: ${width}%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          <div  
+          id= "progressBar${questionNumber}" 
+          class="progress-bar bg-info" 
+          role="progressbar" 
+          style="width: ${width}%" 
+          aria-valuenow="0" 
+          aria-valuemin="0" 
+          aria-valuemax="100"></div>
         `)
     }
 }
@@ -131,7 +138,7 @@ function displayProgress(elementName) {
         let qaArray = curArray['QA']
         let denominator = data[arrayNumber].questionAndPoints.length
 
-        $("#arrayText").append(`<div class="card" id="score"><h2 style="text-align:center">Score: ${score}/${denominator} <br/> Percentage: ${Math.round(score/denominator * 100)}%</h2></div> <hr/> <br/>`)
+        $("#arrayText").append(`<div id="score"><h2 style="text-align:center">Score: ${score}/${denominator} <br/> Percentage: ${Math.round(score/denominator * 100)}%</h2></div> <hr/> <br/>`)
         let arrayTextHtml = `<tr><th>Questions<th/><th></th><tbody>`
         for(let i=0; i< qaArray.length; i+=2) {
             arrayTextHtml += `<tr>`
