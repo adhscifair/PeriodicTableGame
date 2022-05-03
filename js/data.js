@@ -871,14 +871,6 @@ let data = [
 			"answer": "Titanium"
 		 },
 		 {
-			"question": "Number of valence electrons in Titanium",
-			"answer": "4"
-		 },
-		 {
-			"question": "Titanium's oxidation state",
-			"answer": "+4"
-		 },
-		 {
 			"question": "Titanium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^2"
 		 },
@@ -910,14 +902,6 @@ let data = [
 		 {
 			"question": "Which element has a higher Electronegativity:  Vanadium or Calcium?",
 			"answer": "Vanadium"
-		 },
-		 {
-			"question": "Number of valence electrons in Vanadium",
-			"answer": "5"
-		 },
-		 {
-			"question": "Vanadium's oxidation state",
-			"answer": "+5"
 		 },
 		 {
 			"question": "Vanadium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
@@ -953,14 +937,6 @@ let data = [
 			"answer": "Cobalt"
 		 },
 		 {
-			"question": "Number of valence electrons in Chromium",
-			"answer": "6"
-		 },
-		 {
-			"question": "Chromium's oxidation state",
-			"answer": "6"
-		 },
-		 {
 			"question": "Chromium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1))",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^5"
 		 },
@@ -992,14 +968,6 @@ let data = [
 		 {
 			"question": "Which element has a higher Electronegativity:  Manganese or Chromium?",
 			"answer": "Chromium"
-		 },
-		 {
-			"question": "Number of valence electrons in Manganese",
-			"answer": "7"
-		 },
-		 {
-			"question": "Maganese's oxidation state",
-			"answer": "+7"
 		 },
 		 {
 			"question": "Maganese's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
@@ -1035,14 +1003,6 @@ let data = [
 			"answer": "Iron"
 		 },
 		 {
-			"question": "Number of valence electrons in Iron",
-			"answer": "8"
-		 },
-		 {
-			"question": "Iron's oxidation state.",
-			"answer": "+2"
-		 },
-		 {
 			"question": "Iron's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6"
 		 },
@@ -1074,14 +1034,6 @@ let data = [
 		 {
 			"question": "Which element has a higher Electronegativity:  Cobalt or Gallium?",
 			"answer": "Cobalt"
-		 },
-		 {
-			"question": "Number of valence electrons in Cobalt",
-			"answer": "9"
-		 },
-		 {
-			"question": "Cobalt's oxidation state",
-			"answer": "+3"
 		 },
 		 {
 			"question": "Cobalt's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
@@ -1117,14 +1069,6 @@ let data = [
 			"answer": "Nickel"
 		 },
 		 {
-			"question": "Number of valence electrons in Nickel",
-			"answer": "10"
-		 },
-		 {
-			"question": "Nickel's oxidation state",
-			"answer": "+2"
-		 },
-		 {
 			"question": "Nickel's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^8"
 		 },
@@ -1158,14 +1102,6 @@ let data = [
 			"answer": "Copper"
 		 },
 		 {
-			"question": "Number of valence electrons in Copper",
-			"answer": "11"
-		 },
-		 {
-			"question": "Copper's oxidation state",
-			"answer": "+2"
-		 },
-		 {
 			"question": "Copper's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10"
 		 },
@@ -1197,14 +1133,6 @@ let data = [
 		 {
 			"question": "Which element has a higher Electronegativity:  Zinc or Chlorine?",
 			"answer": "Chlorine"
-		 },
-		 {
-			"question": "Number of valence electrons in Zinc",
-			"answer": "12"
-		 },
-		 {
-			"question": "Zinc's oxidation state",
-			"answer": "+2"
 		 },
 		 {
 			"question": "Zinc's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
@@ -1609,14 +1537,6 @@ let data = [
 			"answer": "Germanium"
 		 },
 		 {
-			"question": "Number of valence electrons in Zirconium.",
-			"answer": "4"
-		 },
-		 {
-			"question": "Zirocnium's oxidation state",
-			"answer": "+4"
-		 },
-		 {
 			"question": "Zirocnium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^2"
 		 },
@@ -1648,14 +1568,6 @@ let data = [
 		 {
 			"question": "Which element has a higher Electronegativity:  Niobium or Scandium?",
 			"answer": "Niobium"
-		 },
-		 {
-			"question": "Number of valence electrons in Niobium.",
-			"answer": "5"
-		 },
-		 {
-			"question": "Niobium's oxidation state",
-			"answer": "+5"
 		 },
 		 {
 			"question": "Niobium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
@@ -1691,14 +1603,6 @@ let data = [
 			"answer": "Krypton"
 		 },
 		 {
-			"question": "Number of valence electrons in Molybdenum.",
-			"answer": "6"
-		 },
-		 {
-			"question": "Molybdenum's oxidation state",
-			"answer": "+6"
-		 },
-		 {
 			"question": "Molybdenum's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^5"
 		 },
@@ -1730,14 +1634,6 @@ let data = [
 		 {
 			"question": "Which element has a higher Electronegativity:  Technetium or Hydrogen?",
 			"answer": "Technetium"
-		 },
-		 {
-			"question": "Number of valence electrons in Technetium.",
-			"answer": "7"
-		 },
-		 {
-			"question": "Technetium's oxidation state",
-			"answer": "+7"
 		 },
 		 {
 			"question": "Technetium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
@@ -1773,14 +1669,6 @@ let data = [
 			"answer": "Ruthenium"
 		 },
 		 {
-			"question": "Number of valence electrons in Ruthenium.",
-			"answer": "8"
-		 },
-		 {
-			"question": "Ruthenium's oxidation state",
-			"answer": "+3"
-		 },
-		 {
 			"question": "Ruthenium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^7"
 		 },
@@ -1812,14 +1700,6 @@ let data = [
 		 {
 			"question": "Which element has a higher Electronegativity:  Rhodium or Palladium?",
 			"answer": "Palladium"
-		 },
-		 {
-			"question": "Number of valence electrons in Rhodium.",
-			"answer": "9"
-		 },
-		 {
-			"question": "Rhodium's oxidation state",
-			"answer": "+4"
 		 },
 		 {
 			"question": "Rhodium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
@@ -1855,14 +1735,6 @@ let data = [
 			"answer": "Selenium"
 		 },
 		 {
-			"question": "Number of valence electrons in Palladium.",
-			"answer": "10"
-		 },
-		 {
-			"question": "Palladium's oxidation state",
-			"answer": "+2"
-		 },
-		 {
 			"question": "Palladium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 4d^10"
 		 },
@@ -1896,14 +1768,6 @@ let data = [
 			"answer": "Osmium"
 		 },
 		 {
-			"question": "Number of valence electrons in Silver.",
-			"answer": "11"
-		 },
-		 {
-			"question": "Silver's oxidation state",
-			"answer": "+1"
-		 },
-		 {
 			"question": "Silver's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10"
 		 },
@@ -1935,14 +1799,6 @@ let data = [
 		 {
 			"question": "Which element has a higher Electronegativity:  Cadmium or Cerium?",
 			"answer": "Cadmium"
-		 },
-		 {
-			"question": "Number of valence electrons in Cadmium.",
-			"answer": "12"
-		 },
-		 {
-			"question": "Cadmium's oxidation state",
-			"answer": "+2"
 		 },
 		 {
 			"question": "Cadmium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
@@ -2921,14 +2777,6 @@ let data = [
 			"answer": "Hafnium"
 		 },
 		 {
-			"question": "Number of valence electrons in Hafnium.",
-			"answer": "4"
-		 },
-		 {
-			"question": "Hafnium's oxidation state",
-			"answer": "+3"
-		 },
-		 {
 			"question": "Hafnium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^2"
 		 },
@@ -2960,14 +2808,6 @@ let data = [
 		 {
 			"question": "Which element has a higher Electronegativity:  Tantalum or Magnesium?",
 			"answer": "Tantalum"
-		 },
-		 {
-			"question": "Number of valence electrons in Tantalum.",
-			"answer": "5"
-		 },
-		 {
-			"question": "Tantalum's oxidation state",
-			"answer": "+5"
 		 },
 		 {
 			"question": "Tantalum's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
@@ -3003,14 +2843,6 @@ let data = [
 			"answer": "Krypton"
 		 },
 		 {
-			"question": "Number of valence electrons in Tungsten.",
-			"answer": "6"
-		 },
-		 {
-			"question": "Tungsten's oxidation state",
-			"answer": "+6"
-		 },
-		 {
 			"question": "Tungsten's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^4"
 		 },
@@ -3042,14 +2874,6 @@ let data = [
 		 {
 			"question": "Which element has a higher Electronegativity:  Rhenium or Aluminum?",
 			"answer": "Rhenium"
-		 },
-		 {
-			"question": "Number of valence electrons in Rhenium.",
-			"answer": "7"
-		 },
-		 {
-			"question": "Rhenium's oxidation state",
-			"answer": "+7"
 		 },
 		 {
 			"question": "Rhenium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
@@ -3085,14 +2909,6 @@ let data = [
 			"answer": "Osmium"
 		 },
 		 {
-			"question": "Number of valence electrons in Osmium.",
-			"answer": "8"
-		 },
-		 {
-			"question": "Osmium's oxidation state",
-			"answer": "+4"
-		 },
-		 {
 			"question": "Osmium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^6"
 		 },
@@ -3124,14 +2940,6 @@ let data = [
 		 {
 			"question": "Which element has a higher Electronegativity:  Iridium or Thallium?",
 			"answer": "Iridium"
-		 },
-		 {
-			"question": "Number of valence electrons in Iridium.",
-			"answer": "9"
-		 },
-		 {
-			"question": "Irdium's oxidation state",
-			"answer": "+4"
 		 },
 		 {
 			"question": "Irdium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
@@ -3167,14 +2975,6 @@ let data = [
 			"answer": "Platinum"
 		 },
 		 {
-			"question": "Number of valence electrons in Platinum.",
-			"answer": "10"
-		 },
-		 {
-			"question": "Platinum's oxidation state",
-			"answer": "+4"
-		 },
-		 {
 			"question": "Platinum's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^9"
 		 },
@@ -3208,14 +3008,6 @@ let data = [
 			"answer": "Gold"
 		 },
 		 {
-			"question": "Number of valence electrons in Gold.",
-			"answer": "11"
-		 },
-		 {
-			"question": "Gold's oxidation state",
-			"answer": "+3"
-		 },
-		 {
 			"question": "Gold's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10"
 		 },
@@ -3247,14 +3039,6 @@ let data = [
 		 {
 			"question": "Which element has a higher Electronegativity:  Mercury or Chromium?",
 			"answer": "Mercury"
-		 },
-		 {
-			"question": "Number of valence electrons in Mercury.",
-			"answer": "12"
-		 },
-		 {
-			"question": "Mercury's oxidation state",
-			"answer": "+2"
 		 },
 		 {
 			"question": "Mercury's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
@@ -4223,10 +4007,6 @@ let data = [
 			"answer": "Rf"
 		 },
 		 {
-			"question": "Number of valence electrons in Rutherfordium.",
-			"answer": "4"
-		 },
-		 {
 			"question": "Rutherfordium's oxidation state",
 			"answer": "+4"
 		 },
@@ -4251,10 +4031,6 @@ let data = [
 		 {
 			"question": "Dubnium's abbreviation",
 			"answer": "Db"
-		 },
-		 {
-			"question": "Number of valence electrons in Dubnium.",
-			"answer": "5"
 		 },
 		 {
 			"question": "Dubnium's oxidation state",
@@ -4283,10 +4059,6 @@ let data = [
 			"answer": "Sg"
 		 },
 		 {
-			"question": "Number of valence electrons in Seaborgium.",
-			"answer": "6"
-		 },
-		 {
 			"question": "Seaborgium's oxidation state",
 			"answer": "+6"
 		 },
@@ -4310,10 +4082,6 @@ let data = [
 		 {
 			"question": "Bohrium's abbreviation",
 			"answer": "Bh"
-		 },
-		 {
-			"question": "Number of valence electrons in Bohrium.",
-			"answer": "7"
 		 },
 		 {
 			"question": "Bohrium's oxidation state",
@@ -4341,10 +4109,6 @@ let data = [
 			"answer": "Hs"
 		 },
 		 {
-			"question": "Number of valence electrons in Hassium.",
-			"answer": "8"
-		 },
-		 {
 			"question": "Hassium's oxidation state",
 			"answer": "+8"
 		 },
@@ -4370,10 +4134,6 @@ let data = [
 			"answer": "Mt"
 		 },
 		 {
-			"question": "Number of valence electrons in Meitnerium.",
-			"answer": "9"
-		 },
-		 {
 			"question": "Meitnerium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^7"
 		 }
@@ -4393,10 +4153,6 @@ let data = [
 		 {
 			"question": "Darmstadtium's abbreviation",
 			"answer": "Ds"
-		 },
-		 {
-			"question": "Number of valence electrons in Darmstadtium.",
-			"answer": "10"
 		 },
 		 {
 			"question": "Darmstadtium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
@@ -4420,10 +4176,6 @@ let data = [
 			"answer": "Rg"
 		 },
 		 {
-			"question": "Number of valence electrons in Roentgenium.",
-			"answer": "11"
-		 },
-		 {
 			"question": "Roentgenium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
 			"answer": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^1 4d^10 5p^6 6s^2 4f^14 5d^10 6p^1 7s^2 5f^14 6d^9"
 		 }
@@ -4443,10 +4195,6 @@ let data = [
 		 {
 			"question": "Copernicium's abbreviation",
 			"answer": "Cn"
-		 },
-		 {
-			"question": "Number of valence electrons in Copernicium.",
-			"answer": "12"
 		 },
 		 {
 			"question": "Copernicium's Electron Configuration. (When a number is being raised, use the character '^', like for  1s<sup>1</sup>, you would say 1s^1)",
