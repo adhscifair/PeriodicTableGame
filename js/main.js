@@ -70,7 +70,7 @@ function resetForNextQuestion() {
         $(".progress").append(`
           <div  
           id= "progressBar${questionNumber}" 
-          class="progress-bar bg-info" 
+          class="progress-bar" 
           role="progressbar" 
           style="width: ${width}%" 
           aria-valuenow="0" 
@@ -189,7 +189,7 @@ function displayModal (clicked_id) {
     let width = (1/data[arrayNumber].questionAndPoints.length)*100
     displayProgress(title)
     $(".progress").append(`
-      <div  id= "progressBar${questionNumber}" class="progress-bar bg-info" role="progressbar" style="width: ${width}%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      <div  id= "progressBar${questionNumber}" class="progress-bar" role="progressbar" style="width: ${width}%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
     `)
 }
 
@@ -230,4 +230,3 @@ function evaluateAnswer(){
     displayProgress(elementName)
     
 }
-
