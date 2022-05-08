@@ -191,6 +191,7 @@ function displayModal (clicked_id) {
     $(".progress").append(`
       <div  id= "progressBar${questionNumber}" class="progress-bar" role="progressbar" style="width: ${width}%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
     `)
+    $("#quickMessage").html("")
 }
 
 function evaluateAnswer(){
