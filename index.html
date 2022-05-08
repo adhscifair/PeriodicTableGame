@@ -34,7 +34,7 @@
           </button>
         </div>
         <div class="modal-body">
-          Welcome to the Periodic Table Trivia! Not sure where to start?
+          Welcome to Periodic Table Trivia! Not sure where to start?
           Well, this is how you use the website to the best of your ability!
           <br/><br/>
           First hover and click on an elemenet that you would like to answer
@@ -102,11 +102,6 @@
               <br/>
               <div id="quickMessage">
                 <div class="alert alert-info" role="alert">
-                  Please note that you will not be able to click out 
-                of this modal until you answer ALL the questions, 
-                otherwise, your progress will be lost. If you answer all 
-                the questions and exit, the progrees bar will be blank,
-                but your progress will be still saved on the progress tab.
                 </div>
               </div>
               <div class="modal-body" id="questionBody"></div>
@@ -130,9 +125,64 @@
       </div> <!-- end of modal content-->
     </div> <!-- end of modal dialogue-->
   </div>
+  <div  id="tutorialModal" data-backdrop="static" data-keyboard="false" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" draggable>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Periodic Table Trivia Refresher on Some Terminology</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>I know that some of the terminology can be confusing, and I'll admit
+            that I did not know what some of these terms meant! So here
+            is a quick breakdown on some confusing terminology that I 
+            hope you'll find... not confusing!
+          </p>
+          <p><b>Protons</b> - Positively charged particles in an atom that sit 
+          in the nucleus - the center of the atom. Hint: that's the number in the top right
+          corner of each element. This is same for electrons.</p>
+
+          <p><b>Electrons</b> - Negatively charged particles in an atom that orbit
+            the atom- the center of the atom. Hint: that's the number in the top right
+            corner of each element. </p>
+
+          <p><b>Valence electrons</b> - Electrons that are in the 
+            outermost shell of the atom. To figure this out, do this calculation:
+          ({insert electron number here} -  2)/8. The remander is the number of
+          valence electrons! If it is 0, then their are 8 valence electrons - except
+          Helium which has 2.
+          </p>
+          <img src="pictures/diagramOfChlorine.png" width="96%" style="text-align:center;" alt="diagram of a chlorine atom"/>
+          <h6>A diagram of Chlorine, to show the protons and electrons</h6>
+          <p><b>Oxidation Number</b> - The charge of an atom if it was
+            in a compound composed of ions.
+          </p>
+          <p><b>Electron Configuration</b> - How the electrons
+            are arranged around the atomic nucleus.
+          </p>
+          <p><b>Ionization Energy</b> The energy needeed to 
+            take out an ellectron from a isolated atom/molocule. 
+            The more higher and too the right you go, the higher
+            the ionization energy is.
+          </p>
+          <p><b>Electronegativity</b> - How much the atom in a molocule attracts
+            the shared pair of electrons to itself. The trend for this is as the 
+            more to the right and up you go, the higher the electronegativity is!
+            (Noble gasses have no electronegativity)
+          </p>
+          <img src="pictures/higherEnergyTable.png" width="96%" style="text-align:center;" alt="diagram of the increasing electronegativity and ionization energy"/>
+          <h6>A picture of </h6>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <h1 id = "header" style="text-align: center;">Periodic Table Trivia!</h1>
   <button style="margin-left:90%;" class="btn-primary btn" href="#" id="rules" data-toggle="modal" data-target="#myModal" >Rules</button>
+  <br/>
+  <button style="margin-left:83.5%; font-size:9px;" class="btn-secondary btn" href="#" id="tutorial" data-toggle="modal" data-target="#tutorialModal" >Refresher on Terminology</button>
  
     <div class="periodic">
       <div class="periodic-row">
