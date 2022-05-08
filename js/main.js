@@ -111,7 +111,7 @@ function displayFailureMessage(correctAnswer) {
     $("#quickMessage").html(
         `<br/><div class="alert alert-danger" role="alert">
             You got the last question incorrect. The answer was ${correctAnswer}.
-            <br/> Their is always next time!
+            <br/> There is always next time!
         </div>
     `)
 }
