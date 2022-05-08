@@ -13,6 +13,12 @@ body {
 .label {
   font-family: "Concert One", cursive;
 }
+#arrayText {
+  font-size: x-large;
+}
+#questionModal {
+  font-size: x-large;
+}
 .disabled {
   color: rgb(168, 168, 168);
 }
