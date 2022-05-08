@@ -4384,7 +4384,7 @@ let data = [
 			"answer": "FALSE"
 		 },
 		 {
-			"question": "True or False? Helium is a Noble gas have full valence electron shells",
+			"question": "True or False? Helium is a noble gas",
 			"answer": "TRUE"
 		 }
 	  ]
