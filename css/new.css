@@ -32,7 +32,9 @@ hr {
 #dropdown {
   float: right;
 }
-
+#score {
+  text-align: center;
+}
 .periodic {
   position: relative;
   height: 200px;
