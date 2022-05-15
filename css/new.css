@@ -13,17 +13,17 @@ body {
 .label {
   font-family: "Concert One", cursive;
 }
-#arrayText {
-  font-size: x-large;
-}
-#questionModal {
-  font-size: x-large;
-}
 .disabled {
   color: rgb(168, 168, 168);
 }
 #interactive {
   text-align: center;
+}
+#arrayText {
+  font-size: x-large;
+}
+#questionModal {
+  font-size: x-large;
 }
 hr {
   width: 200%;
@@ -35,6 +35,7 @@ hr {
 #score {
   text-align: center;
 }
+
 .periodic {
   position: relative;
   height: 200px;
