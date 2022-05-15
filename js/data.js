@@ -4353,7 +4353,7 @@ let data = [
 	  ]
    },
 	{
-	  "elementName": "General Categorization Questions",
+	  "elementName": "General Questions",
 	  "questionAndPoints": [
 		 {
 			"question": "How many valence electrons do the alkali metals have?",
