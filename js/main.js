@@ -138,7 +138,7 @@ function displayProgress(elementName) {
         let qaArray = curArray['QA']
         let denominator = data[arrayNumber].questionAndPoints.length
 
-        $("#score").append(`<div><h2 style="text-align:center">Score: ${score}/${denominator} <br/> Percentage: ${Math.round(score/denominator * 100)}%</h2></div> <hr/> <br/>`)
+       $("#score").append(`<div><h2 style="text-align:center">Score: ${score}/${denominator} <br/> Percentage: ${Math.round(score/denominator * 100)}%</h2></div> <hr/> <br/>`)
         let arrayTextHtml = `<tr><th>Questions<th/><th></th><tbody>`
         for(let i=0; i< qaArray.length; i+=2) {
             arrayTextHtml += `<tr>`
